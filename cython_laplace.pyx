@@ -195,17 +195,22 @@ cdef np.ndarray[FDTYPE_t, ndim=1] eulerStep(double v0, double v1, double v2,
 
 # given the gradients and a voxel (in voxel coordinates), find the streamline
 # that goes to the inside and outside boundary
-cdef double createStreamline(np.ndarray[BDTYPE_t, ndim=3] g,    # grid
+cdef double createStreamline(str method,                        # method
+                             np.ndarray[BDTYPE_t, ndim=3] g,    # grid
+                             np.ndarray[FDTYPE_t, ndim=3] s,    # scalar function
                              np.ndarray[FDTYPE_t, ndim=3] dv0,  # gradient
                              np.ndarray[FDTYPE_t, ndim=3] dv1,  # gradient
                              np.ndarray[FDTYPE_t, ndim=3] dv2,  # gradient
                              double v0, double v1, double v2,   # voxel
                              double h):  # step
     cdef double stream_length, stream_lengthtwo
+    cdef double proj, proj2
+    cdef double ds
     cdef double real_line_distance = 0
     cdef double mag
     cdef double grid_position
     cdef double newv0, newv1, newv2
+    cdef double retval
     cdef np.ndarray[FDTYPE_t, ndim=1] point = np.zeros(3)
     cdef np.ndarray[FDTYPE_t, ndim=1] oldpoint = np.zeros(3)
 
@@ -226,6 +231,9 @@ cdef double createStreamline(np.ndarray[BDTYPE_t, ndim=3] g,    # grid
 
     stream_length = 0
     stream_lengthtwo = 0
+    ds = 0
+    proj = 0
+    proj2 = 0
     cdef int counter = 0
 
     # move towards outer surface first
@@ -239,6 +247,7 @@ cdef double createStreamline(np.ndarray[BDTYPE_t, ndim=3] g,    # grid
             newv2 = fast_trilinear_interpolant(dv2, oldpoint)
         mag = newv0*newv0 + newv1*newv1 + newv2*newv2
         
+        # If gradient not present, done
         if mag < 1.0e-6:
             grid_position=10
         else:
@@ -251,7 +260,10 @@ cdef double createStreamline(np.ndarray[BDTYPE_t, ndim=3] g,    # grid
             point[1] = oldpoint[1] + newv1 * h
             point[2] = oldpoint[2] + newv2 * h
 
-            stream_length = stream_length + sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
+            
+            ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
+            proj = proj + s[point[0], point[1], point[2]]*ds
+            stream_length = stream_length + ds
 
             if nv2 == 1:
                 grid_position = fast_bilinear_interpolant(g, point)
@@ -295,7 +307,9 @@ cdef double createStreamline(np.ndarray[BDTYPE_t, ndim=3] g,    # grid
             point[1] = oldpoint[1] + newv1 * h_negative
             point[2] = oldpoint[2] + newv2 * h_negative
 
-            stream_lengthtwo = stream_lengthtwo + sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
+            ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
+            proj2 = proj2 + s[point[0], point[1], point[2]]*ds
+            stream_lengthtwo = stream_lengthtwo + ds
 
             if nv2 == 1:
                 grid_position = fast_bilinear_interpolant(g, point)
@@ -312,7 +326,15 @@ cdef double createStreamline(np.ndarray[BDTYPE_t, ndim=3] g,    # grid
                                         (newv2-v2)*(newv2-v2) )
             if stream_lengthtwo > (4.0*real_line_distance):
                 grid_position = 0.0
-    return(stream_length + stream_lengthtwo)
+    if method=="thickness":
+        retval = stream_length + stream_lengthtwo
+    elif method=="sum":
+        retval = proj + proj2
+    elif method=="mean":
+        retval = (proj + proj2) / (stream_length + stream_lengthtwo)
+    else:
+        retval = 0.
+    return(retval)
 
 
 cdef double voxelDistance(np.ndarray[BDTYPE_t, ndim=3] g, # grid
@@ -364,7 +386,9 @@ def straightLineDistance(np.ndarray[BDTYPE_t, ndim=3] g,    # grid
                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:
                     o[v0,v1,v2] = voxelDistance(g, v0, v1, v2)
 
-def computeAllStreamlines(np.ndarray[BDTYPE_t, ndim=3] g,    # grid
+def computeAllStreamlines(str method, # method
+                          np.ndarray[BDTYPE_t, ndim=3] g,    # grid
+                          np.ndarray[FDTYPE_t, ndim=3] s, #scalar function                          
                           np.ndarray[FDTYPE_t, ndim=3] o,    # output
                           np.ndarray[FDTYPE_t, ndim=3] dv0,  # gradient
                           np.ndarray[FDTYPE_t, ndim=3] dv1,  # gradient
@@ -380,12 +404,14 @@ def computeAllStreamlines(np.ndarray[BDTYPE_t, ndim=3] g,    # grid
         for v1 in range(nv1):
             for v2 in range(nv2):
                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:
-                    o[v0,v1,v2] = createStreamline(g, dv0, dv1, dv2,
+                    o[v0,v1,v2] = createStreamline(method, g, s, dv0, dv1, dv2,
                                                    v0,v1,v2, h)
                 else:
                     o[v0,v1,v2] = 0
 
-def computeStreamlinesFromList(np.ndarray[BDTYPE_t, ndim=3] g,    # grid
+def computeStreamlinesFromList(str method, # method
+                               np.ndarray[BDTYPE_t, ndim=3] g,    # grid
+                               np.ndarray[FDTYPE_t, ndim=3] s, #scalar function                                
                                np.ndarray[FDTYPE_t, ndim=2] pointList,
                                np.ndarray[FDTYPE_t, ndim=1] o,    # output
                                np.ndarray[FDTYPE_t, ndim=3] dv0,  # gradient
@@ -395,7 +421,7 @@ def computeStreamlinesFromList(np.ndarray[BDTYPE_t, ndim=3] g,    # grid
     cdef unsigned long nv0 = pointList.shape[0]
     cdef unsigned long int v0
     for v0 in range(nv0):
-        o[v0] = createStreamline(g, dv0, dv1, dv2,
+        o[v0] = createStreamline(method, g, s, dv0, dv1, dv2,
                                  pointList[v0, 0],
                                  pointList[v0, 1],
                                  pointList[v0, 2],

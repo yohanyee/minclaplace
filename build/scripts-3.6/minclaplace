@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/home/yyee/anaconda3/bin/python
 
 # lots of imports
 from pyminc.volumes.factory import *
