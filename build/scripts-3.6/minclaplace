@@ -28,7 +28,7 @@ def convertAllWorldToVoxel(coords, mincvol):
 
 if __name__ == "__main__":
 
-    usage = "%prog [options] input-grid.mnc output-solved.mnc"
+    usage = "%prog [options] input-grid.mnc output-solved.txt"
     description = """
 All the glories of Laplace's equation for measuring cortical thickness
 - as initially described in:
@@ -85,7 +85,7 @@ model of Huntington's disease. Neuroimage. 2008 Jun;41(2):243-51.
     output_group = OptionGroup(parser, "Output options")
     output_group.add_option("--output-relaxation", dest="output_relaxation",
                             help="Output the relaxed equation to the "
-                            "specified filename",
+                            "specified filename (minc)",
                             type="string", default=None)
     output_group.add_option("--stop-after-relaxation", dest="relaxation_stop",
                             help="Stop after relaxing the equation (i.e. dont't"
@@ -143,8 +143,8 @@ model of Huntington's disease. Neuroimage. 2008 Jun;41(2):243-51.
 
     # get the grid/label volume
     grid = volumeFromFile(gridfile, dtype='ubyte')
-    if options.volume is not None:
-        svol = volumeFromFile(volumefile)
+    if options.volumefile is not None:
+        svol = volumeFromFile(options.volumefile)
     else:
         svol = grid
 

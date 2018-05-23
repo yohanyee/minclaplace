@@ -210,6 +210,7 @@ cdef double createStreamline(str method,                        # method
     cdef double mag
     cdef double grid_position
     cdef double newv0, newv1, newv2
+    cdef int p0, p1, p2
     cdef double retval
     cdef np.ndarray[FDTYPE_t, ndim=1] point = np.zeros(3)
     cdef np.ndarray[FDTYPE_t, ndim=1] oldpoint = np.zeros(3)
@@ -234,6 +235,9 @@ cdef double createStreamline(str method,                        # method
     ds = 0
     proj = 0
     proj2 = 0
+    p0 = 0
+    p1 = 0
+    p2 = 0
     cdef int counter = 0
 
     # move towards outer surface first
@@ -260,9 +264,12 @@ cdef double createStreamline(str method,                        # method
             point[1] = oldpoint[1] + newv1 * h
             point[2] = oldpoint[2] + newv2 * h
 
+            p0 = int(point[0])
+            p1 = int(point[1])
+            p2 = int(point[2])
             
             ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
-            proj = proj + s[point[0], point[1], point[2]]*ds
+            proj = proj + s[p0, p1, p2]*ds
             stream_length = stream_length + ds
 
             if nv2 == 1:
@@ -306,9 +313,13 @@ cdef double createStreamline(str method,                        # method
             point[0] = oldpoint[0] + newv0 * h_negative
             point[1] = oldpoint[1] + newv1 * h_negative
             point[2] = oldpoint[2] + newv2 * h_negative
+            
+            p0 = int(point[0])
+            p1 = int(point[1])
+            p2 = int(point[2])
 
             ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
-            proj2 = proj2 + s[point[0], point[1], point[2]]*ds
+            proj2 = proj2 + s[p0, p1, p2]*ds
             stream_lengthtwo = stream_lengthtwo + ds
 
             if nv2 == 1:
@@ -331,6 +342,7 @@ cdef double createStreamline(str method,                        # method
     elif method=="sum":
         retval = proj + proj2
     elif method=="mean":
+        #print("Stream: {a} {b} | Reverse: {c} {d}".format(a=stream_length, b=proj, c=stream_lengthtwo, d=proj2))
         retval = (proj + proj2) / (stream_length + stream_lengthtwo)
     else:
         retval = 0.
