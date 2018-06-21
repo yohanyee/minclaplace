@@ -279,7 +279,7 @@ model of Huntington's disease. Neuroimage. 2008 Jun;41(2):243-51.
                                              grid.data, 
                                              svol.data,
                                              output.data,
-                                             dv0, dv1, dv2, 0.1)
+                                             dv0, dv1, dv2, 0.01)
         
         # measured thickness is in voxels-multiply by step size to get it in mm
         output.data = output.data * output.separations[1]
