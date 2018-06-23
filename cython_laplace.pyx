@@ -240,6 +240,7 @@ cdef double createStreamline(str method,                        # method
     p2 = 0
     cdef int counter = 0
 
+    print("This point is: {} {} {}".format(v0, v1, v2))
     # move towards outer surface first
     while grid_position < 9.99:
         if nv2 == 1:
@@ -254,6 +255,8 @@ cdef double createStreamline(str method,                        # method
         # If gradient not present, done
         if mag < 1.0e-6:
             grid_position=10
+            if counter == 0:
+                print("Uh oh. OUTER failed. Magnitude is {mag:08f}".format(mag=mag))
         else:
 
             # for some reason eulerStep is not being optimized
@@ -286,6 +289,7 @@ cdef double createStreamline(str method,                        # method
             if stream_length > (4.0*real_line_distance):
                 grid_position = 10.0
         #print "OUTSIDE:", point[0], point[1], point[2], grid_position
+    print("TO OUTER | Counter = {counter:5d} | stream_length = {sl:8f} | proj = {proj:8f}".format(counter=counter, sl=stream_length, proj=proj))
     # move towards inner surface
     oldpoint[0] = v0
     oldpoint[1] = v1
@@ -304,6 +308,8 @@ cdef double createStreamline(str method,                        # method
         mag = newv0*newv0 + newv1*newv1 + newv2*newv2
         if mag < 1.0e-6:
             grid_position=0.0
+            if counter == 0:
+                print("Uh oh. INNER failed. Magnitude is {mag:08f}".format(mag=mag))
         else:
 
             # for some reason eulerStep is not being optimized 
@@ -337,6 +343,7 @@ cdef double createStreamline(str method,                        # method
                                         (newv2-v2)*(newv2-v2) )
             if stream_lengthtwo > (4.0*real_line_distance):
                 grid_position = 0.0
+    print("TO INNER | Counter = {counter:05d} | stream_length = {sl:08f} | proj = {proj:08f}".format(counter=counter, sl=stream_lengthtwo, proj=proj2))          
     if method=="thickness":
         retval = stream_length + stream_lengthtwo
     elif method=="sum":
@@ -346,6 +353,7 @@ cdef double createStreamline(str method,                        # method
         retval = (proj + proj2) / (stream_length + stream_lengthtwo)
     else:
         retval = 0.
+    print("")  
     return(retval)
 
 

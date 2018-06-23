@@ -2490,10 +2490,12 @@ static const char __pyx_k_d2[] = "d2";
 static const char __pyx_k_d3[] = "d3";
 static const char __pyx_k_id[] = "id";
 static const char __pyx_k_np[] = "np";
+static const char __pyx_k_sl[] = "sl";
 static const char __pyx_k_v0[] = "v0";
 static const char __pyx_k_v1[] = "v1";
 static const char __pyx_k_v2[] = "v2";
-static const char __pyx_k__20[] = ":";
+static const char __pyx_k__15[] = "";
+static const char __pyx_k__21[] = ":";
 static const char __pyx_k_dv0[] = "dv0";
 static const char __pyx_k_dv1[] = "dv1";
 static const char __pyx_k_dv2[] = "dv2";
@@ -2517,6 +2519,7 @@ static const char __pyx_k_mode[] = "mode";
 static const char __pyx_k_name[] = "name";
 static const char __pyx_k_ndim[] = "ndim";
 static const char __pyx_k_pack[] = "pack";
+static const char __pyx_k_proj[] = "proj";
 static const char __pyx_k_size[] = "size";
 static const char __pyx_k_step[] = "step";
 static const char __pyx_k_stop[] = "stop";
@@ -2553,6 +2556,7 @@ static const char __pyx_k_reduce[] = "__reduce__";
 static const char __pyx_k_struct[] = "struct";
 static const char __pyx_k_unpack[] = "unpack";
 static const char __pyx_k_update[] = "update";
+static const char __pyx_k_counter[] = "counter";
 static const char __pyx_k_float64[] = "float64";
 static const char __pyx_k_fortran[] = "fortran";
 static const char __pyx_k_memview[] = "memview";
@@ -2584,6 +2588,7 @@ static const char __pyx_k_convergence[] = "convergence";
 static const char __pyx_k_RuntimeError[] = "RuntimeError";
 static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";
 static const char __pyx_k_stringsource[] = "stringsource";
+static const char __pyx_k_This_point_is[] = "This point is: {} {} {}";
 static const char __pyx_k_pyx_getbuffer[] = "__pyx_getbuffer";
 static const char __pyx_k_reduce_cython[] = "__reduce_cython__";
 static const char __pyx_k_cython_laplace[] = "cython_laplace";
@@ -2626,6 +2631,8 @@ static const char __pyx_k_pyx_fuse_0fast_trilinear_inter[] = "__pyx_fuse_0fast_t
 static const char __pyx_k_pyx_fuse_1fast_bilinear_interp[] = "__pyx_fuse_1fast_bilinear_interpolant";
 static const char __pyx_k_pyx_fuse_1fast_trilinear_inter[] = "__pyx_fuse_1fast_trilinear_interpolant";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
+static const char __pyx_k_Uh_oh_INNER_failed_Magnitude_is[] = "Uh oh. INNER failed. Magnitude is {mag:08f}";
+static const char __pyx_k_Uh_oh_OUTER_failed_Magnitude_is[] = "Uh oh. OUTER failed. Magnitude is {mag:08f}";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
 static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose strides";
@@ -2641,6 +2648,8 @@ static const char __pyx_k_Indirect_dimensions_not_supporte[] = "Indirect dimensi
 static const char __pyx_k_Invalid_mode_expected_c_or_fortr[] = "Invalid mode, expected 'c' or 'fortran', got %s";
 static const char __pyx_k_Non_native_byte_order_not_suppor[] = "Non-native byte order not supported";
 static const char __pyx_k_Out_of_bounds_on_buffer_access_a[] = "Out of bounds on buffer access (axis %d)";
+static const char __pyx_k_TO_INNER_Counter_counter_05d_str[] = "TO INNER | Counter = {counter:05d} | stream_length = {sl:08f} | proj = {proj:08f}";
+static const char __pyx_k_TO_OUTER_Counter_counter_5d_stre[] = "TO OUTER | Counter = {counter:5d} | stream_length = {sl:8f} | proj = {proj:8f}";
 static const char __pyx_k_Unable_to_convert_item_to_object[] = "Unable to convert item to object";
 static const char __pyx_k_got_differing_extents_in_dimensi[] = "got differing extents in dimension %d (got %d and %d)";
 static const char __pyx_k_ndarray_is_not_Fortran_contiguou[] = "ndarray is not Fortran contiguous";
@@ -2679,12 +2688,18 @@ static PyObject *__pyx_n_b_O;
 static PyObject *__pyx_kp_s_Out_of_bounds_on_buffer_access_a;
 static PyObject *__pyx_n_s_PickleError;
 static PyObject *__pyx_n_s_RuntimeError;
+static PyObject *__pyx_kp_s_TO_INNER_Counter_counter_05d_str;
+static PyObject *__pyx_kp_s_TO_OUTER_Counter_counter_5d_stre;
+static PyObject *__pyx_kp_s_This_point_is;
 static PyObject *__pyx_n_s_TypeError;
+static PyObject *__pyx_kp_s_Uh_oh_INNER_failed_Magnitude_is;
+static PyObject *__pyx_kp_s_Uh_oh_OUTER_failed_Magnitude_is;
 static PyObject *__pyx_kp_s_Unable_to_convert_item_to_object;
 static PyObject *__pyx_n_s_ValueError;
 static PyObject *__pyx_n_s_View_MemoryView;
+static PyObject *__pyx_kp_s__15;
 static PyObject *__pyx_kp_s__2;
-static PyObject *__pyx_kp_s__20;
+static PyObject *__pyx_kp_s__21;
 static PyObject *__pyx_kp_s__4;
 static PyObject *__pyx_n_s_allocate_buffer;
 static PyObject *__pyx_n_s_args;
@@ -2704,6 +2719,7 @@ static PyObject *__pyx_kp_s_contiguous_and_direct;
 static PyObject *__pyx_kp_s_contiguous_and_indirect;
 static PyObject *__pyx_n_s_convergence;
 static PyObject *__pyx_n_s_convergence_criteria;
+static PyObject *__pyx_n_s_counter;
 static PyObject *__pyx_kp_s_criteria;
 static PyObject *__pyx_n_s_cython_laplace;
 static PyObject *__pyx_kp_s_cython_laplace_pyx;
@@ -2779,6 +2795,7 @@ static PyObject *__pyx_n_s_pickle;
 static PyObject *__pyx_n_s_point;
 static PyObject *__pyx_n_s_pointList;
 static PyObject *__pyx_n_s_print;
+static PyObject *__pyx_n_s_proj;
 static PyObject *__pyx_n_s_pyx_PickleError;
 static PyObject *__pyx_n_s_pyx_checksum;
 static PyObject *__pyx_n_s_pyx_fuse_0fast_bilinear_interp;
@@ -2801,6 +2818,7 @@ static PyObject *__pyx_n_s_setstate_cython;
 static PyObject *__pyx_n_s_shape;
 static PyObject *__pyx_n_s_signatures;
 static PyObject *__pyx_n_s_size;
+static PyObject *__pyx_n_s_sl;
 static PyObject *__pyx_n_s_split;
 static PyObject *__pyx_n_s_start;
 static PyObject *__pyx_n_s_step;
@@ -2901,15 +2919,14 @@ static PyObject *__pyx_tuple__6;
 static PyObject *__pyx_tuple__7;
 static PyObject *__pyx_tuple__8;
 static PyObject *__pyx_tuple__9;
-static PyObject *__pyx_slice__45;
 static PyObject *__pyx_slice__46;
 static PyObject *__pyx_slice__47;
+static PyObject *__pyx_slice__48;
 static PyObject *__pyx_tuple__10;
 static PyObject *__pyx_tuple__11;
 static PyObject *__pyx_tuple__12;
 static PyObject *__pyx_tuple__13;
 static PyObject *__pyx_tuple__14;
-static PyObject *__pyx_tuple__21;
 static PyObject *__pyx_tuple__22;
 static PyObject *__pyx_tuple__23;
 static PyObject *__pyx_tuple__24;
@@ -2933,13 +2950,13 @@ static PyObject *__pyx_tuple__41;
 static PyObject *__pyx_tuple__42;
 static PyObject *__pyx_tuple__43;
 static PyObject *__pyx_tuple__44;
-static PyObject *__pyx_tuple__48;
+static PyObject *__pyx_tuple__45;
 static PyObject *__pyx_tuple__49;
 static PyObject *__pyx_tuple__50;
-static PyObject *__pyx_tuple__52;
+static PyObject *__pyx_tuple__51;
 static PyObject *__pyx_tuple__53;
-static PyObject *__pyx_tuple__55;
-static PyObject *__pyx_tuple__57;
+static PyObject *__pyx_tuple__54;
+static PyObject *__pyx_tuple__56;
 static PyObject *__pyx_tuple__58;
 static PyObject *__pyx_tuple__59;
 static PyObject *__pyx_tuple__60;
@@ -2950,14 +2967,15 @@ static PyObject *__pyx_tuple__64;
 static PyObject *__pyx_tuple__65;
 static PyObject *__pyx_tuple__66;
 static PyObject *__pyx_tuple__67;
-static PyObject *__pyx_codeobj__15;
+static PyObject *__pyx_tuple__68;
 static PyObject *__pyx_codeobj__16;
 static PyObject *__pyx_codeobj__17;
 static PyObject *__pyx_codeobj__18;
 static PyObject *__pyx_codeobj__19;
-static PyObject *__pyx_codeobj__51;
-static PyObject *__pyx_codeobj__54;
-static PyObject *__pyx_codeobj__56;
+static PyObject *__pyx_codeobj__20;
+static PyObject *__pyx_codeobj__52;
+static PyObject *__pyx_codeobj__55;
+static PyObject *__pyx_codeobj__57;
 /* Late includes */
 
 /* "cython_laplace.pyx":35
@@ -7059,12 +7077,12 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
   Py_ssize_t __pyx_t_6;
   Py_ssize_t __pyx_t_7;
   int __pyx_t_8;
-  Py_ssize_t __pyx_t_9;
-  Py_ssize_t __pyx_t_10;
-  Py_ssize_t __pyx_t_11;
-  Py_ssize_t __pyx_t_12;
-  Py_ssize_t __pyx_t_13;
-  Py_ssize_t __pyx_t_14;
+  PyObject *__pyx_t_9 = NULL;
+  PyObject *__pyx_t_10 = NULL;
+  PyObject *__pyx_t_11 = NULL;
+  PyObject *__pyx_t_12 = NULL;
+  int __pyx_t_13;
+  PyObject *__pyx_t_14 = NULL;
   Py_ssize_t __pyx_t_15;
   Py_ssize_t __pyx_t_16;
   Py_ssize_t __pyx_t_17;
@@ -7122,9 +7140,15 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
   Py_ssize_t __pyx_t_69;
   Py_ssize_t __pyx_t_70;
   Py_ssize_t __pyx_t_71;
-  int __pyx_t_72;
-  double __pyx_t_73;
-  double __pyx_t_74;
+  Py_ssize_t __pyx_t_72;
+  Py_ssize_t __pyx_t_73;
+  Py_ssize_t __pyx_t_74;
+  Py_ssize_t __pyx_t_75;
+  Py_ssize_t __pyx_t_76;
+  Py_ssize_t __pyx_t_77;
+  int __pyx_t_78;
+  double __pyx_t_79;
+  double __pyx_t_80;
   __Pyx_RefNannySetupContext("createStreamline", 0);
   __Pyx_TraceCall("createStreamline", __pyx_f[0], 198, 0, __PYX_ERR(0, 198, __pyx_L1_error));
   __pyx_pybuffer_point.pybuffer.buf = NULL;
@@ -7423,12 +7447,84 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  *     p2 = 0
  *     cdef int counter = 0             # <<<<<<<<<<<<<<
  * 
- *     # move towards outer surface first
+ *     print("This point is: {} {} {}".format(v0, v1, v2))
  */
   __pyx_v_counter = 0;
 
-  /* "cython_laplace.pyx":244
+  /* "cython_laplace.pyx":243
+ *     cdef int counter = 0
  * 
+ *     print("This point is: {} {} {}".format(v0, v1, v2))             # <<<<<<<<<<<<<<
+ *     # move towards outer surface first
+ *     while grid_position < 9.99:
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_This_point_is, __pyx_n_s_format); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_9 = PyFloat_FromDouble(__pyx_v_v0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __pyx_t_10 = PyFloat_FromDouble(__pyx_v_v1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_10);
+  __pyx_t_11 = PyFloat_FromDouble(__pyx_v_v2); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_11);
+  __pyx_t_12 = NULL;
+  __pyx_t_13 = 0;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_12 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_12)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_12);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+      __pyx_t_13 = 1;
+    }
+  }
+  #if CYTHON_FAST_PYCALL
+  if (PyFunction_Check(__pyx_t_2)) {
+    PyObject *__pyx_temp[4] = {__pyx_t_12, __pyx_t_9, __pyx_t_10, __pyx_t_11};
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_13, 3+__pyx_t_13); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+    __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
+  } else
+  #endif
+  #if CYTHON_FAST_PYCCALL
+  if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+    PyObject *__pyx_temp[4] = {__pyx_t_12, __pyx_t_9, __pyx_t_10, __pyx_t_11};
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_13, 3+__pyx_t_13); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+    __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+    __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
+  } else
+  #endif
+  {
+    __pyx_t_14 = PyTuple_New(3+__pyx_t_13); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_14);
+    if (__pyx_t_12) {
+      __Pyx_GIVEREF(__pyx_t_12); PyTuple_SET_ITEM(__pyx_t_14, 0, __pyx_t_12); __pyx_t_12 = NULL;
+    }
+    __Pyx_GIVEREF(__pyx_t_9);
+    PyTuple_SET_ITEM(__pyx_t_14, 0+__pyx_t_13, __pyx_t_9);
+    __Pyx_GIVEREF(__pyx_t_10);
+    PyTuple_SET_ITEM(__pyx_t_14, 1+__pyx_t_13, __pyx_t_10);
+    __Pyx_GIVEREF(__pyx_t_11);
+    PyTuple_SET_ITEM(__pyx_t_14, 2+__pyx_t_13, __pyx_t_11);
+    __pyx_t_9 = 0;
+    __pyx_t_10 = 0;
+    __pyx_t_11 = 0;
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_14, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+  }
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 243, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "cython_laplace.pyx":245
+ *     print("This point is: {} {} {}".format(v0, v1, v2))
  *     # move towards outer surface first
  *     while grid_position < 9.99:             # <<<<<<<<<<<<<<
  *         if nv2 == 1:
@@ -7438,7 +7534,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
     __pyx_t_8 = ((__pyx_v_grid_position < 9.99) != 0);
     if (!__pyx_t_8) break;
 
-    /* "cython_laplace.pyx":245
+    /* "cython_laplace.pyx":246
  *     # move towards outer surface first
  *     while grid_position < 9.99:
  *         if nv2 == 1:             # <<<<<<<<<<<<<<
@@ -7448,7 +7544,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
     __pyx_t_8 = ((__pyx_v_nv2 == 1) != 0);
     if (__pyx_t_8) {
 
-      /* "cython_laplace.pyx":246
+      /* "cython_laplace.pyx":247
  *     while grid_position < 9.99:
  *         if nv2 == 1:
  *             newv0 = fast_bilinear_interpolant(dv0, oldpoint)             # <<<<<<<<<<<<<<
@@ -7457,7 +7553,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_newv0 = __pyx_fuse_0__pyx_f_14cython_laplace_fast_bilinear_interpolant(((PyArrayObject *)__pyx_v_dv0), ((PyArrayObject *)__pyx_v_oldpoint), 0);
 
-      /* "cython_laplace.pyx":247
+      /* "cython_laplace.pyx":248
  *         if nv2 == 1:
  *             newv0 = fast_bilinear_interpolant(dv0, oldpoint)
  *             newv1 = fast_bilinear_interpolant(dv1, oldpoint)             # <<<<<<<<<<<<<<
@@ -7466,7 +7562,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_newv1 = __pyx_fuse_0__pyx_f_14cython_laplace_fast_bilinear_interpolant(((PyArrayObject *)__pyx_v_dv1), ((PyArrayObject *)__pyx_v_oldpoint), 0);
 
-      /* "cython_laplace.pyx":245
+      /* "cython_laplace.pyx":246
  *     # move towards outer surface first
  *     while grid_position < 9.99:
  *         if nv2 == 1:             # <<<<<<<<<<<<<<
@@ -7476,7 +7572,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
       goto __pyx_L6;
     }
 
-    /* "cython_laplace.pyx":249
+    /* "cython_laplace.pyx":250
  *             newv1 = fast_bilinear_interpolant(dv1, oldpoint)
  *         else:
  *             newv0 = fast_trilinear_interpolant(dv0, oldpoint)             # <<<<<<<<<<<<<<
@@ -7486,7 +7582,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
     /*else*/ {
       __pyx_v_newv0 = __pyx_fuse_0__pyx_f_14cython_laplace_fast_trilinear_interpolant(((PyArrayObject *)__pyx_v_dv0), ((PyArrayObject *)__pyx_v_oldpoint), 0);
 
-      /* "cython_laplace.pyx":250
+      /* "cython_laplace.pyx":251
  *         else:
  *             newv0 = fast_trilinear_interpolant(dv0, oldpoint)
  *             newv1 = fast_trilinear_interpolant(dv1, oldpoint)             # <<<<<<<<<<<<<<
@@ -7495,7 +7591,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_newv1 = __pyx_fuse_0__pyx_f_14cython_laplace_fast_trilinear_interpolant(((PyArrayObject *)__pyx_v_dv1), ((PyArrayObject *)__pyx_v_oldpoint), 0);
 
-      /* "cython_laplace.pyx":251
+      /* "cython_laplace.pyx":252
  *             newv0 = fast_trilinear_interpolant(dv0, oldpoint)
  *             newv1 = fast_trilinear_interpolant(dv1, oldpoint)
  *             newv2 = fast_trilinear_interpolant(dv2, oldpoint)             # <<<<<<<<<<<<<<
@@ -7506,7 +7602,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
     }
     __pyx_L6:;
 
-    /* "cython_laplace.pyx":252
+    /* "cython_laplace.pyx":253
  *             newv1 = fast_trilinear_interpolant(dv1, oldpoint)
  *             newv2 = fast_trilinear_interpolant(dv2, oldpoint)
  *         mag = newv0*newv0 + newv1*newv1 + newv2*newv2             # <<<<<<<<<<<<<<
@@ -7515,36 +7611,77 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
     __pyx_v_mag = (((__pyx_v_newv0 * __pyx_v_newv0) + (__pyx_v_newv1 * __pyx_v_newv1)) + (__pyx_v_newv2 * __pyx_v_newv2));
 
-    /* "cython_laplace.pyx":255
+    /* "cython_laplace.pyx":256
  * 
  *         # If gradient not present, done
  *         if mag < 1.0e-6:             # <<<<<<<<<<<<<<
  *             grid_position=10
- *         else:
+ *             if counter == 0:
  */
     __pyx_t_8 = ((__pyx_v_mag < 1.0e-6) != 0);
     if (__pyx_t_8) {
 
-      /* "cython_laplace.pyx":256
+      /* "cython_laplace.pyx":257
  *         # If gradient not present, done
  *         if mag < 1.0e-6:
  *             grid_position=10             # <<<<<<<<<<<<<<
- *         else:
- * 
+ *             if counter == 0:
+ *                 print("Uh oh. OUTER failed. Magnitude is {mag:08f}".format(mag=mag))
  */
       __pyx_v_grid_position = 10.0;
 
-      /* "cython_laplace.pyx":255
+      /* "cython_laplace.pyx":258
+ *         if mag < 1.0e-6:
+ *             grid_position=10
+ *             if counter == 0:             # <<<<<<<<<<<<<<
+ *                 print("Uh oh. OUTER failed. Magnitude is {mag:08f}".format(mag=mag))
+ *         else:
+ */
+      __pyx_t_8 = ((__pyx_v_counter == 0) != 0);
+      if (__pyx_t_8) {
+
+        /* "cython_laplace.pyx":259
+ *             grid_position=10
+ *             if counter == 0:
+ *                 print("Uh oh. OUTER failed. Magnitude is {mag:08f}".format(mag=mag))             # <<<<<<<<<<<<<<
+ *         else:
+ * 
+ */
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_Uh_oh_OUTER_failed_Magnitude_is, __pyx_n_s_format); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 259, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 259, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_14 = PyFloat_FromDouble(__pyx_v_mag); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 259, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_14);
+        if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_mag, __pyx_t_14) < 0) __PYX_ERR(0, 259, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __pyx_t_14 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 259, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_14);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        if (__Pyx_PrintOne(0, __pyx_t_14) < 0) __PYX_ERR(0, 259, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+
+        /* "cython_laplace.pyx":258
+ *         if mag < 1.0e-6:
+ *             grid_position=10
+ *             if counter == 0:             # <<<<<<<<<<<<<<
+ *                 print("Uh oh. OUTER failed. Magnitude is {mag:08f}".format(mag=mag))
+ *         else:
+ */
+      }
+
+      /* "cython_laplace.pyx":256
  * 
  *         # If gradient not present, done
  *         if mag < 1.0e-6:             # <<<<<<<<<<<<<<
  *             grid_position=10
- *         else:
+ *             if counter == 0:
  */
       goto __pyx_L7;
     }
 
-    /* "cython_laplace.pyx":263
+    /* "cython_laplace.pyx":266
  *             #                  newv0, newv1, newv2, h)
  *             # so do it inline
  *             point[0] = oldpoint[0] + newv0 * h             # <<<<<<<<<<<<<<
@@ -7552,96 +7689,96 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  *             point[2] = oldpoint[2] + newv2 * h
  */
     /*else*/ {
-      __pyx_t_9 = 0;
-      __pyx_t_10 = 0;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_10, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_9, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv0 * __pyx_v_h));
+      __pyx_t_15 = 0;
+      __pyx_t_16 = 0;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_16, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_15, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv0 * __pyx_v_h));
 
-      /* "cython_laplace.pyx":264
+      /* "cython_laplace.pyx":267
  *             # so do it inline
  *             point[0] = oldpoint[0] + newv0 * h
  *             point[1] = oldpoint[1] + newv1 * h             # <<<<<<<<<<<<<<
  *             point[2] = oldpoint[2] + newv2 * h
  * 
  */
-      __pyx_t_11 = 1;
-      __pyx_t_12 = 1;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_12, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_11, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv1 * __pyx_v_h));
+      __pyx_t_17 = 1;
+      __pyx_t_18 = 1;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_18, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_17, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv1 * __pyx_v_h));
 
-      /* "cython_laplace.pyx":265
+      /* "cython_laplace.pyx":268
  *             point[0] = oldpoint[0] + newv0 * h
  *             point[1] = oldpoint[1] + newv1 * h
  *             point[2] = oldpoint[2] + newv2 * h             # <<<<<<<<<<<<<<
  * 
  *             p0 = int(point[0])
  */
-      __pyx_t_13 = 2;
-      __pyx_t_14 = 2;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_14, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_13, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv2 * __pyx_v_h));
+      __pyx_t_19 = 2;
+      __pyx_t_20 = 2;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_20, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_19, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv2 * __pyx_v_h));
 
-      /* "cython_laplace.pyx":267
+      /* "cython_laplace.pyx":270
  *             point[2] = oldpoint[2] + newv2 * h
  * 
  *             p0 = int(point[0])             # <<<<<<<<<<<<<<
  *             p1 = int(point[1])
  *             p2 = int(point[2])
  */
-      __pyx_t_15 = 0;
-      __pyx_v_p0 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_15, __pyx_pybuffernd_point.diminfo[0].strides)));
+      __pyx_t_21 = 0;
+      __pyx_v_p0 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_21, __pyx_pybuffernd_point.diminfo[0].strides)));
 
-      /* "cython_laplace.pyx":268
+      /* "cython_laplace.pyx":271
  * 
  *             p0 = int(point[0])
  *             p1 = int(point[1])             # <<<<<<<<<<<<<<
  *             p2 = int(point[2])
  * 
  */
-      __pyx_t_16 = 1;
-      __pyx_v_p1 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_16, __pyx_pybuffernd_point.diminfo[0].strides)));
+      __pyx_t_22 = 1;
+      __pyx_v_p1 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_22, __pyx_pybuffernd_point.diminfo[0].strides)));
 
-      /* "cython_laplace.pyx":269
+      /* "cython_laplace.pyx":272
  *             p0 = int(point[0])
  *             p1 = int(point[1])
  *             p2 = int(point[2])             # <<<<<<<<<<<<<<
  * 
  *             ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
  */
-      __pyx_t_17 = 2;
-      __pyx_v_p2 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_17, __pyx_pybuffernd_point.diminfo[0].strides)));
+      __pyx_t_23 = 2;
+      __pyx_v_p2 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_23, __pyx_pybuffernd_point.diminfo[0].strides)));
 
-      /* "cython_laplace.pyx":271
+      /* "cython_laplace.pyx":274
  *             p2 = int(point[2])
  * 
  *             ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )             # <<<<<<<<<<<<<<
  *             proj = proj + s[p0, p1, p2]*ds
  *             stream_length = stream_length + ds
  */
-      __pyx_t_18 = 0;
-      __pyx_t_19 = 0;
-      __pyx_t_20 = 0;
-      __pyx_t_21 = 0;
-      __pyx_t_22 = 1;
-      __pyx_t_23 = 1;
-      __pyx_t_24 = 1;
-      __pyx_t_25 = 1;
-      __pyx_t_26 = 2;
-      __pyx_t_27 = 2;
-      __pyx_t_28 = 2;
-      __pyx_t_29 = 2;
-      __pyx_v_ds = sqrt((((((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_18, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_19, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_20, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_21, __pyx_pybuffernd_oldpoint.diminfo[0].strides)))) + (((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_22, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_23, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_24, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_25, __pyx_pybuffernd_oldpoint.diminfo[0].strides))))) + (((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_27, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_28, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_29, __pyx_pybuffernd_oldpoint.diminfo[0].strides))))));
+      __pyx_t_24 = 0;
+      __pyx_t_25 = 0;
+      __pyx_t_26 = 0;
+      __pyx_t_27 = 0;
+      __pyx_t_28 = 1;
+      __pyx_t_29 = 1;
+      __pyx_t_30 = 1;
+      __pyx_t_31 = 1;
+      __pyx_t_32 = 2;
+      __pyx_t_33 = 2;
+      __pyx_t_34 = 2;
+      __pyx_t_35 = 2;
+      __pyx_v_ds = sqrt((((((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_24, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_25, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_27, __pyx_pybuffernd_oldpoint.diminfo[0].strides)))) + (((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_28, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_29, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_30, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_31, __pyx_pybuffernd_oldpoint.diminfo[0].strides))))) + (((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_32, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_33, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_35, __pyx_pybuffernd_oldpoint.diminfo[0].strides))))));
 
-      /* "cython_laplace.pyx":272
+      /* "cython_laplace.pyx":275
  * 
  *             ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
  *             proj = proj + s[p0, p1, p2]*ds             # <<<<<<<<<<<<<<
  *             stream_length = stream_length + ds
  * 
  */
-      __pyx_t_30 = __pyx_v_p0;
-      __pyx_t_31 = __pyx_v_p1;
-      __pyx_t_32 = __pyx_v_p2;
-      __pyx_v_proj = (__pyx_v_proj + ((*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_s.rcbuffer->pybuffer.buf, __pyx_t_30, __pyx_pybuffernd_s.diminfo[0].strides, __pyx_t_31, __pyx_pybuffernd_s.diminfo[1].strides, __pyx_t_32, __pyx_pybuffernd_s.diminfo[2].strides)) * __pyx_v_ds));
+      __pyx_t_36 = __pyx_v_p0;
+      __pyx_t_37 = __pyx_v_p1;
+      __pyx_t_38 = __pyx_v_p2;
+      __pyx_v_proj = (__pyx_v_proj + ((*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_s.rcbuffer->pybuffer.buf, __pyx_t_36, __pyx_pybuffernd_s.diminfo[0].strides, __pyx_t_37, __pyx_pybuffernd_s.diminfo[1].strides, __pyx_t_38, __pyx_pybuffernd_s.diminfo[2].strides)) * __pyx_v_ds));
 
-      /* "cython_laplace.pyx":273
+      /* "cython_laplace.pyx":276
  *             ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
  *             proj = proj + s[p0, p1, p2]*ds
  *             stream_length = stream_length + ds             # <<<<<<<<<<<<<<
@@ -7650,7 +7787,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_stream_length = (__pyx_v_stream_length + __pyx_v_ds);
 
-      /* "cython_laplace.pyx":275
+      /* "cython_laplace.pyx":278
  *             stream_length = stream_length + ds
  * 
  *             if nv2 == 1:             # <<<<<<<<<<<<<<
@@ -7660,7 +7797,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
       __pyx_t_8 = ((__pyx_v_nv2 == 1) != 0);
       if (__pyx_t_8) {
 
-        /* "cython_laplace.pyx":276
+        /* "cython_laplace.pyx":279
  * 
  *             if nv2 == 1:
  *                 grid_position = fast_bilinear_interpolant(g, point)             # <<<<<<<<<<<<<<
@@ -7669,17 +7806,17 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
         __pyx_v_grid_position = __pyx_fuse_1__pyx_f_14cython_laplace_fast_bilinear_interpolant(((PyArrayObject *)__pyx_v_g), ((PyArrayObject *)__pyx_v_point), 0);
 
-        /* "cython_laplace.pyx":275
+        /* "cython_laplace.pyx":278
  *             stream_length = stream_length + ds
  * 
  *             if nv2 == 1:             # <<<<<<<<<<<<<<
  *                 grid_position = fast_bilinear_interpolant(g, point)
  *             else:
  */
-        goto __pyx_L8;
+        goto __pyx_L9;
       }
 
-      /* "cython_laplace.pyx":278
+      /* "cython_laplace.pyx":281
  *                 grid_position = fast_bilinear_interpolant(g, point)
  *             else:
  *                 grid_position = fast_trilinear_interpolant(g, point)             # <<<<<<<<<<<<<<
@@ -7689,42 +7826,42 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
       /*else*/ {
         __pyx_v_grid_position = __pyx_fuse_1__pyx_f_14cython_laplace_fast_trilinear_interpolant(((PyArrayObject *)__pyx_v_g), ((PyArrayObject *)__pyx_v_point), 0);
       }
-      __pyx_L8:;
+      __pyx_L9:;
 
-      /* "cython_laplace.pyx":279
+      /* "cython_laplace.pyx":282
  *             else:
  *                 grid_position = fast_trilinear_interpolant(g, point)
  *             oldpoint[0] = point[0]             # <<<<<<<<<<<<<<
  *             oldpoint[1] = point[1]
  *             oldpoint[2] = point[2]
  */
-      __pyx_t_33 = 0;
-      __pyx_t_34 = 0;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_33, __pyx_pybuffernd_point.diminfo[0].strides));
+      __pyx_t_39 = 0;
+      __pyx_t_40 = 0;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_40, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_39, __pyx_pybuffernd_point.diminfo[0].strides));
 
-      /* "cython_laplace.pyx":280
+      /* "cython_laplace.pyx":283
  *                 grid_position = fast_trilinear_interpolant(g, point)
  *             oldpoint[0] = point[0]
  *             oldpoint[1] = point[1]             # <<<<<<<<<<<<<<
  *             oldpoint[2] = point[2]
  *             counter=counter+1
  */
-      __pyx_t_35 = 1;
-      __pyx_t_36 = 1;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_36, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_35, __pyx_pybuffernd_point.diminfo[0].strides));
+      __pyx_t_41 = 1;
+      __pyx_t_42 = 1;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_42, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_41, __pyx_pybuffernd_point.diminfo[0].strides));
 
-      /* "cython_laplace.pyx":281
+      /* "cython_laplace.pyx":284
  *             oldpoint[0] = point[0]
  *             oldpoint[1] = point[1]
  *             oldpoint[2] = point[2]             # <<<<<<<<<<<<<<
  *             counter=counter+1
  *             real_line_distance = sqrt ( (newv0-v0)*(newv0-v0) +
  */
-      __pyx_t_37 = 2;
-      __pyx_t_38 = 2;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_38, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_37, __pyx_pybuffernd_point.diminfo[0].strides));
+      __pyx_t_43 = 2;
+      __pyx_t_44 = 2;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_44, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_43, __pyx_pybuffernd_point.diminfo[0].strides));
 
-      /* "cython_laplace.pyx":282
+      /* "cython_laplace.pyx":285
  *             oldpoint[1] = point[1]
  *             oldpoint[2] = point[2]
  *             counter=counter+1             # <<<<<<<<<<<<<<
@@ -7733,7 +7870,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_counter = (__pyx_v_counter + 1);
 
-      /* "cython_laplace.pyx":283
+      /* "cython_laplace.pyx":286
  *             oldpoint[2] = point[2]
  *             counter=counter+1
  *             real_line_distance = sqrt ( (newv0-v0)*(newv0-v0) +             # <<<<<<<<<<<<<<
@@ -7742,7 +7879,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_real_line_distance = sqrt(((((__pyx_v_newv0 - __pyx_v_v0) * (__pyx_v_newv0 - __pyx_v_v0)) + ((__pyx_v_newv1 - __pyx_v_v1) * (__pyx_v_newv1 - __pyx_v_v1))) + ((__pyx_v_newv2 - __pyx_v_v2) * (__pyx_v_newv2 - __pyx_v_v2))));
 
-      /* "cython_laplace.pyx":286
+      /* "cython_laplace.pyx":289
  *                                         (newv1-v1)*(newv1-v1) +
  *                                         (newv2-v2)*(newv2-v2) )
  *             if stream_length > (4.0*real_line_distance):             # <<<<<<<<<<<<<<
@@ -7752,16 +7889,16 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
       __pyx_t_8 = ((__pyx_v_stream_length > (4.0 * __pyx_v_real_line_distance)) != 0);
       if (__pyx_t_8) {
 
-        /* "cython_laplace.pyx":287
+        /* "cython_laplace.pyx":290
  *                                         (newv2-v2)*(newv2-v2) )
  *             if stream_length > (4.0*real_line_distance):
  *                 grid_position = 10.0             # <<<<<<<<<<<<<<
  *         #print "OUTSIDE:", point[0], point[1], point[2], grid_position
- *     # move towards inner surface
+ *     print("TO OUTER | Counter = {counter:5d} | stream_length = {sl:8f} | proj = {proj:8f}".format(counter=counter, sl=stream_length, proj=proj))
  */
         __pyx_v_grid_position = 10.0;
 
-        /* "cython_laplace.pyx":286
+        /* "cython_laplace.pyx":289
  *                                         (newv1-v1)*(newv1-v1) +
  *                                         (newv2-v2)*(newv2-v2) )
  *             if stream_length > (4.0*real_line_distance):             # <<<<<<<<<<<<<<
@@ -7773,37 +7910,67 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
     __pyx_L7:;
   }
 
-  /* "cython_laplace.pyx":290
+  /* "cython_laplace.pyx":292
+ *                 grid_position = 10.0
  *         #print "OUTSIDE:", point[0], point[1], point[2], grid_position
+ *     print("TO OUTER | Counter = {counter:5d} | stream_length = {sl:8f} | proj = {proj:8f}".format(counter=counter, sl=stream_length, proj=proj))             # <<<<<<<<<<<<<<
+ *     # move towards inner surface
+ *     oldpoint[0] = v0
+ */
+  __pyx_t_14 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_TO_OUTER_Counter_counter_5d_stre, __pyx_n_s_format); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_14);
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_counter); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_counter, __pyx_t_1) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_stream_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_sl, __pyx_t_1) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_proj); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_proj, __pyx_t_1) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_14, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "cython_laplace.pyx":294
+ *     print("TO OUTER | Counter = {counter:5d} | stream_length = {sl:8f} | proj = {proj:8f}".format(counter=counter, sl=stream_length, proj=proj))
  *     # move towards inner surface
  *     oldpoint[0] = v0             # <<<<<<<<<<<<<<
  *     oldpoint[1] = v1
  *     oldpoint[2] = v2
  */
-  __pyx_t_39 = 0;
-  *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_39, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = __pyx_v_v0;
+  __pyx_t_45 = 0;
+  *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_45, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = __pyx_v_v0;
 
-  /* "cython_laplace.pyx":291
+  /* "cython_laplace.pyx":295
  *     # move towards inner surface
  *     oldpoint[0] = v0
  *     oldpoint[1] = v1             # <<<<<<<<<<<<<<
  *     oldpoint[2] = v2
  *     counter=0
  */
-  __pyx_t_40 = 1;
-  *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_40, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = __pyx_v_v1;
+  __pyx_t_46 = 1;
+  *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_46, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = __pyx_v_v1;
 
-  /* "cython_laplace.pyx":292
+  /* "cython_laplace.pyx":296
  *     oldpoint[0] = v0
  *     oldpoint[1] = v1
  *     oldpoint[2] = v2             # <<<<<<<<<<<<<<
  *     counter=0
  *     real_line_distance = 0
  */
-  __pyx_t_41 = 2;
-  *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_41, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = __pyx_v_v2;
+  __pyx_t_47 = 2;
+  *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_47, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = __pyx_v_v2;
 
-  /* "cython_laplace.pyx":293
+  /* "cython_laplace.pyx":297
  *     oldpoint[1] = v1
  *     oldpoint[2] = v2
  *     counter=0             # <<<<<<<<<<<<<<
@@ -7812,7 +7979,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
   __pyx_v_counter = 0;
 
-  /* "cython_laplace.pyx":294
+  /* "cython_laplace.pyx":298
  *     oldpoint[2] = v2
  *     counter=0
  *     real_line_distance = 0             # <<<<<<<<<<<<<<
@@ -7821,7 +7988,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
   __pyx_v_real_line_distance = 0.0;
 
-  /* "cython_laplace.pyx":295
+  /* "cython_laplace.pyx":299
  *     counter=0
  *     real_line_distance = 0
  *     while grid_position > 0.01:             # <<<<<<<<<<<<<<
@@ -7832,7 +7999,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
     __pyx_t_8 = ((__pyx_v_grid_position > 0.01) != 0);
     if (!__pyx_t_8) break;
 
-    /* "cython_laplace.pyx":296
+    /* "cython_laplace.pyx":300
  *     real_line_distance = 0
  *     while grid_position > 0.01:
  *         if nv2 == 1:             # <<<<<<<<<<<<<<
@@ -7842,7 +8009,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
     __pyx_t_8 = ((__pyx_v_nv2 == 1) != 0);
     if (__pyx_t_8) {
 
-      /* "cython_laplace.pyx":297
+      /* "cython_laplace.pyx":301
  *     while grid_position > 0.01:
  *         if nv2 == 1:
  *             newv0 = fast_bilinear_interpolant(dv0, oldpoint)             # <<<<<<<<<<<<<<
@@ -7851,7 +8018,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_newv0 = __pyx_fuse_0__pyx_f_14cython_laplace_fast_bilinear_interpolant(((PyArrayObject *)__pyx_v_dv0), ((PyArrayObject *)__pyx_v_oldpoint), 0);
 
-      /* "cython_laplace.pyx":298
+      /* "cython_laplace.pyx":302
  *         if nv2 == 1:
  *             newv0 = fast_bilinear_interpolant(dv0, oldpoint)
  *             newv1 = fast_bilinear_interpolant(dv1, oldpoint)             # <<<<<<<<<<<<<<
@@ -7860,17 +8027,17 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_newv1 = __pyx_fuse_0__pyx_f_14cython_laplace_fast_bilinear_interpolant(((PyArrayObject *)__pyx_v_dv1), ((PyArrayObject *)__pyx_v_oldpoint), 0);
 
-      /* "cython_laplace.pyx":296
+      /* "cython_laplace.pyx":300
  *     real_line_distance = 0
  *     while grid_position > 0.01:
  *         if nv2 == 1:             # <<<<<<<<<<<<<<
  *             newv0 = fast_bilinear_interpolant(dv0, oldpoint)
  *             newv1 = fast_bilinear_interpolant(dv1, oldpoint)
  */
-      goto __pyx_L12;
+      goto __pyx_L13;
     }
 
-    /* "cython_laplace.pyx":300
+    /* "cython_laplace.pyx":304
  *             newv1 = fast_bilinear_interpolant(dv1, oldpoint)
  *         else:
  *             newv0 = fast_trilinear_interpolant(dv0, oldpoint)             # <<<<<<<<<<<<<<
@@ -7880,7 +8047,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
     /*else*/ {
       __pyx_v_newv0 = __pyx_fuse_0__pyx_f_14cython_laplace_fast_trilinear_interpolant(((PyArrayObject *)__pyx_v_dv0), ((PyArrayObject *)__pyx_v_oldpoint), 0);
 
-      /* "cython_laplace.pyx":301
+      /* "cython_laplace.pyx":305
  *         else:
  *             newv0 = fast_trilinear_interpolant(dv0, oldpoint)
  *             newv1 = fast_trilinear_interpolant(dv1, oldpoint)             # <<<<<<<<<<<<<<
@@ -7889,7 +8056,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_newv1 = __pyx_fuse_0__pyx_f_14cython_laplace_fast_trilinear_interpolant(((PyArrayObject *)__pyx_v_dv1), ((PyArrayObject *)__pyx_v_oldpoint), 0);
 
-      /* "cython_laplace.pyx":302
+      /* "cython_laplace.pyx":306
  *             newv0 = fast_trilinear_interpolant(dv0, oldpoint)
  *             newv1 = fast_trilinear_interpolant(dv1, oldpoint)
  *             newv2 = fast_trilinear_interpolant(dv2, oldpoint)             # <<<<<<<<<<<<<<
@@ -7898,9 +8065,9 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_newv2 = __pyx_fuse_0__pyx_f_14cython_laplace_fast_trilinear_interpolant(((PyArrayObject *)__pyx_v_dv2), ((PyArrayObject *)__pyx_v_oldpoint), 0);
     }
-    __pyx_L12:;
+    __pyx_L13:;
 
-    /* "cython_laplace.pyx":304
+    /* "cython_laplace.pyx":308
  *             newv2 = fast_trilinear_interpolant(dv2, oldpoint)
  * 
  *         mag = newv0*newv0 + newv1*newv1 + newv2*newv2             # <<<<<<<<<<<<<<
@@ -7909,36 +8076,77 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
     __pyx_v_mag = (((__pyx_v_newv0 * __pyx_v_newv0) + (__pyx_v_newv1 * __pyx_v_newv1)) + (__pyx_v_newv2 * __pyx_v_newv2));
 
-    /* "cython_laplace.pyx":305
+    /* "cython_laplace.pyx":309
  * 
  *         mag = newv0*newv0 + newv1*newv1 + newv2*newv2
  *         if mag < 1.0e-6:             # <<<<<<<<<<<<<<
  *             grid_position=0.0
- *         else:
+ *             if counter == 0:
  */
     __pyx_t_8 = ((__pyx_v_mag < 1.0e-6) != 0);
     if (__pyx_t_8) {
 
-      /* "cython_laplace.pyx":306
+      /* "cython_laplace.pyx":310
  *         mag = newv0*newv0 + newv1*newv1 + newv2*newv2
  *         if mag < 1.0e-6:
  *             grid_position=0.0             # <<<<<<<<<<<<<<
- *         else:
- * 
+ *             if counter == 0:
+ *                 print("Uh oh. INNER failed. Magnitude is {mag:08f}".format(mag=mag))
  */
       __pyx_v_grid_position = 0.0;
 
-      /* "cython_laplace.pyx":305
+      /* "cython_laplace.pyx":311
+ *         if mag < 1.0e-6:
+ *             grid_position=0.0
+ *             if counter == 0:             # <<<<<<<<<<<<<<
+ *                 print("Uh oh. INNER failed. Magnitude is {mag:08f}".format(mag=mag))
+ *         else:
+ */
+      __pyx_t_8 = ((__pyx_v_counter == 0) != 0);
+      if (__pyx_t_8) {
+
+        /* "cython_laplace.pyx":312
+ *             grid_position=0.0
+ *             if counter == 0:
+ *                 print("Uh oh. INNER failed. Magnitude is {mag:08f}".format(mag=mag))             # <<<<<<<<<<<<<<
+ *         else:
+ * 
+ */
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_Uh_oh_INNER_failed_Magnitude_is, __pyx_n_s_format); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 312, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 312, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_14 = PyFloat_FromDouble(__pyx_v_mag); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 312, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_14);
+        if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_mag, __pyx_t_14) < 0) __PYX_ERR(0, 312, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+        __pyx_t_14 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 312, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_14);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        if (__Pyx_PrintOne(0, __pyx_t_14) < 0) __PYX_ERR(0, 312, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+
+        /* "cython_laplace.pyx":311
+ *         if mag < 1.0e-6:
+ *             grid_position=0.0
+ *             if counter == 0:             # <<<<<<<<<<<<<<
+ *                 print("Uh oh. INNER failed. Magnitude is {mag:08f}".format(mag=mag))
+ *         else:
+ */
+      }
+
+      /* "cython_laplace.pyx":309
  * 
  *         mag = newv0*newv0 + newv1*newv1 + newv2*newv2
  *         if mag < 1.0e-6:             # <<<<<<<<<<<<<<
  *             grid_position=0.0
- *         else:
+ *             if counter == 0:
  */
-      goto __pyx_L13;
+      goto __pyx_L14;
     }
 
-    /* "cython_laplace.pyx":313
+    /* "cython_laplace.pyx":319
  *             #                  newv0, newv1, newv2, (h * -1))
  *             # so do it inline
  *             point[0] = oldpoint[0] + newv0 * h_negative             # <<<<<<<<<<<<<<
@@ -7946,96 +8154,96 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  *             point[2] = oldpoint[2] + newv2 * h_negative
  */
     /*else*/ {
-      __pyx_t_42 = 0;
-      __pyx_t_43 = 0;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_43, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_42, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv0 * __pyx_v_h_negative));
+      __pyx_t_48 = 0;
+      __pyx_t_49 = 0;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_49, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_48, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv0 * __pyx_v_h_negative));
 
-      /* "cython_laplace.pyx":314
+      /* "cython_laplace.pyx":320
  *             # so do it inline
  *             point[0] = oldpoint[0] + newv0 * h_negative
  *             point[1] = oldpoint[1] + newv1 * h_negative             # <<<<<<<<<<<<<<
  *             point[2] = oldpoint[2] + newv2 * h_negative
  * 
  */
-      __pyx_t_44 = 1;
-      __pyx_t_45 = 1;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_45, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_44, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv1 * __pyx_v_h_negative));
+      __pyx_t_50 = 1;
+      __pyx_t_51 = 1;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_51, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_50, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv1 * __pyx_v_h_negative));
 
-      /* "cython_laplace.pyx":315
+      /* "cython_laplace.pyx":321
  *             point[0] = oldpoint[0] + newv0 * h_negative
  *             point[1] = oldpoint[1] + newv1 * h_negative
  *             point[2] = oldpoint[2] + newv2 * h_negative             # <<<<<<<<<<<<<<
  * 
  *             p0 = int(point[0])
  */
-      __pyx_t_46 = 2;
-      __pyx_t_47 = 2;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_47, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_46, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv2 * __pyx_v_h_negative));
+      __pyx_t_52 = 2;
+      __pyx_t_53 = 2;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_53, __pyx_pybuffernd_point.diminfo[0].strides) = ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_52, __pyx_pybuffernd_oldpoint.diminfo[0].strides)) + (__pyx_v_newv2 * __pyx_v_h_negative));
 
-      /* "cython_laplace.pyx":317
+      /* "cython_laplace.pyx":323
  *             point[2] = oldpoint[2] + newv2 * h_negative
  * 
  *             p0 = int(point[0])             # <<<<<<<<<<<<<<
  *             p1 = int(point[1])
  *             p2 = int(point[2])
  */
-      __pyx_t_48 = 0;
-      __pyx_v_p0 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_48, __pyx_pybuffernd_point.diminfo[0].strides)));
+      __pyx_t_54 = 0;
+      __pyx_v_p0 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_54, __pyx_pybuffernd_point.diminfo[0].strides)));
 
-      /* "cython_laplace.pyx":318
+      /* "cython_laplace.pyx":324
  * 
  *             p0 = int(point[0])
  *             p1 = int(point[1])             # <<<<<<<<<<<<<<
  *             p2 = int(point[2])
  * 
  */
-      __pyx_t_49 = 1;
-      __pyx_v_p1 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_49, __pyx_pybuffernd_point.diminfo[0].strides)));
+      __pyx_t_55 = 1;
+      __pyx_v_p1 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_55, __pyx_pybuffernd_point.diminfo[0].strides)));
 
-      /* "cython_laplace.pyx":319
+      /* "cython_laplace.pyx":325
  *             p0 = int(point[0])
  *             p1 = int(point[1])
  *             p2 = int(point[2])             # <<<<<<<<<<<<<<
  * 
  *             ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
  */
-      __pyx_t_50 = 2;
-      __pyx_v_p2 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_50, __pyx_pybuffernd_point.diminfo[0].strides)));
+      __pyx_t_56 = 2;
+      __pyx_v_p2 = ((int)(*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_56, __pyx_pybuffernd_point.diminfo[0].strides)));
 
-      /* "cython_laplace.pyx":321
+      /* "cython_laplace.pyx":327
  *             p2 = int(point[2])
  * 
  *             ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )             # <<<<<<<<<<<<<<
  *             proj2 = proj2 + s[p0, p1, p2]*ds
  *             stream_lengthtwo = stream_lengthtwo + ds
  */
-      __pyx_t_51 = 0;
-      __pyx_t_52 = 0;
-      __pyx_t_53 = 0;
-      __pyx_t_54 = 0;
-      __pyx_t_55 = 1;
-      __pyx_t_56 = 1;
-      __pyx_t_57 = 1;
-      __pyx_t_58 = 1;
-      __pyx_t_59 = 2;
-      __pyx_t_60 = 2;
-      __pyx_t_61 = 2;
-      __pyx_t_62 = 2;
-      __pyx_v_ds = sqrt((((((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_51, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_52, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_53, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_54, __pyx_pybuffernd_oldpoint.diminfo[0].strides)))) + (((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_55, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_56, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_57, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_58, __pyx_pybuffernd_oldpoint.diminfo[0].strides))))) + (((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_59, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_60, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_61, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_62, __pyx_pybuffernd_oldpoint.diminfo[0].strides))))));
+      __pyx_t_57 = 0;
+      __pyx_t_58 = 0;
+      __pyx_t_59 = 0;
+      __pyx_t_60 = 0;
+      __pyx_t_61 = 1;
+      __pyx_t_62 = 1;
+      __pyx_t_63 = 1;
+      __pyx_t_64 = 1;
+      __pyx_t_65 = 2;
+      __pyx_t_66 = 2;
+      __pyx_t_67 = 2;
+      __pyx_t_68 = 2;
+      __pyx_v_ds = sqrt((((((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_57, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_58, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_59, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_60, __pyx_pybuffernd_oldpoint.diminfo[0].strides)))) + (((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_61, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_62, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_63, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_64, __pyx_pybuffernd_oldpoint.diminfo[0].strides))))) + (((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_65, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_66, __pyx_pybuffernd_oldpoint.diminfo[0].strides))) * ((*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_67, __pyx_pybuffernd_point.diminfo[0].strides)) - (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_68, __pyx_pybuffernd_oldpoint.diminfo[0].strides))))));
 
-      /* "cython_laplace.pyx":322
+      /* "cython_laplace.pyx":328
  * 
  *             ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
  *             proj2 = proj2 + s[p0, p1, p2]*ds             # <<<<<<<<<<<<<<
  *             stream_lengthtwo = stream_lengthtwo + ds
  * 
  */
-      __pyx_t_63 = __pyx_v_p0;
-      __pyx_t_64 = __pyx_v_p1;
-      __pyx_t_65 = __pyx_v_p2;
-      __pyx_v_proj2 = (__pyx_v_proj2 + ((*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_s.rcbuffer->pybuffer.buf, __pyx_t_63, __pyx_pybuffernd_s.diminfo[0].strides, __pyx_t_64, __pyx_pybuffernd_s.diminfo[1].strides, __pyx_t_65, __pyx_pybuffernd_s.diminfo[2].strides)) * __pyx_v_ds));
+      __pyx_t_69 = __pyx_v_p0;
+      __pyx_t_70 = __pyx_v_p1;
+      __pyx_t_71 = __pyx_v_p2;
+      __pyx_v_proj2 = (__pyx_v_proj2 + ((*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_s.rcbuffer->pybuffer.buf, __pyx_t_69, __pyx_pybuffernd_s.diminfo[0].strides, __pyx_t_70, __pyx_pybuffernd_s.diminfo[1].strides, __pyx_t_71, __pyx_pybuffernd_s.diminfo[2].strides)) * __pyx_v_ds));
 
-      /* "cython_laplace.pyx":323
+      /* "cython_laplace.pyx":329
  *             ds = sqrt( (point[0] - oldpoint[0])*(point[0] - oldpoint[0]) + (point[1] - oldpoint[1])*(point[1] - oldpoint[1]) + (point[2]-oldpoint[2])*(point[2]-oldpoint[2]) )
  *             proj2 = proj2 + s[p0, p1, p2]*ds
  *             stream_lengthtwo = stream_lengthtwo + ds             # <<<<<<<<<<<<<<
@@ -8044,7 +8252,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_stream_lengthtwo = (__pyx_v_stream_lengthtwo + __pyx_v_ds);
 
-      /* "cython_laplace.pyx":325
+      /* "cython_laplace.pyx":331
  *             stream_lengthtwo = stream_lengthtwo + ds
  * 
  *             if nv2 == 1:             # <<<<<<<<<<<<<<
@@ -8054,7 +8262,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
       __pyx_t_8 = ((__pyx_v_nv2 == 1) != 0);
       if (__pyx_t_8) {
 
-        /* "cython_laplace.pyx":326
+        /* "cython_laplace.pyx":332
  * 
  *             if nv2 == 1:
  *                 grid_position = fast_bilinear_interpolant(g, point)             # <<<<<<<<<<<<<<
@@ -8063,17 +8271,17 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
         __pyx_v_grid_position = __pyx_fuse_1__pyx_f_14cython_laplace_fast_bilinear_interpolant(((PyArrayObject *)__pyx_v_g), ((PyArrayObject *)__pyx_v_point), 0);
 
-        /* "cython_laplace.pyx":325
+        /* "cython_laplace.pyx":331
  *             stream_lengthtwo = stream_lengthtwo + ds
  * 
  *             if nv2 == 1:             # <<<<<<<<<<<<<<
  *                 grid_position = fast_bilinear_interpolant(g, point)
  *             else:
  */
-        goto __pyx_L14;
+        goto __pyx_L16;
       }
 
-      /* "cython_laplace.pyx":328
+      /* "cython_laplace.pyx":334
  *                 grid_position = fast_bilinear_interpolant(g, point)
  *             else:
  *                 grid_position = fast_trilinear_interpolant(g, point)             # <<<<<<<<<<<<<<
@@ -8083,9 +8291,9 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
       /*else*/ {
         __pyx_v_grid_position = __pyx_fuse_1__pyx_f_14cython_laplace_fast_trilinear_interpolant(((PyArrayObject *)__pyx_v_g), ((PyArrayObject *)__pyx_v_point), 0);
       }
-      __pyx_L14:;
+      __pyx_L16:;
 
-      /* "cython_laplace.pyx":330
+      /* "cython_laplace.pyx":336
  *                 grid_position = fast_trilinear_interpolant(g, point)
  *             #print "INSIDE:", point[0], point[1], point[2], grid_position, counter
  *             counter = counter + 1             # <<<<<<<<<<<<<<
@@ -8094,40 +8302,40 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_counter = (__pyx_v_counter + 1);
 
-      /* "cython_laplace.pyx":331
+      /* "cython_laplace.pyx":337
  *             #print "INSIDE:", point[0], point[1], point[2], grid_position, counter
  *             counter = counter + 1
  *             oldpoint[0] = point[0]             # <<<<<<<<<<<<<<
  *             oldpoint[1] = point[1]
  *             oldpoint[2] = point[2]
  */
-      __pyx_t_66 = 0;
-      __pyx_t_67 = 0;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_67, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_66, __pyx_pybuffernd_point.diminfo[0].strides));
+      __pyx_t_72 = 0;
+      __pyx_t_73 = 0;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_73, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_72, __pyx_pybuffernd_point.diminfo[0].strides));
 
-      /* "cython_laplace.pyx":332
+      /* "cython_laplace.pyx":338
  *             counter = counter + 1
  *             oldpoint[0] = point[0]
  *             oldpoint[1] = point[1]             # <<<<<<<<<<<<<<
  *             oldpoint[2] = point[2]
  * 
  */
-      __pyx_t_68 = 1;
-      __pyx_t_69 = 1;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_69, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_68, __pyx_pybuffernd_point.diminfo[0].strides));
+      __pyx_t_74 = 1;
+      __pyx_t_75 = 1;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_75, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_74, __pyx_pybuffernd_point.diminfo[0].strides));
 
-      /* "cython_laplace.pyx":333
+      /* "cython_laplace.pyx":339
  *             oldpoint[0] = point[0]
  *             oldpoint[1] = point[1]
  *             oldpoint[2] = point[2]             # <<<<<<<<<<<<<<
  * 
  *             real_line_distance = sqrt ( (newv0-v0)*(newv0-v0) +
  */
-      __pyx_t_70 = 2;
-      __pyx_t_71 = 2;
-      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_71, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_70, __pyx_pybuffernd_point.diminfo[0].strides));
+      __pyx_t_76 = 2;
+      __pyx_t_77 = 2;
+      *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_oldpoint.rcbuffer->pybuffer.buf, __pyx_t_77, __pyx_pybuffernd_oldpoint.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_point.rcbuffer->pybuffer.buf, __pyx_t_76, __pyx_pybuffernd_point.diminfo[0].strides));
 
-      /* "cython_laplace.pyx":335
+      /* "cython_laplace.pyx":341
  *             oldpoint[2] = point[2]
  * 
  *             real_line_distance = sqrt ( (newv0-v0)*(newv0-v0) +             # <<<<<<<<<<<<<<
@@ -8136,50 +8344,80 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
       __pyx_v_real_line_distance = sqrt(((((__pyx_v_newv0 - __pyx_v_v0) * (__pyx_v_newv0 - __pyx_v_v0)) + ((__pyx_v_newv1 - __pyx_v_v1) * (__pyx_v_newv1 - __pyx_v_v1))) + ((__pyx_v_newv2 - __pyx_v_v2) * (__pyx_v_newv2 - __pyx_v_v2))));
 
-      /* "cython_laplace.pyx":338
+      /* "cython_laplace.pyx":344
  *                                         (newv1-v1)*(newv1-v1) +
  *                                         (newv2-v2)*(newv2-v2) )
  *             if stream_lengthtwo > (4.0*real_line_distance):             # <<<<<<<<<<<<<<
  *                 grid_position = 0.0
- *     if method=="thickness":
+ *     print("TO INNER | Counter = {counter:05d} | stream_length = {sl:08f} | proj = {proj:08f}".format(counter=counter, sl=stream_lengthtwo, proj=proj2))
  */
       __pyx_t_8 = ((__pyx_v_stream_lengthtwo > (4.0 * __pyx_v_real_line_distance)) != 0);
       if (__pyx_t_8) {
 
-        /* "cython_laplace.pyx":339
+        /* "cython_laplace.pyx":345
  *                                         (newv2-v2)*(newv2-v2) )
  *             if stream_lengthtwo > (4.0*real_line_distance):
  *                 grid_position = 0.0             # <<<<<<<<<<<<<<
+ *     print("TO INNER | Counter = {counter:05d} | stream_length = {sl:08f} | proj = {proj:08f}".format(counter=counter, sl=stream_lengthtwo, proj=proj2))
  *     if method=="thickness":
- *         retval = stream_length + stream_lengthtwo
  */
         __pyx_v_grid_position = 0.0;
 
-        /* "cython_laplace.pyx":338
+        /* "cython_laplace.pyx":344
  *                                         (newv1-v1)*(newv1-v1) +
  *                                         (newv2-v2)*(newv2-v2) )
  *             if stream_lengthtwo > (4.0*real_line_distance):             # <<<<<<<<<<<<<<
  *                 grid_position = 0.0
- *     if method=="thickness":
+ *     print("TO INNER | Counter = {counter:05d} | stream_length = {sl:08f} | proj = {proj:08f}".format(counter=counter, sl=stream_lengthtwo, proj=proj2))
  */
       }
     }
-    __pyx_L13:;
+    __pyx_L14:;
   }
 
-  /* "cython_laplace.pyx":340
+  /* "cython_laplace.pyx":346
  *             if stream_lengthtwo > (4.0*real_line_distance):
  *                 grid_position = 0.0
+ *     print("TO INNER | Counter = {counter:05d} | stream_length = {sl:08f} | proj = {proj:08f}".format(counter=counter, sl=stream_lengthtwo, proj=proj2))             # <<<<<<<<<<<<<<
+ *     if method=="thickness":
+ *         retval = stream_length + stream_lengthtwo
+ */
+  __pyx_t_14 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_TO_INNER_Counter_counter_05d_str, __pyx_n_s_format); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 346, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_14);
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 346, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_counter); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 346, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_counter, __pyx_t_1) < 0) __PYX_ERR(0, 346, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_stream_lengthtwo); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 346, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_sl, __pyx_t_1) < 0) __PYX_ERR(0, 346, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_proj2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 346, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_proj, __pyx_t_1) < 0) __PYX_ERR(0, 346, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_14, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 346, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 346, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "cython_laplace.pyx":347
+ *                 grid_position = 0.0
+ *     print("TO INNER | Counter = {counter:05d} | stream_length = {sl:08f} | proj = {proj:08f}".format(counter=counter, sl=stream_lengthtwo, proj=proj2))
  *     if method=="thickness":             # <<<<<<<<<<<<<<
  *         retval = stream_length + stream_lengthtwo
  *     elif method=="sum":
  */
-  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_method, __pyx_n_s_thickness, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 340, __pyx_L1_error)
-  __pyx_t_72 = (__pyx_t_8 != 0);
-  if (__pyx_t_72) {
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_method, __pyx_n_s_thickness, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 347, __pyx_L1_error)
+  __pyx_t_78 = (__pyx_t_8 != 0);
+  if (__pyx_t_78) {
 
-    /* "cython_laplace.pyx":341
- *                 grid_position = 0.0
+    /* "cython_laplace.pyx":348
+ *     print("TO INNER | Counter = {counter:05d} | stream_length = {sl:08f} | proj = {proj:08f}".format(counter=counter, sl=stream_lengthtwo, proj=proj2))
  *     if method=="thickness":
  *         retval = stream_length + stream_lengthtwo             # <<<<<<<<<<<<<<
  *     elif method=="sum":
@@ -8187,28 +8425,28 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
     __pyx_v_retval = (__pyx_v_stream_length + __pyx_v_stream_lengthtwo);
 
-    /* "cython_laplace.pyx":340
- *             if stream_lengthtwo > (4.0*real_line_distance):
+    /* "cython_laplace.pyx":347
  *                 grid_position = 0.0
+ *     print("TO INNER | Counter = {counter:05d} | stream_length = {sl:08f} | proj = {proj:08f}".format(counter=counter, sl=stream_lengthtwo, proj=proj2))
  *     if method=="thickness":             # <<<<<<<<<<<<<<
  *         retval = stream_length + stream_lengthtwo
  *     elif method=="sum":
  */
-    goto __pyx_L16;
+    goto __pyx_L18;
   }
 
-  /* "cython_laplace.pyx":342
+  /* "cython_laplace.pyx":349
  *     if method=="thickness":
  *         retval = stream_length + stream_lengthtwo
  *     elif method=="sum":             # <<<<<<<<<<<<<<
  *         retval = proj + proj2
  *     elif method=="mean":
  */
-  __pyx_t_72 = (__Pyx_PyString_Equals(__pyx_v_method, __pyx_n_s_sum, Py_EQ)); if (unlikely(__pyx_t_72 < 0)) __PYX_ERR(0, 342, __pyx_L1_error)
-  __pyx_t_8 = (__pyx_t_72 != 0);
+  __pyx_t_78 = (__Pyx_PyString_Equals(__pyx_v_method, __pyx_n_s_sum, Py_EQ)); if (unlikely(__pyx_t_78 < 0)) __PYX_ERR(0, 349, __pyx_L1_error)
+  __pyx_t_8 = (__pyx_t_78 != 0);
   if (__pyx_t_8) {
 
-    /* "cython_laplace.pyx":343
+    /* "cython_laplace.pyx":350
  *         retval = stream_length + stream_lengthtwo
  *     elif method=="sum":
  *         retval = proj + proj2             # <<<<<<<<<<<<<<
@@ -8217,67 +8455,76 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
  */
     __pyx_v_retval = (__pyx_v_proj + __pyx_v_proj2);
 
-    /* "cython_laplace.pyx":342
+    /* "cython_laplace.pyx":349
  *     if method=="thickness":
  *         retval = stream_length + stream_lengthtwo
  *     elif method=="sum":             # <<<<<<<<<<<<<<
  *         retval = proj + proj2
  *     elif method=="mean":
  */
-    goto __pyx_L16;
+    goto __pyx_L18;
   }
 
-  /* "cython_laplace.pyx":344
+  /* "cython_laplace.pyx":351
  *     elif method=="sum":
  *         retval = proj + proj2
  *     elif method=="mean":             # <<<<<<<<<<<<<<
  *         #print("Stream: {a} {b} | Reverse: {c} {d}".format(a=stream_length, b=proj, c=stream_lengthtwo, d=proj2))
  *         retval = (proj + proj2) / (stream_length + stream_lengthtwo)
  */
-  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_method, __pyx_n_s_mean, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 344, __pyx_L1_error)
-  __pyx_t_72 = (__pyx_t_8 != 0);
-  if (__pyx_t_72) {
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_v_method, __pyx_n_s_mean, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 351, __pyx_L1_error)
+  __pyx_t_78 = (__pyx_t_8 != 0);
+  if (__pyx_t_78) {
 
-    /* "cython_laplace.pyx":346
+    /* "cython_laplace.pyx":353
  *     elif method=="mean":
  *         #print("Stream: {a} {b} | Reverse: {c} {d}".format(a=stream_length, b=proj, c=stream_lengthtwo, d=proj2))
  *         retval = (proj + proj2) / (stream_length + stream_lengthtwo)             # <<<<<<<<<<<<<<
  *     else:
  *         retval = 0.
  */
-    __pyx_t_73 = (__pyx_v_proj + __pyx_v_proj2);
-    __pyx_t_74 = (__pyx_v_stream_length + __pyx_v_stream_lengthtwo);
-    if (unlikely(__pyx_t_74 == 0)) {
+    __pyx_t_79 = (__pyx_v_proj + __pyx_v_proj2);
+    __pyx_t_80 = (__pyx_v_stream_length + __pyx_v_stream_lengthtwo);
+    if (unlikely(__pyx_t_80 == 0)) {
       PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-      __PYX_ERR(0, 346, __pyx_L1_error)
+      __PYX_ERR(0, 353, __pyx_L1_error)
     }
-    __pyx_v_retval = (__pyx_t_73 / __pyx_t_74);
+    __pyx_v_retval = (__pyx_t_79 / __pyx_t_80);
 
-    /* "cython_laplace.pyx":344
+    /* "cython_laplace.pyx":351
  *     elif method=="sum":
  *         retval = proj + proj2
  *     elif method=="mean":             # <<<<<<<<<<<<<<
  *         #print("Stream: {a} {b} | Reverse: {c} {d}".format(a=stream_length, b=proj, c=stream_lengthtwo, d=proj2))
  *         retval = (proj + proj2) / (stream_length + stream_lengthtwo)
  */
-    goto __pyx_L16;
+    goto __pyx_L18;
   }
 
-  /* "cython_laplace.pyx":348
+  /* "cython_laplace.pyx":355
  *         retval = (proj + proj2) / (stream_length + stream_lengthtwo)
  *     else:
  *         retval = 0.             # <<<<<<<<<<<<<<
+ *     print("")
  *     return(retval)
- * 
  */
   /*else*/ {
     __pyx_v_retval = 0.;
   }
-  __pyx_L16:;
+  __pyx_L18:;
 
-  /* "cython_laplace.pyx":349
+  /* "cython_laplace.pyx":356
  *     else:
  *         retval = 0.
+ *     print("")             # <<<<<<<<<<<<<<
+ *     return(retval)
+ * 
+ */
+  if (__Pyx_PrintOne(0, __pyx_kp_s__15) < 0) __PYX_ERR(0, 356, __pyx_L1_error)
+
+  /* "cython_laplace.pyx":357
+ *         retval = 0.
+ *     print("")
  *     return(retval)             # <<<<<<<<<<<<<<
  * 
  * 
@@ -8297,6 +8544,11 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_9);
+  __Pyx_XDECREF(__pyx_t_10);
+  __Pyx_XDECREF(__pyx_t_11);
+  __Pyx_XDECREF(__pyx_t_12);
+  __Pyx_XDECREF(__pyx_t_14);
   { PyObject *__pyx_type, *__pyx_value, *__pyx_tb;
     __Pyx_PyThreadState_declare
     __Pyx_PyThreadState_assign
@@ -8328,7 +8580,7 @@ static double __pyx_f_14cython_laplace_createStreamline(PyObject *__pyx_v_method
   return __pyx_r;
 }
 
-/* "cython_laplace.pyx":352
+/* "cython_laplace.pyx":360
  * 
  * 
  * cdef double voxelDistance(np.ndarray[BDTYPE_t, ndim=3] g, # grid             # <<<<<<<<<<<<<<
@@ -8367,18 +8619,18 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
   int __pyx_t_13;
   int __pyx_t_14;
   __Pyx_RefNannySetupContext("voxelDistance", 0);
-  __Pyx_TraceCall("voxelDistance", __pyx_f[0], 352, 0, __PYX_ERR(0, 352, __pyx_L1_error));
+  __Pyx_TraceCall("voxelDistance", __pyx_f[0], 360, 0, __PYX_ERR(0, 360, __pyx_L1_error));
   __pyx_pybuffer_g.pybuffer.buf = NULL;
   __pyx_pybuffer_g.refcount = 0;
   __pyx_pybuffernd_g.data = NULL;
   __pyx_pybuffernd_g.rcbuffer = &__pyx_pybuffer_g;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 352, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 360, __pyx_L1_error)
   }
   __pyx_pybuffernd_g.diminfo[0].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_g.diminfo[0].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_g.diminfo[1].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_g.diminfo[1].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_g.diminfo[2].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_g.diminfo[2].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[2];
 
-  /* "cython_laplace.pyx":356
+  /* "cython_laplace.pyx":364
  * 
  *     cdef int v0, v1, v2
  *     cdef int nv0 = g.shape[0]             # <<<<<<<<<<<<<<
@@ -8387,7 +8639,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
  */
   __pyx_v_nv0 = (__pyx_v_g->dimensions[0]);
 
-  /* "cython_laplace.pyx":357
+  /* "cython_laplace.pyx":365
  *     cdef int v0, v1, v2
  *     cdef int nv0 = g.shape[0]
  *     cdef int nv1 = g.shape[1]             # <<<<<<<<<<<<<<
@@ -8396,7 +8648,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
  */
   __pyx_v_nv1 = (__pyx_v_g->dimensions[1]);
 
-  /* "cython_laplace.pyx":358
+  /* "cython_laplace.pyx":366
  *     cdef int nv0 = g.shape[0]
  *     cdef int nv1 = g.shape[1]
  *     cdef int nv2 = g.shape[2]             # <<<<<<<<<<<<<<
@@ -8405,7 +8657,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
  */
   __pyx_v_nv2 = (__pyx_v_g->dimensions[2]);
 
-  /* "cython_laplace.pyx":360
+  /* "cython_laplace.pyx":368
  *     cdef int nv2 = g.shape[2]
  * 
  *     cdef double dist_to_inside = max(nv0, nv1, nv2)             # <<<<<<<<<<<<<<
@@ -8428,7 +8680,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
   }
   __pyx_v_dist_to_inside = __pyx_t_4;
 
-  /* "cython_laplace.pyx":361
+  /* "cython_laplace.pyx":369
  * 
  *     cdef double dist_to_inside = max(nv0, nv1, nv2)
  *     cdef double dist_to_outside = dist_to_inside             # <<<<<<<<<<<<<<
@@ -8437,7 +8689,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
  */
   __pyx_v_dist_to_outside = __pyx_v_dist_to_inside;
 
-  /* "cython_laplace.pyx":365
+  /* "cython_laplace.pyx":373
  *     cdef int current_grid
  * 
  *     cdef double current_distance = 0.0             # <<<<<<<<<<<<<<
@@ -8446,7 +8698,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
  */
   __pyx_v_current_distance = 0.0;
 
-  /* "cython_laplace.pyx":367
+  /* "cython_laplace.pyx":375
  *     cdef double current_distance = 0.0
  * 
  *     for v0 in range(nv0):             # <<<<<<<<<<<<<<
@@ -8458,7 +8710,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
   for (__pyx_t_2 = 0; __pyx_t_2 < __pyx_t_1; __pyx_t_2+=1) {
     __pyx_v_v0 = __pyx_t_2;
 
-    /* "cython_laplace.pyx":368
+    /* "cython_laplace.pyx":376
  * 
  *     for v0 in range(nv0):
  *        for v1 in range(nv1):             # <<<<<<<<<<<<<<
@@ -8470,7 +8722,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
     for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_5; __pyx_t_6+=1) {
       __pyx_v_v1 = __pyx_t_6;
 
-      /* "cython_laplace.pyx":369
+      /* "cython_laplace.pyx":377
  *     for v0 in range(nv0):
  *        for v1 in range(nv1):
  *            for v2 in range(nv2):             # <<<<<<<<<<<<<<
@@ -8482,7 +8734,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
       for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
         __pyx_v_v2 = __pyx_t_9;
 
-        /* "cython_laplace.pyx":370
+        /* "cython_laplace.pyx":378
  *        for v1 in range(nv1):
  *            for v2 in range(nv2):
  *                current_grid = g[v0,v1,v2]             # <<<<<<<<<<<<<<
@@ -8494,7 +8746,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
         __pyx_t_12 = __pyx_v_v2;
         __pyx_v_current_grid = (*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_BDTYPE_t *, __pyx_pybuffernd_g.rcbuffer->pybuffer.buf, __pyx_t_10, __pyx_pybuffernd_g.diminfo[0].strides, __pyx_t_11, __pyx_pybuffernd_g.diminfo[1].strides, __pyx_t_12, __pyx_pybuffernd_g.diminfo[2].strides));
 
-        /* "cython_laplace.pyx":371
+        /* "cython_laplace.pyx":379
  *            for v2 in range(nv2):
  *                current_grid = g[v0,v1,v2]
  *                if current_grid == 0 or current_grid == 10:             # <<<<<<<<<<<<<<
@@ -8505,7 +8757,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
           case 0:
           case 10:
 
-          /* "cython_laplace.pyx":372
+          /* "cython_laplace.pyx":380
  *                current_grid = g[v0,v1,v2]
  *                if current_grid == 0 or current_grid == 10:
  *                    current_distance= sqrt( (vv0-v0)*(vv0-v0) +             # <<<<<<<<<<<<<<
@@ -8514,7 +8766,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
  */
           __pyx_v_current_distance = sqrt(((((__pyx_v_vv0 - __pyx_v_v0) * (__pyx_v_vv0 - __pyx_v_v0)) + ((__pyx_v_vv1 - __pyx_v_v1) * (__pyx_v_vv1 - __pyx_v_v1))) + ((__pyx_v_vv2 - __pyx_v_v2) * (__pyx_v_vv2 - __pyx_v_v2))));
 
-          /* "cython_laplace.pyx":375
+          /* "cython_laplace.pyx":383
  *                                            (vv1-v1)*(vv1-v1) +
  *                                            (vv2-v2)*(vv2-v2) )
  *                    if current_grid == 0 and current_distance < dist_to_inside:             # <<<<<<<<<<<<<<
@@ -8532,7 +8784,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
           __pyx_L10_bool_binop_done:;
           if (__pyx_t_13) {
 
-            /* "cython_laplace.pyx":376
+            /* "cython_laplace.pyx":384
  *                                            (vv2-v2)*(vv2-v2) )
  *                    if current_grid == 0 and current_distance < dist_to_inside:
  *                        dist_to_inside = current_distance             # <<<<<<<<<<<<<<
@@ -8541,7 +8793,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
  */
             __pyx_v_dist_to_inside = __pyx_v_current_distance;
 
-            /* "cython_laplace.pyx":375
+            /* "cython_laplace.pyx":383
  *                                            (vv1-v1)*(vv1-v1) +
  *                                            (vv2-v2)*(vv2-v2) )
  *                    if current_grid == 0 and current_distance < dist_to_inside:             # <<<<<<<<<<<<<<
@@ -8551,7 +8803,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
             goto __pyx_L9;
           }
 
-          /* "cython_laplace.pyx":377
+          /* "cython_laplace.pyx":385
  *                    if current_grid == 0 and current_distance < dist_to_inside:
  *                        dist_to_inside = current_distance
  *                    elif current_grid == 10 and current_distance < dist_to_outside:             # <<<<<<<<<<<<<<
@@ -8569,7 +8821,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
           __pyx_L12_bool_binop_done:;
           if (__pyx_t_13) {
 
-            /* "cython_laplace.pyx":378
+            /* "cython_laplace.pyx":386
  *                        dist_to_inside = current_distance
  *                    elif current_grid == 10 and current_distance < dist_to_outside:
  *                        dist_to_outside = current_distance             # <<<<<<<<<<<<<<
@@ -8578,7 +8830,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
  */
             __pyx_v_dist_to_outside = __pyx_v_current_distance;
 
-            /* "cython_laplace.pyx":377
+            /* "cython_laplace.pyx":385
  *                    if current_grid == 0 and current_distance < dist_to_inside:
  *                        dist_to_inside = current_distance
  *                    elif current_grid == 10 and current_distance < dist_to_outside:             # <<<<<<<<<<<<<<
@@ -8588,7 +8840,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
           }
           __pyx_L9:;
 
-          /* "cython_laplace.pyx":371
+          /* "cython_laplace.pyx":379
  *            for v2 in range(nv2):
  *                current_grid = g[v0,v1,v2]
  *                if current_grid == 0 or current_grid == 10:             # <<<<<<<<<<<<<<
@@ -8602,7 +8854,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
     }
   }
 
-  /* "cython_laplace.pyx":379
+  /* "cython_laplace.pyx":387
  *                    elif current_grid == 10 and current_distance < dist_to_outside:
  *                        dist_to_outside = current_distance
  *     return(dist_to_inside + dist_to_outside)             # <<<<<<<<<<<<<<
@@ -8612,7 +8864,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
   __pyx_r = (__pyx_v_dist_to_inside + __pyx_v_dist_to_outside);
   goto __pyx_L0;
 
-  /* "cython_laplace.pyx":352
+  /* "cython_laplace.pyx":360
  * 
  * 
  * cdef double voxelDistance(np.ndarray[BDTYPE_t, ndim=3] g, # grid             # <<<<<<<<<<<<<<
@@ -8639,7 +8891,7 @@ static double __pyx_f_14cython_laplace_voxelDistance(PyArrayObject *__pyx_v_g, i
   return __pyx_r;
 }
 
-/* "cython_laplace.pyx":386
+/* "cython_laplace.pyx":394
  * #   0: output the distance between closest inside and closest outside point
  * #   1: normalize that distance to lie between the inside and outside grid
  * def straightLineDistance(np.ndarray[BDTYPE_t, ndim=3] g,    # grid             # <<<<<<<<<<<<<<
@@ -8682,17 +8934,17 @@ static PyObject *__pyx_pw_14cython_laplace_7straightLineDistance(PyObject *__pyx
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_o)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("straightLineDistance", 1, 3, 3, 1); __PYX_ERR(0, 386, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("straightLineDistance", 1, 3, 3, 1); __PYX_ERR(0, 394, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_laplace_initialization)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("straightLineDistance", 1, 3, 3, 2); __PYX_ERR(0, 386, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("straightLineDistance", 1, 3, 3, 2); __PYX_ERR(0, 394, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "straightLineDistance") < 0)) __PYX_ERR(0, 386, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "straightLineDistance") < 0)) __PYX_ERR(0, 394, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -8703,18 +8955,18 @@ static PyObject *__pyx_pw_14cython_laplace_7straightLineDistance(PyObject *__pyx
     }
     __pyx_v_g = ((PyArrayObject *)values[0]);
     __pyx_v_o = ((PyArrayObject *)values[1]);
-    __pyx_v_laplace_initialization = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_laplace_initialization == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 388, __pyx_L3_error)
+    __pyx_v_laplace_initialization = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_laplace_initialization == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 396, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("straightLineDistance", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 386, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("straightLineDistance", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 394, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_laplace.straightLineDistance", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_g), __pyx_ptype_5numpy_ndarray, 1, "g", 0))) __PYX_ERR(0, 386, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_o), __pyx_ptype_5numpy_ndarray, 1, "o", 0))) __PYX_ERR(0, 387, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_g), __pyx_ptype_5numpy_ndarray, 1, "g", 0))) __PYX_ERR(0, 394, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_o), __pyx_ptype_5numpy_ndarray, 1, "o", 0))) __PYX_ERR(0, 395, __pyx_L1_error)
   __pyx_r = __pyx_pf_14cython_laplace_6straightLineDistance(__pyx_self, __pyx_v_g, __pyx_v_o, __pyx_v_laplace_initialization);
 
   /* function exit code */
@@ -8762,9 +9014,9 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
   Py_ssize_t __pyx_t_20;
   Py_ssize_t __pyx_t_21;
   Py_ssize_t __pyx_t_22;
-  __Pyx_TraceFrameInit(__pyx_codeobj__15)
+  __Pyx_TraceFrameInit(__pyx_codeobj__16)
   __Pyx_RefNannySetupContext("straightLineDistance", 0);
-  __Pyx_TraceCall("straightLineDistance", __pyx_f[0], 386, 0, __PYX_ERR(0, 386, __pyx_L1_error));
+  __Pyx_TraceCall("straightLineDistance", __pyx_f[0], 394, 0, __PYX_ERR(0, 394, __pyx_L1_error));
   __pyx_pybuffer_g.pybuffer.buf = NULL;
   __pyx_pybuffer_g.refcount = 0;
   __pyx_pybuffernd_g.data = NULL;
@@ -8775,16 +9027,16 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
   __pyx_pybuffernd_o.rcbuffer = &__pyx_pybuffer_o;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 386, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 394, __pyx_L1_error)
   }
   __pyx_pybuffernd_g.diminfo[0].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_g.diminfo[0].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_g.diminfo[1].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_g.diminfo[1].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_g.diminfo[2].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_g.diminfo[2].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_o.rcbuffer->pybuffer, (PyObject*)__pyx_v_o, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 386, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_o.rcbuffer->pybuffer, (PyObject*)__pyx_v_o, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 394, __pyx_L1_error)
   }
   __pyx_pybuffernd_o.diminfo[0].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_o.diminfo[0].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_o.diminfo[1].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_o.diminfo[1].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_o.diminfo[2].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_o.diminfo[2].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[2];
 
-  /* "cython_laplace.pyx":390
+  /* "cython_laplace.pyx":398
  *                          int laplace_initialization):       # work mode
  *     cdef int v0, v1, v2
  *     cdef int nv0 = g.shape[0]             # <<<<<<<<<<<<<<
@@ -8793,7 +9045,7 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
  */
   __pyx_v_nv0 = (__pyx_v_g->dimensions[0]);
 
-  /* "cython_laplace.pyx":391
+  /* "cython_laplace.pyx":399
  *     cdef int v0, v1, v2
  *     cdef int nv0 = g.shape[0]
  *     cdef int nv1 = g.shape[1]             # <<<<<<<<<<<<<<
@@ -8802,7 +9054,7 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
  */
   __pyx_v_nv1 = (__pyx_v_g->dimensions[1]);
 
-  /* "cython_laplace.pyx":392
+  /* "cython_laplace.pyx":400
  *     cdef int nv0 = g.shape[0]
  *     cdef int nv1 = g.shape[1]
  *     cdef int nv2 = g.shape[2]             # <<<<<<<<<<<<<<
@@ -8811,7 +9063,7 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
  */
   __pyx_v_nv2 = (__pyx_v_g->dimensions[2]);
 
-  /* "cython_laplace.pyx":394
+  /* "cython_laplace.pyx":402
  *     cdef int nv2 = g.shape[2]
  * 
  *     for v0 in range(nv0):             # <<<<<<<<<<<<<<
@@ -8823,16 +9075,16 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_v0 = __pyx_t_3;
 
-    /* "cython_laplace.pyx":395
+    /* "cython_laplace.pyx":403
  * 
  *     for v0 in range(nv0):
  *         print "In slice:", v0             # <<<<<<<<<<<<<<
  *         for v1 in range(nv1):
  *             for v2 in range(nv2):
  */
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_v0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 395, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_v0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 403, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 395, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 403, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_kp_s_In_slice);
     __Pyx_GIVEREF(__pyx_kp_s_In_slice);
@@ -8840,10 +9092,10 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_4);
     __pyx_t_4 = 0;
-    if (__Pyx_Print(0, __pyx_t_5, 1) < 0) __PYX_ERR(0, 395, __pyx_L1_error)
+    if (__Pyx_Print(0, __pyx_t_5, 1) < 0) __PYX_ERR(0, 403, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "cython_laplace.pyx":396
+    /* "cython_laplace.pyx":404
  *     for v0 in range(nv0):
  *         print "In slice:", v0
  *         for v1 in range(nv1):             # <<<<<<<<<<<<<<
@@ -8855,7 +9107,7 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
     for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
       __pyx_v_v1 = __pyx_t_8;
 
-      /* "cython_laplace.pyx":397
+      /* "cython_laplace.pyx":405
  *         print "In slice:", v0
  *         for v1 in range(nv1):
  *             for v2 in range(nv2):             # <<<<<<<<<<<<<<
@@ -8867,7 +9119,7 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
       for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
         __pyx_v_v2 = __pyx_t_11;
 
-        /* "cython_laplace.pyx":398
+        /* "cython_laplace.pyx":406
  *         for v1 in range(nv1):
  *             for v2 in range(nv2):
  *                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:             # <<<<<<<<<<<<<<
@@ -8891,7 +9143,7 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
         __pyx_L10_bool_binop_done:;
         if (__pyx_t_12) {
 
-          /* "cython_laplace.pyx":399
+          /* "cython_laplace.pyx":407
  *             for v2 in range(nv2):
  *                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:
  *                     o[v0,v1,v2] = voxelDistance(g, v0, v1, v2)             # <<<<<<<<<<<<<<
@@ -8903,7 +9155,7 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
           __pyx_t_22 = __pyx_v_v2;
           *__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_20, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_21, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_22, __pyx_pybuffernd_o.diminfo[2].strides) = __pyx_f_14cython_laplace_voxelDistance(((PyArrayObject *)__pyx_v_g), __pyx_v_v0, __pyx_v_v1, __pyx_v_v2);
 
-          /* "cython_laplace.pyx":398
+          /* "cython_laplace.pyx":406
  *         for v1 in range(nv1):
  *             for v2 in range(nv2):
  *                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:             # <<<<<<<<<<<<<<
@@ -8915,7 +9167,7 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
     }
   }
 
-  /* "cython_laplace.pyx":386
+  /* "cython_laplace.pyx":394
  * #   0: output the distance between closest inside and closest outside point
  * #   1: normalize that distance to lie between the inside and outside grid
  * def straightLineDistance(np.ndarray[BDTYPE_t, ndim=3] g,    # grid             # <<<<<<<<<<<<<<
@@ -8949,7 +9201,7 @@ static PyObject *__pyx_pf_14cython_laplace_6straightLineDistance(CYTHON_UNUSED P
   return __pyx_r;
 }
 
-/* "cython_laplace.pyx":401
+/* "cython_laplace.pyx":409
  *                     o[v0,v1,v2] = voxelDistance(g, v0, v1, v2)
  * 
  * def computeAllStreamlines(str method, # method             # <<<<<<<<<<<<<<
@@ -9007,47 +9259,47 @@ static PyObject *__pyx_pw_14cython_laplace_9computeAllStreamlines(PyObject *__py
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_g)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 1); __PYX_ERR(0, 401, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 1); __PYX_ERR(0, 409, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_s)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 2); __PYX_ERR(0, 401, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 2); __PYX_ERR(0, 409, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_o)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 3); __PYX_ERR(0, 401, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 3); __PYX_ERR(0, 409, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dv0)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 4); __PYX_ERR(0, 401, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 4); __PYX_ERR(0, 409, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  5:
         if (likely((values[5] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dv1)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 5); __PYX_ERR(0, 401, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 5); __PYX_ERR(0, 409, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  6:
         if (likely((values[6] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dv2)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 6); __PYX_ERR(0, 401, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 6); __PYX_ERR(0, 409, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  7:
         if (likely((values[7] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_h)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 7); __PYX_ERR(0, 401, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, 7); __PYX_ERR(0, 409, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "computeAllStreamlines") < 0)) __PYX_ERR(0, 401, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "computeAllStreamlines") < 0)) __PYX_ERR(0, 409, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 8) {
       goto __pyx_L5_argtuple_error;
@@ -9068,23 +9320,23 @@ static PyObject *__pyx_pw_14cython_laplace_9computeAllStreamlines(PyObject *__py
     __pyx_v_dv0 = ((PyArrayObject *)values[4]);
     __pyx_v_dv1 = ((PyArrayObject *)values[5]);
     __pyx_v_dv2 = ((PyArrayObject *)values[6]);
-    __pyx_v_h = __pyx_PyFloat_AsDouble(values[7]); if (unlikely((__pyx_v_h == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 408, __pyx_L3_error)
+    __pyx_v_h = __pyx_PyFloat_AsDouble(values[7]); if (unlikely((__pyx_v_h == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 416, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 401, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("computeAllStreamlines", 1, 8, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 409, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_laplace.computeAllStreamlines", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_method), (&PyString_Type), 1, "method", 1))) __PYX_ERR(0, 401, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_g), __pyx_ptype_5numpy_ndarray, 1, "g", 0))) __PYX_ERR(0, 402, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_s), __pyx_ptype_5numpy_ndarray, 1, "s", 0))) __PYX_ERR(0, 403, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_o), __pyx_ptype_5numpy_ndarray, 1, "o", 0))) __PYX_ERR(0, 404, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv0), __pyx_ptype_5numpy_ndarray, 1, "dv0", 0))) __PYX_ERR(0, 405, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv1), __pyx_ptype_5numpy_ndarray, 1, "dv1", 0))) __PYX_ERR(0, 406, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv2), __pyx_ptype_5numpy_ndarray, 1, "dv2", 0))) __PYX_ERR(0, 407, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_method), (&PyString_Type), 1, "method", 1))) __PYX_ERR(0, 409, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_g), __pyx_ptype_5numpy_ndarray, 1, "g", 0))) __PYX_ERR(0, 410, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_s), __pyx_ptype_5numpy_ndarray, 1, "s", 0))) __PYX_ERR(0, 411, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_o), __pyx_ptype_5numpy_ndarray, 1, "o", 0))) __PYX_ERR(0, 412, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv0), __pyx_ptype_5numpy_ndarray, 1, "dv0", 0))) __PYX_ERR(0, 413, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv1), __pyx_ptype_5numpy_ndarray, 1, "dv1", 0))) __PYX_ERR(0, 414, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv2), __pyx_ptype_5numpy_ndarray, 1, "dv2", 0))) __PYX_ERR(0, 415, __pyx_L1_error)
   __pyx_r = __pyx_pf_14cython_laplace_8computeAllStreamlines(__pyx_self, __pyx_v_method, __pyx_v_g, __pyx_v_s, __pyx_v_o, __pyx_v_dv0, __pyx_v_dv1, __pyx_v_dv2, __pyx_v_h);
 
   /* function exit code */
@@ -9143,9 +9395,9 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
   Py_ssize_t __pyx_t_23;
   Py_ssize_t __pyx_t_24;
   Py_ssize_t __pyx_t_25;
-  __Pyx_TraceFrameInit(__pyx_codeobj__16)
+  __Pyx_TraceFrameInit(__pyx_codeobj__17)
   __Pyx_RefNannySetupContext("computeAllStreamlines", 0);
-  __Pyx_TraceCall("computeAllStreamlines", __pyx_f[0], 401, 0, __PYX_ERR(0, 401, __pyx_L1_error));
+  __Pyx_TraceCall("computeAllStreamlines", __pyx_f[0], 409, 0, __PYX_ERR(0, 409, __pyx_L1_error));
   __pyx_pybuffer_g.pybuffer.buf = NULL;
   __pyx_pybuffer_g.refcount = 0;
   __pyx_pybuffernd_g.data = NULL;
@@ -9172,36 +9424,36 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
   __pyx_pybuffernd_dv2.rcbuffer = &__pyx_pybuffer_dv2;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 401, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 409, __pyx_L1_error)
   }
   __pyx_pybuffernd_g.diminfo[0].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_g.diminfo[0].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_g.diminfo[1].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_g.diminfo[1].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_g.diminfo[2].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_g.diminfo[2].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_s.rcbuffer->pybuffer, (PyObject*)__pyx_v_s, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 401, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_s.rcbuffer->pybuffer, (PyObject*)__pyx_v_s, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 409, __pyx_L1_error)
   }
   __pyx_pybuffernd_s.diminfo[0].strides = __pyx_pybuffernd_s.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_s.diminfo[0].shape = __pyx_pybuffernd_s.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_s.diminfo[1].strides = __pyx_pybuffernd_s.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_s.diminfo[1].shape = __pyx_pybuffernd_s.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_s.diminfo[2].strides = __pyx_pybuffernd_s.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_s.diminfo[2].shape = __pyx_pybuffernd_s.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_o.rcbuffer->pybuffer, (PyObject*)__pyx_v_o, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 401, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_o.rcbuffer->pybuffer, (PyObject*)__pyx_v_o, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 409, __pyx_L1_error)
   }
   __pyx_pybuffernd_o.diminfo[0].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_o.diminfo[0].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_o.diminfo[1].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_o.diminfo[1].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_o.diminfo[2].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_o.diminfo[2].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv0.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv0, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 401, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv0.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv0, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 409, __pyx_L1_error)
   }
   __pyx_pybuffernd_dv0.diminfo[0].strides = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_dv0.diminfo[0].shape = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_dv0.diminfo[1].strides = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_dv0.diminfo[1].shape = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_dv0.diminfo[2].strides = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_dv0.diminfo[2].shape = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv1.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv1, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 401, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv1.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv1, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 409, __pyx_L1_error)
   }
   __pyx_pybuffernd_dv1.diminfo[0].strides = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_dv1.diminfo[0].shape = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_dv1.diminfo[1].strides = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_dv1.diminfo[1].shape = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_dv1.diminfo[2].strides = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_dv1.diminfo[2].shape = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv2.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv2, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 401, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv2.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv2, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 409, __pyx_L1_error)
   }
   __pyx_pybuffernd_dv2.diminfo[0].strides = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_dv2.diminfo[0].shape = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_dv2.diminfo[1].strides = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_dv2.diminfo[1].shape = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_dv2.diminfo[2].strides = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_dv2.diminfo[2].shape = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.shape[2];
 
-  /* "cython_laplace.pyx":410
+  /* "cython_laplace.pyx":418
  *                           double h):
  *     cdef int v0, v1, v2
  *     cdef int nv0 = g.shape[0]             # <<<<<<<<<<<<<<
@@ -9210,7 +9462,7 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
  */
   __pyx_v_nv0 = (__pyx_v_g->dimensions[0]);
 
-  /* "cython_laplace.pyx":411
+  /* "cython_laplace.pyx":419
  *     cdef int v0, v1, v2
  *     cdef int nv0 = g.shape[0]
  *     cdef int nv1 = g.shape[1]             # <<<<<<<<<<<<<<
@@ -9219,7 +9471,7 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
  */
   __pyx_v_nv1 = (__pyx_v_g->dimensions[1]);
 
-  /* "cython_laplace.pyx":412
+  /* "cython_laplace.pyx":420
  *     cdef int nv0 = g.shape[0]
  *     cdef int nv1 = g.shape[1]
  *     cdef int nv2 = g.shape[2]             # <<<<<<<<<<<<<<
@@ -9228,7 +9480,7 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
  */
   __pyx_v_nv2 = (__pyx_v_g->dimensions[2]);
 
-  /* "cython_laplace.pyx":414
+  /* "cython_laplace.pyx":422
  *     cdef int nv2 = g.shape[2]
  * 
  *     for v0 in range(nv0):             # <<<<<<<<<<<<<<
@@ -9240,16 +9492,16 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_v0 = __pyx_t_3;
 
-    /* "cython_laplace.pyx":415
+    /* "cython_laplace.pyx":423
  * 
  *     for v0 in range(nv0):
  *         print "In slice:", v0             # <<<<<<<<<<<<<<
  *         for v1 in range(nv1):
  *             for v2 in range(nv2):
  */
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_v0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 415, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_v0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 415, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_kp_s_In_slice);
     __Pyx_GIVEREF(__pyx_kp_s_In_slice);
@@ -9257,10 +9509,10 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_4);
     __pyx_t_4 = 0;
-    if (__Pyx_Print(0, __pyx_t_5, 1) < 0) __PYX_ERR(0, 415, __pyx_L1_error)
+    if (__Pyx_Print(0, __pyx_t_5, 1) < 0) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "cython_laplace.pyx":416
+    /* "cython_laplace.pyx":424
  *     for v0 in range(nv0):
  *         print "In slice:", v0
  *         for v1 in range(nv1):             # <<<<<<<<<<<<<<
@@ -9272,7 +9524,7 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
     for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
       __pyx_v_v1 = __pyx_t_8;
 
-      /* "cython_laplace.pyx":417
+      /* "cython_laplace.pyx":425
  *         print "In slice:", v0
  *         for v1 in range(nv1):
  *             for v2 in range(nv2):             # <<<<<<<<<<<<<<
@@ -9284,7 +9536,7 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
       for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
         __pyx_v_v2 = __pyx_t_11;
 
-        /* "cython_laplace.pyx":418
+        /* "cython_laplace.pyx":426
  *         for v1 in range(nv1):
  *             for v2 in range(nv2):
  *                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:             # <<<<<<<<<<<<<<
@@ -9308,7 +9560,7 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
         __pyx_L10_bool_binop_done:;
         if (__pyx_t_12) {
 
-          /* "cython_laplace.pyx":419
+          /* "cython_laplace.pyx":427
  *             for v2 in range(nv2):
  *                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:
  *                     o[v0,v1,v2] = createStreamline(method, g, s, dv0, dv1, dv2,             # <<<<<<<<<<<<<<
@@ -9320,7 +9572,7 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
           __pyx_t_22 = __pyx_v_v2;
           *__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_20, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_21, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_22, __pyx_pybuffernd_o.diminfo[2].strides) = __pyx_f_14cython_laplace_createStreamline(__pyx_v_method, ((PyArrayObject *)__pyx_v_g), ((PyArrayObject *)__pyx_v_s), ((PyArrayObject *)__pyx_v_dv0), ((PyArrayObject *)__pyx_v_dv1), ((PyArrayObject *)__pyx_v_dv2), __pyx_v_v0, __pyx_v_v1, __pyx_v_v2, __pyx_v_h);
 
-          /* "cython_laplace.pyx":418
+          /* "cython_laplace.pyx":426
  *         for v1 in range(nv1):
  *             for v2 in range(nv2):
  *                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:             # <<<<<<<<<<<<<<
@@ -9330,7 +9582,7 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
           goto __pyx_L9;
         }
 
-        /* "cython_laplace.pyx":422
+        /* "cython_laplace.pyx":430
  *                                                    v0,v1,v2, h)
  *                 else:
  *                     o[v0,v1,v2] = 0             # <<<<<<<<<<<<<<
@@ -9348,7 +9600,7 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
     }
   }
 
-  /* "cython_laplace.pyx":401
+  /* "cython_laplace.pyx":409
  *                     o[v0,v1,v2] = voxelDistance(g, v0, v1, v2)
  * 
  * def computeAllStreamlines(str method, # method             # <<<<<<<<<<<<<<
@@ -9390,7 +9642,7 @@ static PyObject *__pyx_pf_14cython_laplace_8computeAllStreamlines(CYTHON_UNUSED 
   return __pyx_r;
 }
 
-/* "cython_laplace.pyx":424
+/* "cython_laplace.pyx":432
  *                     o[v0,v1,v2] = 0
  * 
  * def computeStreamlinesFromList(str method, # method             # <<<<<<<<<<<<<<
@@ -9451,53 +9703,53 @@ static PyObject *__pyx_pw_14cython_laplace_11computeStreamlinesFromList(PyObject
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_g)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 1); __PYX_ERR(0, 424, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 1); __PYX_ERR(0, 432, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_s)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 2); __PYX_ERR(0, 424, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 2); __PYX_ERR(0, 432, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pointList)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 3); __PYX_ERR(0, 424, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 3); __PYX_ERR(0, 432, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_o)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 4); __PYX_ERR(0, 424, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 4); __PYX_ERR(0, 432, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  5:
         if (likely((values[5] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dv0)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 5); __PYX_ERR(0, 424, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 5); __PYX_ERR(0, 432, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  6:
         if (likely((values[6] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dv1)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 6); __PYX_ERR(0, 424, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 6); __PYX_ERR(0, 432, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  7:
         if (likely((values[7] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dv2)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 7); __PYX_ERR(0, 424, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 7); __PYX_ERR(0, 432, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  8:
         if (likely((values[8] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_h)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 8); __PYX_ERR(0, 424, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, 8); __PYX_ERR(0, 432, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "computeStreamlinesFromList") < 0)) __PYX_ERR(0, 424, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "computeStreamlinesFromList") < 0)) __PYX_ERR(0, 432, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 9) {
       goto __pyx_L5_argtuple_error;
@@ -9520,24 +9772,24 @@ static PyObject *__pyx_pw_14cython_laplace_11computeStreamlinesFromList(PyObject
     __pyx_v_dv0 = ((PyArrayObject *)values[5]);
     __pyx_v_dv1 = ((PyArrayObject *)values[6]);
     __pyx_v_dv2 = ((PyArrayObject *)values[7]);
-    __pyx_v_h = __pyx_PyFloat_AsDouble(values[8]); if (unlikely((__pyx_v_h == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 432, __pyx_L3_error)
+    __pyx_v_h = __pyx_PyFloat_AsDouble(values[8]); if (unlikely((__pyx_v_h == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 440, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 424, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("computeStreamlinesFromList", 1, 9, 9, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 432, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_laplace.computeStreamlinesFromList", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_method), (&PyString_Type), 1, "method", 1))) __PYX_ERR(0, 424, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_g), __pyx_ptype_5numpy_ndarray, 1, "g", 0))) __PYX_ERR(0, 425, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_s), __pyx_ptype_5numpy_ndarray, 1, "s", 0))) __PYX_ERR(0, 426, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_pointList), __pyx_ptype_5numpy_ndarray, 1, "pointList", 0))) __PYX_ERR(0, 427, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_o), __pyx_ptype_5numpy_ndarray, 1, "o", 0))) __PYX_ERR(0, 428, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv0), __pyx_ptype_5numpy_ndarray, 1, "dv0", 0))) __PYX_ERR(0, 429, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv1), __pyx_ptype_5numpy_ndarray, 1, "dv1", 0))) __PYX_ERR(0, 430, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv2), __pyx_ptype_5numpy_ndarray, 1, "dv2", 0))) __PYX_ERR(0, 431, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_method), (&PyString_Type), 1, "method", 1))) __PYX_ERR(0, 432, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_g), __pyx_ptype_5numpy_ndarray, 1, "g", 0))) __PYX_ERR(0, 433, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_s), __pyx_ptype_5numpy_ndarray, 1, "s", 0))) __PYX_ERR(0, 434, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_pointList), __pyx_ptype_5numpy_ndarray, 1, "pointList", 0))) __PYX_ERR(0, 435, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_o), __pyx_ptype_5numpy_ndarray, 1, "o", 0))) __PYX_ERR(0, 436, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv0), __pyx_ptype_5numpy_ndarray, 1, "dv0", 0))) __PYX_ERR(0, 437, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv1), __pyx_ptype_5numpy_ndarray, 1, "dv1", 0))) __PYX_ERR(0, 438, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv2), __pyx_ptype_5numpy_ndarray, 1, "dv2", 0))) __PYX_ERR(0, 439, __pyx_L1_error)
   __pyx_r = __pyx_pf_14cython_laplace_10computeStreamlinesFromList(__pyx_self, __pyx_v_method, __pyx_v_g, __pyx_v_s, __pyx_v_pointList, __pyx_v_o, __pyx_v_dv0, __pyx_v_dv1, __pyx_v_dv2, __pyx_v_h);
 
   /* function exit code */
@@ -9579,9 +9831,9 @@ static PyObject *__pyx_pf_14cython_laplace_10computeStreamlinesFromList(CYTHON_U
   size_t __pyx_t_8;
   Py_ssize_t __pyx_t_9;
   size_t __pyx_t_10;
-  __Pyx_TraceFrameInit(__pyx_codeobj__17)
+  __Pyx_TraceFrameInit(__pyx_codeobj__18)
   __Pyx_RefNannySetupContext("computeStreamlinesFromList", 0);
-  __Pyx_TraceCall("computeStreamlinesFromList", __pyx_f[0], 424, 0, __PYX_ERR(0, 424, __pyx_L1_error));
+  __Pyx_TraceCall("computeStreamlinesFromList", __pyx_f[0], 432, 0, __PYX_ERR(0, 432, __pyx_L1_error));
   __pyx_pybuffer_g.pybuffer.buf = NULL;
   __pyx_pybuffer_g.refcount = 0;
   __pyx_pybuffernd_g.data = NULL;
@@ -9612,41 +9864,41 @@ static PyObject *__pyx_pf_14cython_laplace_10computeStreamlinesFromList(CYTHON_U
   __pyx_pybuffernd_dv2.rcbuffer = &__pyx_pybuffer_dv2;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 424, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 432, __pyx_L1_error)
   }
   __pyx_pybuffernd_g.diminfo[0].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_g.diminfo[0].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_g.diminfo[1].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_g.diminfo[1].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_g.diminfo[2].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_g.diminfo[2].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_s.rcbuffer->pybuffer, (PyObject*)__pyx_v_s, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 424, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_s.rcbuffer->pybuffer, (PyObject*)__pyx_v_s, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 432, __pyx_L1_error)
   }
   __pyx_pybuffernd_s.diminfo[0].strides = __pyx_pybuffernd_s.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_s.diminfo[0].shape = __pyx_pybuffernd_s.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_s.diminfo[1].strides = __pyx_pybuffernd_s.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_s.diminfo[1].shape = __pyx_pybuffernd_s.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_s.diminfo[2].strides = __pyx_pybuffernd_s.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_s.diminfo[2].shape = __pyx_pybuffernd_s.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_pointList.rcbuffer->pybuffer, (PyObject*)__pyx_v_pointList, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 424, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_pointList.rcbuffer->pybuffer, (PyObject*)__pyx_v_pointList, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 432, __pyx_L1_error)
   }
   __pyx_pybuffernd_pointList.diminfo[0].strides = __pyx_pybuffernd_pointList.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_pointList.diminfo[0].shape = __pyx_pybuffernd_pointList.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_pointList.diminfo[1].strides = __pyx_pybuffernd_pointList.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_pointList.diminfo[1].shape = __pyx_pybuffernd_pointList.rcbuffer->pybuffer.shape[1];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_o.rcbuffer->pybuffer, (PyObject*)__pyx_v_o, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 424, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_o.rcbuffer->pybuffer, (PyObject*)__pyx_v_o, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 432, __pyx_L1_error)
   }
   __pyx_pybuffernd_o.diminfo[0].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_o.diminfo[0].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[0];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv0.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv0, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 424, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv0.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv0, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 432, __pyx_L1_error)
   }
   __pyx_pybuffernd_dv0.diminfo[0].strides = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_dv0.diminfo[0].shape = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_dv0.diminfo[1].strides = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_dv0.diminfo[1].shape = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_dv0.diminfo[2].strides = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_dv0.diminfo[2].shape = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv1.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv1, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 424, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv1.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv1, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 432, __pyx_L1_error)
   }
   __pyx_pybuffernd_dv1.diminfo[0].strides = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_dv1.diminfo[0].shape = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_dv1.diminfo[1].strides = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_dv1.diminfo[1].shape = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_dv1.diminfo[2].strides = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_dv1.diminfo[2].shape = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv2.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv2, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 424, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv2.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv2, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 432, __pyx_L1_error)
   }
   __pyx_pybuffernd_dv2.diminfo[0].strides = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_dv2.diminfo[0].shape = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_dv2.diminfo[1].strides = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_dv2.diminfo[1].shape = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_dv2.diminfo[2].strides = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_dv2.diminfo[2].shape = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.shape[2];
 
-  /* "cython_laplace.pyx":433
+  /* "cython_laplace.pyx":441
  *                                np.ndarray[FDTYPE_t, ndim=3] dv2,  # gradient
  *                                double h):
  *     cdef unsigned long nv0 = pointList.shape[0]             # <<<<<<<<<<<<<<
@@ -9655,7 +9907,7 @@ static PyObject *__pyx_pf_14cython_laplace_10computeStreamlinesFromList(CYTHON_U
  */
   __pyx_v_nv0 = (__pyx_v_pointList->dimensions[0]);
 
-  /* "cython_laplace.pyx":435
+  /* "cython_laplace.pyx":443
  *     cdef unsigned long nv0 = pointList.shape[0]
  *     cdef unsigned long int v0
  *     for v0 in range(nv0):             # <<<<<<<<<<<<<<
@@ -9667,7 +9919,7 @@ static PyObject *__pyx_pf_14cython_laplace_10computeStreamlinesFromList(CYTHON_U
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_v0 = __pyx_t_3;
 
-    /* "cython_laplace.pyx":437
+    /* "cython_laplace.pyx":445
  *     for v0 in range(nv0):
  *         o[v0] = createStreamline(method, g, s, dv0, dv1, dv2,
  *                                  pointList[v0, 0],             # <<<<<<<<<<<<<<
@@ -9677,7 +9929,7 @@ static PyObject *__pyx_pf_14cython_laplace_10computeStreamlinesFromList(CYTHON_U
     __pyx_t_4 = __pyx_v_v0;
     __pyx_t_5 = 0;
 
-    /* "cython_laplace.pyx":438
+    /* "cython_laplace.pyx":446
  *         o[v0] = createStreamline(method, g, s, dv0, dv1, dv2,
  *                                  pointList[v0, 0],
  *                                  pointList[v0, 1],             # <<<<<<<<<<<<<<
@@ -9687,7 +9939,7 @@ static PyObject *__pyx_pf_14cython_laplace_10computeStreamlinesFromList(CYTHON_U
     __pyx_t_6 = __pyx_v_v0;
     __pyx_t_7 = 1;
 
-    /* "cython_laplace.pyx":439
+    /* "cython_laplace.pyx":447
  *                                  pointList[v0, 0],
  *                                  pointList[v0, 1],
  *                                  pointList[v0, 2],             # <<<<<<<<<<<<<<
@@ -9697,7 +9949,7 @@ static PyObject *__pyx_pf_14cython_laplace_10computeStreamlinesFromList(CYTHON_U
     __pyx_t_8 = __pyx_v_v0;
     __pyx_t_9 = 2;
 
-    /* "cython_laplace.pyx":436
+    /* "cython_laplace.pyx":444
  *     cdef unsigned long int v0
  *     for v0 in range(nv0):
  *         o[v0] = createStreamline(method, g, s, dv0, dv1, dv2,             # <<<<<<<<<<<<<<
@@ -9708,7 +9960,7 @@ static PyObject *__pyx_pf_14cython_laplace_10computeStreamlinesFromList(CYTHON_U
     *__Pyx_BufPtrStrided1d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_10, __pyx_pybuffernd_o.diminfo[0].strides) = __pyx_f_14cython_laplace_createStreamline(__pyx_v_method, ((PyArrayObject *)__pyx_v_g), ((PyArrayObject *)__pyx_v_s), ((PyArrayObject *)__pyx_v_dv0), ((PyArrayObject *)__pyx_v_dv1), ((PyArrayObject *)__pyx_v_dv2), (*__Pyx_BufPtrStrided2d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_pointList.rcbuffer->pybuffer.buf, __pyx_t_4, __pyx_pybuffernd_pointList.diminfo[0].strides, __pyx_t_5, __pyx_pybuffernd_pointList.diminfo[1].strides)), (*__Pyx_BufPtrStrided2d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_pointList.rcbuffer->pybuffer.buf, __pyx_t_6, __pyx_pybuffernd_pointList.diminfo[0].strides, __pyx_t_7, __pyx_pybuffernd_pointList.diminfo[1].strides)), (*__Pyx_BufPtrStrided2d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_pointList.rcbuffer->pybuffer.buf, __pyx_t_8, __pyx_pybuffernd_pointList.diminfo[0].strides, __pyx_t_9, __pyx_pybuffernd_pointList.diminfo[1].strides)), __pyx_v_h);
   }
 
-  /* "cython_laplace.pyx":424
+  /* "cython_laplace.pyx":432
  *                     o[v0,v1,v2] = 0
  * 
  * def computeStreamlinesFromList(str method, # method             # <<<<<<<<<<<<<<
@@ -9750,7 +10002,7 @@ static PyObject *__pyx_pf_14cython_laplace_10computeStreamlinesFromList(CYTHON_U
   return __pyx_r;
 }
 
-/* "cython_laplace.pyx":444
+/* "cython_laplace.pyx":452
  * # creates the gradients using the central difference
  * # this is called after iterateLaplace
  * def computeGradients(np.ndarray[BDTYPE_t, ndim=3] g, #grid             # <<<<<<<<<<<<<<
@@ -9799,29 +10051,29 @@ static PyObject *__pyx_pw_14cython_laplace_13computeGradients(PyObject *__pyx_se
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_o)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeGradients", 1, 5, 5, 1); __PYX_ERR(0, 444, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeGradients", 1, 5, 5, 1); __PYX_ERR(0, 452, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dv0)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeGradients", 1, 5, 5, 2); __PYX_ERR(0, 444, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeGradients", 1, 5, 5, 2); __PYX_ERR(0, 452, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dv1)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeGradients", 1, 5, 5, 3); __PYX_ERR(0, 444, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeGradients", 1, 5, 5, 3); __PYX_ERR(0, 452, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dv2)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("computeGradients", 1, 5, 5, 4); __PYX_ERR(0, 444, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("computeGradients", 1, 5, 5, 4); __PYX_ERR(0, 452, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "computeGradients") < 0)) __PYX_ERR(0, 444, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "computeGradients") < 0)) __PYX_ERR(0, 452, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 5) {
       goto __pyx_L5_argtuple_error;
@@ -9840,17 +10092,17 @@ static PyObject *__pyx_pw_14cython_laplace_13computeGradients(PyObject *__pyx_se
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("computeGradients", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 444, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("computeGradients", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 452, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_laplace.computeGradients", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_g), __pyx_ptype_5numpy_ndarray, 1, "g", 0))) __PYX_ERR(0, 444, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_o), __pyx_ptype_5numpy_ndarray, 1, "o", 0))) __PYX_ERR(0, 445, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv0), __pyx_ptype_5numpy_ndarray, 1, "dv0", 0))) __PYX_ERR(0, 446, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv1), __pyx_ptype_5numpy_ndarray, 1, "dv1", 0))) __PYX_ERR(0, 447, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv2), __pyx_ptype_5numpy_ndarray, 1, "dv2", 0))) __PYX_ERR(0, 448, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_g), __pyx_ptype_5numpy_ndarray, 1, "g", 0))) __PYX_ERR(0, 452, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_o), __pyx_ptype_5numpy_ndarray, 1, "o", 0))) __PYX_ERR(0, 453, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv0), __pyx_ptype_5numpy_ndarray, 1, "dv0", 0))) __PYX_ERR(0, 454, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv1), __pyx_ptype_5numpy_ndarray, 1, "dv1", 0))) __PYX_ERR(0, 455, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_dv2), __pyx_ptype_5numpy_ndarray, 1, "dv2", 0))) __PYX_ERR(0, 456, __pyx_L1_error)
   __pyx_r = __pyx_pf_14cython_laplace_12computeGradients(__pyx_self, __pyx_v_g, __pyx_v_o, __pyx_v_dv0, __pyx_v_dv1, __pyx_v_dv2);
 
   /* function exit code */
@@ -9963,9 +10215,9 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
   Py_ssize_t __pyx_t_75;
   Py_ssize_t __pyx_t_76;
   Py_ssize_t __pyx_t_77;
-  __Pyx_TraceFrameInit(__pyx_codeobj__18)
+  __Pyx_TraceFrameInit(__pyx_codeobj__19)
   __Pyx_RefNannySetupContext("computeGradients", 0);
-  __Pyx_TraceCall("computeGradients", __pyx_f[0], 444, 0, __PYX_ERR(0, 444, __pyx_L1_error));
+  __Pyx_TraceCall("computeGradients", __pyx_f[0], 452, 0, __PYX_ERR(0, 452, __pyx_L1_error));
   __pyx_pybuffer_g.pybuffer.buf = NULL;
   __pyx_pybuffer_g.refcount = 0;
   __pyx_pybuffernd_g.data = NULL;
@@ -9988,31 +10240,31 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
   __pyx_pybuffernd_dv2.rcbuffer = &__pyx_pybuffer_dv2;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 444, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 452, __pyx_L1_error)
   }
   __pyx_pybuffernd_g.diminfo[0].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_g.diminfo[0].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_g.diminfo[1].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_g.diminfo[1].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_g.diminfo[2].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_g.diminfo[2].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_o.rcbuffer->pybuffer, (PyObject*)__pyx_v_o, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 444, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_o.rcbuffer->pybuffer, (PyObject*)__pyx_v_o, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 452, __pyx_L1_error)
   }
   __pyx_pybuffernd_o.diminfo[0].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_o.diminfo[0].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_o.diminfo[1].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_o.diminfo[1].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_o.diminfo[2].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_o.diminfo[2].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv0.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv0, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 444, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv0.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv0, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 452, __pyx_L1_error)
   }
   __pyx_pybuffernd_dv0.diminfo[0].strides = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_dv0.diminfo[0].shape = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_dv0.diminfo[1].strides = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_dv0.diminfo[1].shape = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_dv0.diminfo[2].strides = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_dv0.diminfo[2].shape = __pyx_pybuffernd_dv0.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv1.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv1, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 444, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv1.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv1, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 452, __pyx_L1_error)
   }
   __pyx_pybuffernd_dv1.diminfo[0].strides = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_dv1.diminfo[0].shape = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_dv1.diminfo[1].strides = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_dv1.diminfo[1].shape = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_dv1.diminfo[2].strides = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_dv1.diminfo[2].shape = __pyx_pybuffernd_dv1.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv2.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv2, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 444, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_dv2.rcbuffer->pybuffer, (PyObject*)__pyx_v_dv2, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 452, __pyx_L1_error)
   }
   __pyx_pybuffernd_dv2.diminfo[0].strides = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_dv2.diminfo[0].shape = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_dv2.diminfo[1].strides = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_dv2.diminfo[1].shape = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_dv2.diminfo[2].strides = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_dv2.diminfo[2].shape = __pyx_pybuffernd_dv2.rcbuffer->pybuffer.shape[2];
 
-  /* "cython_laplace.pyx":450
+  /* "cython_laplace.pyx":458
  *                      np.ndarray[FDTYPE_t, ndim=3] dv2): # output gradient
  *     cdef int v0, v1, v2
  *     cdef int nv0 = g.shape[0]             # <<<<<<<<<<<<<<
@@ -10021,7 +10273,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
   __pyx_v_nv0 = (__pyx_v_g->dimensions[0]);
 
-  /* "cython_laplace.pyx":451
+  /* "cython_laplace.pyx":459
  *     cdef int v0, v1, v2
  *     cdef int nv0 = g.shape[0]
  *     cdef int nv1 = g.shape[1]             # <<<<<<<<<<<<<<
@@ -10030,7 +10282,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
   __pyx_v_nv1 = (__pyx_v_g->dimensions[1]);
 
-  /* "cython_laplace.pyx":452
+  /* "cython_laplace.pyx":460
  *     cdef int nv0 = g.shape[0]
  *     cdef int nv1 = g.shape[1]
  *     cdef int nv2 = g.shape[2]             # <<<<<<<<<<<<<<
@@ -10039,7 +10291,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
   __pyx_v_nv2 = (__pyx_v_g->dimensions[2]);
 
-  /* "cython_laplace.pyx":456
+  /* "cython_laplace.pyx":464
  *     cdef double d0, d1, d2, mag
  * 
  *     d0 = 0.0             # <<<<<<<<<<<<<<
@@ -10048,7 +10300,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
   __pyx_v_d0 = 0.0;
 
-  /* "cython_laplace.pyx":458
+  /* "cython_laplace.pyx":466
  *     d0 = 0.0
  * 
  *     if nv2 > 1:             # <<<<<<<<<<<<<<
@@ -10058,7 +10310,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
   __pyx_t_1 = ((__pyx_v_nv2 > 1) != 0);
   if (__pyx_t_1) {
 
-    /* "cython_laplace.pyx":459
+    /* "cython_laplace.pyx":467
  * 
  *     if nv2 > 1:
  *         for v0 in range(1, nv0-1):             # <<<<<<<<<<<<<<
@@ -10070,7 +10322,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
     for (__pyx_t_4 = 1; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
       __pyx_v_v0 = __pyx_t_4;
 
-      /* "cython_laplace.pyx":460
+      /* "cython_laplace.pyx":468
  *     if nv2 > 1:
  *         for v0 in range(1, nv0-1):
  *             for v1 in range(1, nv1-1):             # <<<<<<<<<<<<<<
@@ -10082,7 +10334,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
       for (__pyx_t_7 = 1; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
         __pyx_v_v1 = __pyx_t_7;
 
-        /* "cython_laplace.pyx":461
+        /* "cython_laplace.pyx":469
  *         for v0 in range(1, nv0-1):
  *             for v1 in range(1, nv1-1):
  *                 for v2 in range(1, nv2-1):             # <<<<<<<<<<<<<<
@@ -10094,7 +10346,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
         for (__pyx_t_10 = 1; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
           __pyx_v_v2 = __pyx_t_10;
 
-          /* "cython_laplace.pyx":462
+          /* "cython_laplace.pyx":470
  *             for v1 in range(1, nv1-1):
  *                 for v2 in range(1, nv2-1):
  *                     if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:             # <<<<<<<<<<<<<<
@@ -10118,7 +10370,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
           __pyx_L11_bool_binop_done:;
           if (__pyx_t_1) {
 
-            /* "cython_laplace.pyx":463
+            /* "cython_laplace.pyx":471
  *                 for v2 in range(1, nv2-1):
  *                     if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:
  *                         d0 = o[v0+1,v1,v2] - o[v0-1,v1,v2]             # <<<<<<<<<<<<<<
@@ -10133,7 +10385,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
             __pyx_t_23 = __pyx_v_v2;
             __pyx_v_d0 = ((*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_18, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_19, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_20, __pyx_pybuffernd_o.diminfo[2].strides)) - (*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_21, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_22, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_23, __pyx_pybuffernd_o.diminfo[2].strides)));
 
-            /* "cython_laplace.pyx":464
+            /* "cython_laplace.pyx":472
  *                     if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:
  *                         d0 = o[v0+1,v1,v2] - o[v0-1,v1,v2]
  *                         d1 = o[v0,v1+1,v2] - o[v0,v1-1,v2]             # <<<<<<<<<<<<<<
@@ -10148,7 +10400,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
             __pyx_t_29 = __pyx_v_v2;
             __pyx_v_d1 = ((*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_24, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_25, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_26, __pyx_pybuffernd_o.diminfo[2].strides)) - (*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_27, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_28, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_29, __pyx_pybuffernd_o.diminfo[2].strides)));
 
-            /* "cython_laplace.pyx":465
+            /* "cython_laplace.pyx":473
  *                         d0 = o[v0+1,v1,v2] - o[v0-1,v1,v2]
  *                         d1 = o[v0,v1+1,v2] - o[v0,v1-1,v2]
  *                         d2 = o[v0,v1,v2+1] - o[v0,v1,v2-1]             # <<<<<<<<<<<<<<
@@ -10163,7 +10415,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
             __pyx_t_35 = (__pyx_v_v2 - 1);
             __pyx_v_d2 = ((*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_30, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_31, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_32, __pyx_pybuffernd_o.diminfo[2].strides)) - (*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_33, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_34, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_35, __pyx_pybuffernd_o.diminfo[2].strides)));
 
-            /* "cython_laplace.pyx":467
+            /* "cython_laplace.pyx":475
  *                         d2 = o[v0,v1,v2+1] - o[v0,v1,v2-1]
  * 
  *                         mag = sqrt( (d0*d0) + (d1*d1) + (d2*d2) )             # <<<<<<<<<<<<<<
@@ -10172,7 +10424,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
             __pyx_v_mag = sqrt((((__pyx_v_d0 * __pyx_v_d0) + (__pyx_v_d1 * __pyx_v_d1)) + (__pyx_v_d2 * __pyx_v_d2)));
 
-            /* "cython_laplace.pyx":468
+            /* "cython_laplace.pyx":476
  * 
  *                         mag = sqrt( (d0*d0) + (d1*d1) + (d2*d2) )
  *                         if mag == 0:             # <<<<<<<<<<<<<<
@@ -10182,7 +10434,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
             __pyx_t_1 = ((__pyx_v_mag == 0.0) != 0);
             if (__pyx_t_1) {
 
-              /* "cython_laplace.pyx":469
+              /* "cython_laplace.pyx":477
  *                         mag = sqrt( (d0*d0) + (d1*d1) + (d2*d2) )
  *                         if mag == 0:
  *                             mag = mag + 1e-7             # <<<<<<<<<<<<<<
@@ -10191,7 +10443,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
               __pyx_v_mag = (__pyx_v_mag + 1e-7);
 
-              /* "cython_laplace.pyx":468
+              /* "cython_laplace.pyx":476
  * 
  *                         mag = sqrt( (d0*d0) + (d1*d1) + (d2*d2) )
  *                         if mag == 0:             # <<<<<<<<<<<<<<
@@ -10200,7 +10452,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
             }
 
-            /* "cython_laplace.pyx":470
+            /* "cython_laplace.pyx":478
  *                         if mag == 0:
  *                             mag = mag + 1e-7
  *                         dv0[v0,v1,v2] = d0 / mag             # <<<<<<<<<<<<<<
@@ -10209,14 +10461,14 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
             if (unlikely(__pyx_v_mag == 0)) {
               PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-              __PYX_ERR(0, 470, __pyx_L1_error)
+              __PYX_ERR(0, 478, __pyx_L1_error)
             }
             __pyx_t_36 = __pyx_v_v0;
             __pyx_t_37 = __pyx_v_v1;
             __pyx_t_38 = __pyx_v_v2;
             *__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_dv0.rcbuffer->pybuffer.buf, __pyx_t_36, __pyx_pybuffernd_dv0.diminfo[0].strides, __pyx_t_37, __pyx_pybuffernd_dv0.diminfo[1].strides, __pyx_t_38, __pyx_pybuffernd_dv0.diminfo[2].strides) = (__pyx_v_d0 / __pyx_v_mag);
 
-            /* "cython_laplace.pyx":471
+            /* "cython_laplace.pyx":479
  *                             mag = mag + 1e-7
  *                         dv0[v0,v1,v2] = d0 / mag
  *                         dv1[v0,v1,v2] = d1 / mag             # <<<<<<<<<<<<<<
@@ -10225,14 +10477,14 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
             if (unlikely(__pyx_v_mag == 0)) {
               PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-              __PYX_ERR(0, 471, __pyx_L1_error)
+              __PYX_ERR(0, 479, __pyx_L1_error)
             }
             __pyx_t_39 = __pyx_v_v0;
             __pyx_t_40 = __pyx_v_v1;
             __pyx_t_41 = __pyx_v_v2;
             *__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_dv1.rcbuffer->pybuffer.buf, __pyx_t_39, __pyx_pybuffernd_dv1.diminfo[0].strides, __pyx_t_40, __pyx_pybuffernd_dv1.diminfo[1].strides, __pyx_t_41, __pyx_pybuffernd_dv1.diminfo[2].strides) = (__pyx_v_d1 / __pyx_v_mag);
 
-            /* "cython_laplace.pyx":472
+            /* "cython_laplace.pyx":480
  *                         dv0[v0,v1,v2] = d0 / mag
  *                         dv1[v0,v1,v2] = d1 / mag
  *                         dv2[v0,v1,v2] = d2 / mag             # <<<<<<<<<<<<<<
@@ -10241,14 +10493,14 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
             if (unlikely(__pyx_v_mag == 0)) {
               PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-              __PYX_ERR(0, 472, __pyx_L1_error)
+              __PYX_ERR(0, 480, __pyx_L1_error)
             }
             __pyx_t_42 = __pyx_v_v0;
             __pyx_t_43 = __pyx_v_v1;
             __pyx_t_44 = __pyx_v_v2;
             *__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_dv2.rcbuffer->pybuffer.buf, __pyx_t_42, __pyx_pybuffernd_dv2.diminfo[0].strides, __pyx_t_43, __pyx_pybuffernd_dv2.diminfo[1].strides, __pyx_t_44, __pyx_pybuffernd_dv2.diminfo[2].strides) = (__pyx_v_d2 / __pyx_v_mag);
 
-            /* "cython_laplace.pyx":462
+            /* "cython_laplace.pyx":470
  *             for v1 in range(1, nv1-1):
  *                 for v2 in range(1, nv2-1):
  *                     if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:             # <<<<<<<<<<<<<<
@@ -10260,7 +10512,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
       }
     }
 
-    /* "cython_laplace.pyx":458
+    /* "cython_laplace.pyx":466
  *     d0 = 0.0
  * 
  *     if nv2 > 1:             # <<<<<<<<<<<<<<
@@ -10270,7 +10522,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
     goto __pyx_L3;
   }
 
-  /* "cython_laplace.pyx":474
+  /* "cython_laplace.pyx":482
  *                         dv2[v0,v1,v2] = d2 / mag
  *     else:
  *         v2 = 0             # <<<<<<<<<<<<<<
@@ -10280,7 +10532,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
   /*else*/ {
     __pyx_v_v2 = 0;
 
-    /* "cython_laplace.pyx":475
+    /* "cython_laplace.pyx":483
  *     else:
  *         v2 = 0
  *         for v0 in range(1, nv0-1):             # <<<<<<<<<<<<<<
@@ -10292,7 +10544,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
     for (__pyx_t_4 = 1; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
       __pyx_v_v0 = __pyx_t_4;
 
-      /* "cython_laplace.pyx":476
+      /* "cython_laplace.pyx":484
  *         v2 = 0
  *         for v0 in range(1, nv0-1):
  *             for v1 in range(1, nv1-1):             # <<<<<<<<<<<<<<
@@ -10304,7 +10556,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
       for (__pyx_t_7 = 1; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
         __pyx_v_v1 = __pyx_t_7;
 
-        /* "cython_laplace.pyx":477
+        /* "cython_laplace.pyx":485
  *         for v0 in range(1, nv0-1):
  *             for v1 in range(1, nv1-1):
  *                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:             # <<<<<<<<<<<<<<
@@ -10328,7 +10580,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
         __pyx_L19_bool_binop_done:;
         if (__pyx_t_1) {
 
-          /* "cython_laplace.pyx":478
+          /* "cython_laplace.pyx":486
  *             for v1 in range(1, nv1-1):
  *                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:
  *                     d0 = o[v0+1,v1,v2] - o[v0-1,v1,v2]             # <<<<<<<<<<<<<<
@@ -10343,7 +10595,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
           __pyx_t_56 = __pyx_v_v2;
           __pyx_v_d0 = ((*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_51, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_52, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_53, __pyx_pybuffernd_o.diminfo[2].strides)) - (*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_54, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_55, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_56, __pyx_pybuffernd_o.diminfo[2].strides)));
 
-          /* "cython_laplace.pyx":479
+          /* "cython_laplace.pyx":487
  *                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:
  *                     d0 = o[v0+1,v1,v2] - o[v0-1,v1,v2]
  *                     d1 = o[v0,v1+1,v2] - o[v0,v1-1,v2]             # <<<<<<<<<<<<<<
@@ -10358,7 +10610,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
           __pyx_t_62 = __pyx_v_v2;
           __pyx_v_d1 = ((*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_57, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_58, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_59, __pyx_pybuffernd_o.diminfo[2].strides)) - (*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_60, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_61, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_62, __pyx_pybuffernd_o.diminfo[2].strides)));
 
-          /* "cython_laplace.pyx":480
+          /* "cython_laplace.pyx":488
  *                     d0 = o[v0+1,v1,v2] - o[v0-1,v1,v2]
  *                     d1 = o[v0,v1+1,v2] - o[v0,v1-1,v2]
  *                     d2 = o[v0,v1,v2+1] - o[v0,v1,v2-1]             # <<<<<<<<<<<<<<
@@ -10373,7 +10625,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
           __pyx_t_68 = (__pyx_v_v2 - 1);
           __pyx_v_d2 = ((*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_63, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_64, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_65, __pyx_pybuffernd_o.diminfo[2].strides)) - (*__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_o.rcbuffer->pybuffer.buf, __pyx_t_66, __pyx_pybuffernd_o.diminfo[0].strides, __pyx_t_67, __pyx_pybuffernd_o.diminfo[1].strides, __pyx_t_68, __pyx_pybuffernd_o.diminfo[2].strides)));
 
-          /* "cython_laplace.pyx":482
+          /* "cython_laplace.pyx":490
  *                     d2 = o[v0,v1,v2+1] - o[v0,v1,v2-1]
  * 
  *                     mag = sqrt( (d0*d0) + (d1*d1) + (d2*d2) )             # <<<<<<<<<<<<<<
@@ -10382,7 +10634,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
           __pyx_v_mag = sqrt((((__pyx_v_d0 * __pyx_v_d0) + (__pyx_v_d1 * __pyx_v_d1)) + (__pyx_v_d2 * __pyx_v_d2)));
 
-          /* "cython_laplace.pyx":483
+          /* "cython_laplace.pyx":491
  * 
  *                     mag = sqrt( (d0*d0) + (d1*d1) + (d2*d2) )
  *                     if mag == 0:             # <<<<<<<<<<<<<<
@@ -10392,7 +10644,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
           __pyx_t_1 = ((__pyx_v_mag == 0.0) != 0);
           if (__pyx_t_1) {
 
-            /* "cython_laplace.pyx":484
+            /* "cython_laplace.pyx":492
  *                     mag = sqrt( (d0*d0) + (d1*d1) + (d2*d2) )
  *                     if mag == 0:
  *                         mag = mag + 1e-7             # <<<<<<<<<<<<<<
@@ -10401,7 +10653,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
             __pyx_v_mag = (__pyx_v_mag + 1e-7);
 
-            /* "cython_laplace.pyx":483
+            /* "cython_laplace.pyx":491
  * 
  *                     mag = sqrt( (d0*d0) + (d1*d1) + (d2*d2) )
  *                     if mag == 0:             # <<<<<<<<<<<<<<
@@ -10410,7 +10662,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
           }
 
-          /* "cython_laplace.pyx":485
+          /* "cython_laplace.pyx":493
  *                     if mag == 0:
  *                         mag = mag + 1e-7
  *                     dv0[v0,v1,v2] = d0 / mag             # <<<<<<<<<<<<<<
@@ -10419,14 +10671,14 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
           if (unlikely(__pyx_v_mag == 0)) {
             PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-            __PYX_ERR(0, 485, __pyx_L1_error)
+            __PYX_ERR(0, 493, __pyx_L1_error)
           }
           __pyx_t_69 = __pyx_v_v0;
           __pyx_t_70 = __pyx_v_v1;
           __pyx_t_71 = __pyx_v_v2;
           *__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_dv0.rcbuffer->pybuffer.buf, __pyx_t_69, __pyx_pybuffernd_dv0.diminfo[0].strides, __pyx_t_70, __pyx_pybuffernd_dv0.diminfo[1].strides, __pyx_t_71, __pyx_pybuffernd_dv0.diminfo[2].strides) = (__pyx_v_d0 / __pyx_v_mag);
 
-          /* "cython_laplace.pyx":486
+          /* "cython_laplace.pyx":494
  *                         mag = mag + 1e-7
  *                     dv0[v0,v1,v2] = d0 / mag
  *                     dv1[v0,v1,v2] = d1 / mag             # <<<<<<<<<<<<<<
@@ -10435,14 +10687,14 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
           if (unlikely(__pyx_v_mag == 0)) {
             PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-            __PYX_ERR(0, 486, __pyx_L1_error)
+            __PYX_ERR(0, 494, __pyx_L1_error)
           }
           __pyx_t_72 = __pyx_v_v0;
           __pyx_t_73 = __pyx_v_v1;
           __pyx_t_74 = __pyx_v_v2;
           *__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_dv1.rcbuffer->pybuffer.buf, __pyx_t_72, __pyx_pybuffernd_dv1.diminfo[0].strides, __pyx_t_73, __pyx_pybuffernd_dv1.diminfo[1].strides, __pyx_t_74, __pyx_pybuffernd_dv1.diminfo[2].strides) = (__pyx_v_d1 / __pyx_v_mag);
 
-          /* "cython_laplace.pyx":487
+          /* "cython_laplace.pyx":495
  *                     dv0[v0,v1,v2] = d0 / mag
  *                     dv1[v0,v1,v2] = d1 / mag
  *                     dv2[v0,v1,v2] = d2 / mag             # <<<<<<<<<<<<<<
@@ -10451,14 +10703,14 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
  */
           if (unlikely(__pyx_v_mag == 0)) {
             PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-            __PYX_ERR(0, 487, __pyx_L1_error)
+            __PYX_ERR(0, 495, __pyx_L1_error)
           }
           __pyx_t_75 = __pyx_v_v0;
           __pyx_t_76 = __pyx_v_v1;
           __pyx_t_77 = __pyx_v_v2;
           *__Pyx_BufPtrStrided3d(__pyx_t_14cython_laplace_FDTYPE_t *, __pyx_pybuffernd_dv2.rcbuffer->pybuffer.buf, __pyx_t_75, __pyx_pybuffernd_dv2.diminfo[0].strides, __pyx_t_76, __pyx_pybuffernd_dv2.diminfo[1].strides, __pyx_t_77, __pyx_pybuffernd_dv2.diminfo[2].strides) = (__pyx_v_d2 / __pyx_v_mag);
 
-          /* "cython_laplace.pyx":477
+          /* "cython_laplace.pyx":485
  *         for v0 in range(1, nv0-1):
  *             for v1 in range(1, nv1-1):
  *                 if g[v0,v1,v2] > 0 and g[v0,v1,v2] < 10:             # <<<<<<<<<<<<<<
@@ -10471,7 +10723,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
   }
   __pyx_L3:;
 
-  /* "cython_laplace.pyx":444
+  /* "cython_laplace.pyx":452
  * # creates the gradients using the central difference
  * # this is called after iterateLaplace
  * def computeGradients(np.ndarray[BDTYPE_t, ndim=3] g, #grid             # <<<<<<<<<<<<<<
@@ -10509,7 +10761,7 @@ static PyObject *__pyx_pf_14cython_laplace_12computeGradients(CYTHON_UNUSED PyOb
   return __pyx_r;
 }
 
-/* "cython_laplace.pyx":489
+/* "cython_laplace.pyx":497
  *                     dv2[v0,v1,v2] = d2 / mag
  * 
  * def iterateLaplace(np.ndarray[BDTYPE_t, ndim=3] g,             # <<<<<<<<<<<<<<
@@ -10555,23 +10807,23 @@ static PyObject *__pyx_pw_14cython_laplace_15iterateLaplace(PyObject *__pyx_self
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_o)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("iterateLaplace", 1, 4, 4, 1); __PYX_ERR(0, 489, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("iterateLaplace", 1, 4, 4, 1); __PYX_ERR(0, 497, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_max_iterations)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("iterateLaplace", 1, 4, 4, 2); __PYX_ERR(0, 489, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("iterateLaplace", 1, 4, 4, 2); __PYX_ERR(0, 497, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_convergence_criteria)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("iterateLaplace", 1, 4, 4, 3); __PYX_ERR(0, 489, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("iterateLaplace", 1, 4, 4, 3); __PYX_ERR(0, 497, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "iterateLaplace") < 0)) __PYX_ERR(0, 489, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "iterateLaplace") < 0)) __PYX_ERR(0, 497, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -10583,19 +10835,19 @@ static PyObject *__pyx_pw_14cython_laplace_15iterateLaplace(PyObject *__pyx_self
     }
     __pyx_v_g = ((PyArrayObject *)values[0]);
     __pyx_v_o = ((PyArrayObject *)values[1]);
-    __pyx_v_max_iterations = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_max_iterations == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 491, __pyx_L3_error)
-    __pyx_v_convergence_criteria = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_convergence_criteria == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 492, __pyx_L3_error)
+    __pyx_v_max_iterations = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_max_iterations == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 499, __pyx_L3_error)
+    __pyx_v_convergence_criteria = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_convergence_criteria == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 500, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("iterateLaplace", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 489, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("iterateLaplace", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 497, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("cython_laplace.iterateLaplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_g), __pyx_ptype_5numpy_ndarray, 1, "g", 0))) __PYX_ERR(0, 489, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_o), __pyx_ptype_5numpy_ndarray, 1, "o", 0))) __PYX_ERR(0, 490, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_g), __pyx_ptype_5numpy_ndarray, 1, "g", 0))) __PYX_ERR(0, 497, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_o), __pyx_ptype_5numpy_ndarray, 1, "o", 0))) __PYX_ERR(0, 498, __pyx_L1_error)
   __pyx_r = __pyx_pf_14cython_laplace_14iterateLaplace(__pyx_self, __pyx_v_g, __pyx_v_o, __pyx_v_max_iterations, __pyx_v_convergence_criteria);
 
   /* function exit code */
@@ -10627,9 +10879,9 @@ static PyObject *__pyx_pf_14cython_laplace_14iterateLaplace(CYTHON_UNUSED PyObje
   PyObject *__pyx_t_7 = NULL;
   PyObject *__pyx_t_8 = NULL;
   int __pyx_t_9;
-  __Pyx_TraceFrameInit(__pyx_codeobj__19)
+  __Pyx_TraceFrameInit(__pyx_codeobj__20)
   __Pyx_RefNannySetupContext("iterateLaplace", 0);
-  __Pyx_TraceCall("iterateLaplace", __pyx_f[0], 489, 0, __PYX_ERR(0, 489, __pyx_L1_error));
+  __Pyx_TraceCall("iterateLaplace", __pyx_f[0], 497, 0, __PYX_ERR(0, 497, __pyx_L1_error));
   __pyx_pybuffer_g.pybuffer.buf = NULL;
   __pyx_pybuffer_g.refcount = 0;
   __pyx_pybuffernd_g.data = NULL;
@@ -10640,16 +10892,16 @@ static PyObject *__pyx_pf_14cython_laplace_14iterateLaplace(CYTHON_UNUSED PyObje
   __pyx_pybuffernd_o.rcbuffer = &__pyx_pybuffer_o;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 489, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_g.rcbuffer->pybuffer, (PyObject*)__pyx_v_g, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_BDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 497, __pyx_L1_error)
   }
   __pyx_pybuffernd_g.diminfo[0].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_g.diminfo[0].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_g.diminfo[1].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_g.diminfo[1].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_g.diminfo[2].strides = __pyx_pybuffernd_g.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_g.diminfo[2].shape = __pyx_pybuffernd_g.rcbuffer->pybuffer.shape[2];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_o.rcbuffer->pybuffer, (PyObject*)__pyx_v_o, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 489, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_o.rcbuffer->pybuffer, (PyObject*)__pyx_v_o, &__Pyx_TypeInfo_nn___pyx_t_14cython_laplace_FDTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 3, 0, __pyx_stack) == -1)) __PYX_ERR(0, 497, __pyx_L1_error)
   }
   __pyx_pybuffernd_o.diminfo[0].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_o.diminfo[0].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_o.diminfo[1].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_o.diminfo[1].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[1]; __pyx_pybuffernd_o.diminfo[2].strides = __pyx_pybuffernd_o.rcbuffer->pybuffer.strides[2]; __pyx_pybuffernd_o.diminfo[2].shape = __pyx_pybuffernd_o.rcbuffer->pybuffer.shape[2];
 
-  /* "cython_laplace.pyx":500
+  /* "cython_laplace.pyx":508
  *     # run the first iteration outside of the loop to get the
  *     # normalization factor for convergence checking
  *     normalize_factor = 1.0 / cythonLaplaceStep(g,o)             # <<<<<<<<<<<<<<
@@ -10659,11 +10911,11 @@ static PyObject *__pyx_pf_14cython_laplace_14iterateLaplace(CYTHON_UNUSED PyObje
   __pyx_t_1 = __pyx_f_14cython_laplace_cythonLaplaceStep(((PyArrayObject *)__pyx_v_g), ((PyArrayObject *)__pyx_v_o));
   if (unlikely(__pyx_t_1 == 0)) {
     PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-    __PYX_ERR(0, 500, __pyx_L1_error)
+    __PYX_ERR(0, 508, __pyx_L1_error)
   }
   __pyx_v_normalize_factor = (1.0 / __pyx_t_1);
 
-  /* "cython_laplace.pyx":502
+  /* "cython_laplace.pyx":510
  *     normalize_factor = 1.0 / cythonLaplaceStep(g,o)
  * 
  *     for i in range(max_iterations):             # <<<<<<<<<<<<<<
@@ -10675,7 +10927,7 @@ static PyObject *__pyx_pf_14cython_laplace_14iterateLaplace(CYTHON_UNUSED PyObje
   for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
     __pyx_v_i = __pyx_t_4;
 
-    /* "cython_laplace.pyx":505
+    /* "cython_laplace.pyx":513
  *         # call a single relaxation step and multiple output by the
  *         # normalization factor for convergence checking
  *         convergence = cythonLaplaceStep(g, o) * normalize_factor             # <<<<<<<<<<<<<<
@@ -10684,29 +10936,29 @@ static PyObject *__pyx_pf_14cython_laplace_14iterateLaplace(CYTHON_UNUSED PyObje
  */
     __pyx_v_convergence = (__pyx_f_14cython_laplace_cythonLaplaceStep(((PyArrayObject *)__pyx_v_g), ((PyArrayObject *)__pyx_v_o)) * __pyx_v_normalize_factor);
 
-    /* "cython_laplace.pyx":506
+    /* "cython_laplace.pyx":514
  *         # normalization factor for convergence checking
  *         convergence = cythonLaplaceStep(g, o) * normalize_factor
  *         print "iteration", i, ":", convergence, "criteria:", convergence_criteria             # <<<<<<<<<<<<<<
  *         if convergence < convergence_criteria:
  *             print "Converged."
  */
-    __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 506, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 514, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = PyFloat_FromDouble(__pyx_v_convergence); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 506, __pyx_L1_error)
+    __pyx_t_6 = PyFloat_FromDouble(__pyx_v_convergence); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 514, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = PyFloat_FromDouble(__pyx_v_convergence_criteria); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 506, __pyx_L1_error)
+    __pyx_t_7 = PyFloat_FromDouble(__pyx_v_convergence_criteria); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 514, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_8 = PyTuple_New(6); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 506, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(6); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 514, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_n_s_iteration);
     __Pyx_GIVEREF(__pyx_n_s_iteration);
     PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_n_s_iteration);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_8, 1, __pyx_t_5);
-    __Pyx_INCREF(__pyx_kp_s__20);
-    __Pyx_GIVEREF(__pyx_kp_s__20);
-    PyTuple_SET_ITEM(__pyx_t_8, 2, __pyx_kp_s__20);
+    __Pyx_INCREF(__pyx_kp_s__21);
+    __Pyx_GIVEREF(__pyx_kp_s__21);
+    PyTuple_SET_ITEM(__pyx_t_8, 2, __pyx_kp_s__21);
     __Pyx_GIVEREF(__pyx_t_6);
     PyTuple_SET_ITEM(__pyx_t_8, 3, __pyx_t_6);
     __Pyx_INCREF(__pyx_kp_s_criteria);
@@ -10717,10 +10969,10 @@ static PyObject *__pyx_pf_14cython_laplace_14iterateLaplace(CYTHON_UNUSED PyObje
     __pyx_t_5 = 0;
     __pyx_t_6 = 0;
     __pyx_t_7 = 0;
-    if (__Pyx_Print(0, __pyx_t_8, 1) < 0) __PYX_ERR(0, 506, __pyx_L1_error)
+    if (__Pyx_Print(0, __pyx_t_8, 1) < 0) __PYX_ERR(0, 514, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "cython_laplace.pyx":507
+    /* "cython_laplace.pyx":515
  *         convergence = cythonLaplaceStep(g, o) * normalize_factor
  *         print "iteration", i, ":", convergence, "criteria:", convergence_criteria
  *         if convergence < convergence_criteria:             # <<<<<<<<<<<<<<
@@ -10730,16 +10982,16 @@ static PyObject *__pyx_pf_14cython_laplace_14iterateLaplace(CYTHON_UNUSED PyObje
     __pyx_t_9 = ((__pyx_v_convergence < __pyx_v_convergence_criteria) != 0);
     if (__pyx_t_9) {
 
-      /* "cython_laplace.pyx":508
+      /* "cython_laplace.pyx":516
  *         print "iteration", i, ":", convergence, "criteria:", convergence_criteria
  *         if convergence < convergence_criteria:
  *             print "Converged."             # <<<<<<<<<<<<<<
  *             break
  * 
  */
-      if (__Pyx_PrintOne(0, __pyx_kp_s_Converged) < 0) __PYX_ERR(0, 508, __pyx_L1_error)
+      if (__Pyx_PrintOne(0, __pyx_kp_s_Converged) < 0) __PYX_ERR(0, 516, __pyx_L1_error)
 
-      /* "cython_laplace.pyx":509
+      /* "cython_laplace.pyx":517
  *         if convergence < convergence_criteria:
  *             print "Converged."
  *             break             # <<<<<<<<<<<<<<
@@ -10747,7 +10999,7 @@ static PyObject *__pyx_pf_14cython_laplace_14iterateLaplace(CYTHON_UNUSED PyObje
  */
       goto __pyx_L4_break;
 
-      /* "cython_laplace.pyx":507
+      /* "cython_laplace.pyx":515
  *         convergence = cythonLaplaceStep(g, o) * normalize_factor
  *         print "iteration", i, ":", convergence, "criteria:", convergence_criteria
  *         if convergence < convergence_criteria:             # <<<<<<<<<<<<<<
@@ -10758,7 +11010,7 @@ static PyObject *__pyx_pf_14cython_laplace_14iterateLaplace(CYTHON_UNUSED PyObje
   }
   __pyx_L4_break:;
 
-  /* "cython_laplace.pyx":489
+  /* "cython_laplace.pyx":497
  *                     dv2[v0,v1,v2] = d2 / mag
  * 
  * def iterateLaplace(np.ndarray[BDTYPE_t, ndim=3] g,             # <<<<<<<<<<<<<<
@@ -10912,7 +11164,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__21, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 229, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 229, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -10968,7 +11220,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  * 
  *             info.buf = PyArray_DATA(self)
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 233, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__23, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 233, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -11225,7 +11477,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"
  */
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__23, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 263, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__24, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 263, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_Raise(__pyx_t_3, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -12136,7 +12388,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  * 
  *         if ((child.byteorder == c'>' and little_endian) or
  */
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__24, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 810, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__25, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 810, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_Raise(__pyx_t_3, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -12204,7 +12456,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  *             # One could encode it in the format string and have Cython
  *             # complain instead, BUT: < and > in format strings also imply
  */
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__25, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 814, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 814, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_Raise(__pyx_t_3, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -12313,7 +12565,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  * 
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  */
-        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 834, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__27, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 834, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_Raise(__pyx_t_4, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -13003,7 +13255,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  * 
  * cdef inline int import_umath() except -1:
  */
-      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__27, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 1000, __pyx_L5_except_error)
+      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 1000, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_Raise(__pyx_t_8, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -13135,7 +13387,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  * 
  * cdef inline int import_ufunc() except -1:
  */
-      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 1006, __pyx_L5_except_error)
+      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__29, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 1006, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_Raise(__pyx_t_8, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -13264,7 +13516,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
  */
-      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__29, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 1012, __pyx_L5_except_error)
+      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__30, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 1012, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_Raise(__pyx_t_8, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -13511,7 +13763,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __
  * 
  *         if itemsize <= 0:
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__30, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 132, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__31, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -13543,7 +13795,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __
  * 
  *         if not isinstance(format, bytes):
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__31, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 135, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__32, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -13578,7 +13830,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_format, __pyx_n_s_encode); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__32, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 138, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__33, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_format, __pyx_t_5);
@@ -13658,7 +13910,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __
  * 
  * 
  */
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__33, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 147, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__34, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 147, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_Raise(__pyx_t_5, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -13932,7 +14184,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __
  * 
  *             if self.dtype_is_object:
  */
-      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__34, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(2, 175, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__35, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(2, 175, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_Raise(__pyx_t_10, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -14176,7 +14428,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(stru
  *         info.buf = self.data
  *         info.len = self.len
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__35, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 191, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__36, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -14923,7 +15175,7 @@ static PyObject *__pyx_pf___pyx_array___reduce_cython__(CYTHON_UNUSED struct __p
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__36, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__37, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -14979,7 +15231,7 @@ static PyObject *__pyx_pf___pyx_array_2__setstate_cython__(CYTHON_UNUSED struct 
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__37, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__38, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -16671,7 +16923,7 @@ static int __pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_6__setit
  * 
  *         have_slices, index = _unellipsify(index, self.view.ndim)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__38, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(2, 413, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__39, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(2, 413, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -17713,7 +17965,7 @@ static PyObject *__pyx_memoryview_convert_item_to_object(struct __pyx_memoryview
  *         else:
  *             if len(self.view.format) == 1:
  */
-      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__39, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(2, 490, __pyx_L5_except_error)
+      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__40, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(2, 490, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_Raise(__pyx_t_6, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -18075,7 +18327,7 @@ static int __pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_8__getbu
  * 
  *         if flags & PyBUF_STRIDES:
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__40, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 515, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__41, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 515, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -18630,7 +18882,7 @@ static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_7strides___get__(st
  * 
  *         return tuple([stride for stride in self.view.strides[:self.view.ndim]])
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__41, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(2, 565, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__42, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(2, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -18747,7 +18999,7 @@ static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_10suboffsets___get_
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_self->view.ndim); if (unlikely(!__pyx_t_2)) __PYX_ERR(2, 572, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = PyNumber_Multiply(__pyx_tuple__42, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 572, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Multiply(__pyx_tuple__43, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 572, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_r = __pyx_t_3;
@@ -19787,7 +20039,7 @@ static PyObject *__pyx_pf___pyx_memoryview___reduce_cython__(CYTHON_UNUSED struc
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__43, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__44, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -19843,7 +20095,7 @@ static PyObject *__pyx_pf___pyx_memoryview_2__setstate_cython__(CYTHON_UNUSED st
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__44, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__45, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -20206,9 +20458,9 @@ static PyObject *_unellipsify(PyObject *__pyx_v_index, int __pyx_v_ndim) {
         __Pyx_GOTREF(__pyx_t_7);
         { Py_ssize_t __pyx_temp;
           for (__pyx_temp=0; __pyx_temp < ((__pyx_v_ndim - __pyx_t_8) + 1); __pyx_temp++) {
-            __Pyx_INCREF(__pyx_slice__45);
-            __Pyx_GIVEREF(__pyx_slice__45);
-            PyList_SET_ITEM(__pyx_t_7, __pyx_temp, __pyx_slice__45);
+            __Pyx_INCREF(__pyx_slice__46);
+            __Pyx_GIVEREF(__pyx_slice__46);
+            PyList_SET_ITEM(__pyx_t_7, __pyx_temp, __pyx_slice__46);
           }
         }
         __pyx_t_9 = __Pyx_PyList_Extend(__pyx_v_result, __pyx_t_7); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(2, 677, __pyx_L1_error)
@@ -20241,7 +20493,7 @@ static PyObject *_unellipsify(PyObject *__pyx_v_index, int __pyx_v_ndim) {
  *         else:
  */
       /*else*/ {
-        __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_result, __pyx_slice__46); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(2, 680, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_result, __pyx_slice__47); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(2, 680, __pyx_L1_error)
       }
       __pyx_L7:;
 
@@ -20381,9 +20633,9 @@ static PyObject *_unellipsify(PyObject *__pyx_v_index, int __pyx_v_ndim) {
     __Pyx_GOTREF(__pyx_t_3);
     { Py_ssize_t __pyx_temp;
       for (__pyx_temp=0; __pyx_temp < __pyx_v_nslices; __pyx_temp++) {
-        __Pyx_INCREF(__pyx_slice__47);
-        __Pyx_GIVEREF(__pyx_slice__47);
-        PyList_SET_ITEM(__pyx_t_3, __pyx_temp, __pyx_slice__47);
+        __Pyx_INCREF(__pyx_slice__48);
+        __Pyx_GIVEREF(__pyx_slice__48);
+        PyList_SET_ITEM(__pyx_t_3, __pyx_temp, __pyx_slice__48);
       }
     }
     __pyx_t_9 = __Pyx_PyList_Extend(__pyx_v_result, __pyx_t_3); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(2, 691, __pyx_L1_error)
@@ -20510,7 +20762,7 @@ static PyObject *assert_direct_dimensions(Py_ssize_t *__pyx_v_suboffsets, int __
  * 
  * 
  */
-      __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__48, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 698, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__49, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 698, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_Raise(__pyx_t_5, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -22707,7 +22959,7 @@ static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED 
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__49, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__50, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -22763,7 +23015,7 @@ static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUS
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__50, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__51, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(2, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -26170,7 +26422,7 @@ static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSE
   PyObject *__pyx_t_5 = NULL;
   PyObject *__pyx_t_6 = NULL;
   int __pyx_t_7;
-  __Pyx_TraceFrameInit(__pyx_codeobj__51)
+  __Pyx_TraceFrameInit(__pyx_codeobj__52)
   __Pyx_RefNannySetupContext("__pyx_unpickle_Enum", 0);
   __Pyx_TraceCall("__pyx_unpickle_Enum", __pyx_f[2], 1, 0, __PYX_ERR(2, 1, __pyx_L1_error));
 
@@ -27302,12 +27554,18 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_Out_of_bounds_on_buffer_access_a, __pyx_k_Out_of_bounds_on_buffer_access_a, sizeof(__pyx_k_Out_of_bounds_on_buffer_access_a), 0, 0, 1, 0},
   {&__pyx_n_s_PickleError, __pyx_k_PickleError, sizeof(__pyx_k_PickleError), 0, 0, 1, 1},
   {&__pyx_n_s_RuntimeError, __pyx_k_RuntimeError, sizeof(__pyx_k_RuntimeError), 0, 0, 1, 1},
+  {&__pyx_kp_s_TO_INNER_Counter_counter_05d_str, __pyx_k_TO_INNER_Counter_counter_05d_str, sizeof(__pyx_k_TO_INNER_Counter_counter_05d_str), 0, 0, 1, 0},
+  {&__pyx_kp_s_TO_OUTER_Counter_counter_5d_stre, __pyx_k_TO_OUTER_Counter_counter_5d_stre, sizeof(__pyx_k_TO_OUTER_Counter_counter_5d_stre), 0, 0, 1, 0},
+  {&__pyx_kp_s_This_point_is, __pyx_k_This_point_is, sizeof(__pyx_k_This_point_is), 0, 0, 1, 0},
   {&__pyx_n_s_TypeError, __pyx_k_TypeError, sizeof(__pyx_k_TypeError), 0, 0, 1, 1},
+  {&__pyx_kp_s_Uh_oh_INNER_failed_Magnitude_is, __pyx_k_Uh_oh_INNER_failed_Magnitude_is, sizeof(__pyx_k_Uh_oh_INNER_failed_Magnitude_is), 0, 0, 1, 0},
+  {&__pyx_kp_s_Uh_oh_OUTER_failed_Magnitude_is, __pyx_k_Uh_oh_OUTER_failed_Magnitude_is, sizeof(__pyx_k_Uh_oh_OUTER_failed_Magnitude_is), 0, 0, 1, 0},
   {&__pyx_kp_s_Unable_to_convert_item_to_object, __pyx_k_Unable_to_convert_item_to_object, sizeof(__pyx_k_Unable_to_convert_item_to_object), 0, 0, 1, 0},
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
   {&__pyx_n_s_View_MemoryView, __pyx_k_View_MemoryView, sizeof(__pyx_k_View_MemoryView), 0, 0, 1, 1},
+  {&__pyx_kp_s__15, __pyx_k__15, sizeof(__pyx_k__15), 0, 0, 1, 0},
   {&__pyx_kp_s__2, __pyx_k__2, sizeof(__pyx_k__2), 0, 0, 1, 0},
-  {&__pyx_kp_s__20, __pyx_k__20, sizeof(__pyx_k__20), 0, 0, 1, 0},
+  {&__pyx_kp_s__21, __pyx_k__21, sizeof(__pyx_k__21), 0, 0, 1, 0},
   {&__pyx_kp_s__4, __pyx_k__4, sizeof(__pyx_k__4), 0, 0, 1, 0},
   {&__pyx_n_s_allocate_buffer, __pyx_k_allocate_buffer, sizeof(__pyx_k_allocate_buffer), 0, 0, 1, 1},
   {&__pyx_n_s_args, __pyx_k_args, sizeof(__pyx_k_args), 0, 0, 1, 1},
@@ -27327,6 +27585,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_contiguous_and_indirect, __pyx_k_contiguous_and_indirect, sizeof(__pyx_k_contiguous_and_indirect), 0, 0, 1, 0},
   {&__pyx_n_s_convergence, __pyx_k_convergence, sizeof(__pyx_k_convergence), 0, 0, 1, 1},
   {&__pyx_n_s_convergence_criteria, __pyx_k_convergence_criteria, sizeof(__pyx_k_convergence_criteria), 0, 0, 1, 1},
+  {&__pyx_n_s_counter, __pyx_k_counter, sizeof(__pyx_k_counter), 0, 0, 1, 1},
   {&__pyx_kp_s_criteria, __pyx_k_criteria, sizeof(__pyx_k_criteria), 0, 0, 1, 0},
   {&__pyx_n_s_cython_laplace, __pyx_k_cython_laplace, sizeof(__pyx_k_cython_laplace), 0, 0, 1, 1},
   {&__pyx_kp_s_cython_laplace_pyx, __pyx_k_cython_laplace_pyx, sizeof(__pyx_k_cython_laplace_pyx), 0, 0, 1, 0},
@@ -27402,6 +27661,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_point, __pyx_k_point, sizeof(__pyx_k_point), 0, 0, 1, 1},
   {&__pyx_n_s_pointList, __pyx_k_pointList, sizeof(__pyx_k_pointList), 0, 0, 1, 1},
   {&__pyx_n_s_print, __pyx_k_print, sizeof(__pyx_k_print), 0, 0, 1, 1},
+  {&__pyx_n_s_proj, __pyx_k_proj, sizeof(__pyx_k_proj), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_PickleError, __pyx_k_pyx_PickleError, sizeof(__pyx_k_pyx_PickleError), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_checksum, __pyx_k_pyx_checksum, sizeof(__pyx_k_pyx_checksum), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_fuse_0fast_bilinear_interp, __pyx_k_pyx_fuse_0fast_bilinear_interp, sizeof(__pyx_k_pyx_fuse_0fast_bilinear_interp), 0, 0, 1, 1},
@@ -27424,6 +27684,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_shape, __pyx_k_shape, sizeof(__pyx_k_shape), 0, 0, 1, 1},
   {&__pyx_n_s_signatures, __pyx_k_signatures, sizeof(__pyx_k_signatures), 0, 0, 1, 1},
   {&__pyx_n_s_size, __pyx_k_size, sizeof(__pyx_k_size), 0, 0, 1, 1},
+  {&__pyx_n_s_sl, __pyx_k_sl, sizeof(__pyx_k_sl), 0, 0, 1, 1},
   {&__pyx_n_s_split, __pyx_k_split, sizeof(__pyx_k_split), 0, 0, 1, 1},
   {&__pyx_n_s_start, __pyx_k_start, sizeof(__pyx_k_start), 0, 0, 1, 1},
   {&__pyx_n_s_step, __pyx_k_step, sizeof(__pyx_k_step), 0, 0, 1, 1},
@@ -27553,9 +27814,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  */
-  __pyx_tuple__21 = PyTuple_Pack(1, __pyx_kp_u_ndarray_is_not_C_contiguous); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(1, 229, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__21);
-  __Pyx_GIVEREF(__pyx_tuple__21);
+  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_kp_u_ndarray_is_not_C_contiguous); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(1, 229, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__22);
+  __Pyx_GIVEREF(__pyx_tuple__22);
 
   /* "../../../../../../home/yyee/anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
@@ -27564,9 +27825,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *             info.buf = PyArray_DATA(self)
  */
-  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_kp_u_ndarray_is_not_Fortran_contiguou); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(1, 233, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__22);
-  __Pyx_GIVEREF(__pyx_tuple__22);
+  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_kp_u_ndarray_is_not_Fortran_contiguou); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(1, 233, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__23);
+  __Pyx_GIVEREF(__pyx_tuple__23);
 
   /* "../../../../../../home/yyee/anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":263
  *                 if ((descr.byteorder == c'>' and little_endian) or
@@ -27575,9 +27836,9 @@ static int __Pyx_InitCachedConstants(void) {
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"
  */
-  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_kp_u_Non_native_byte_order_not_suppor); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(1, 263, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__23);
-  __Pyx_GIVEREF(__pyx_tuple__23);
+  __pyx_tuple__24 = PyTuple_Pack(1, __pyx_kp_u_Non_native_byte_order_not_suppor); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(1, 263, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__24);
+  __Pyx_GIVEREF(__pyx_tuple__24);
 
   /* "../../../../../../home/yyee/anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":810
  * 
@@ -27586,9 +27847,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         if ((child.byteorder == c'>' and little_endian) or
  */
-  __pyx_tuple__24 = PyTuple_Pack(1, __pyx_kp_u_Format_string_allocated_too_shor); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(1, 810, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__24);
-  __Pyx_GIVEREF(__pyx_tuple__24);
+  __pyx_tuple__25 = PyTuple_Pack(1, __pyx_kp_u_Format_string_allocated_too_shor); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(1, 810, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__25);
+  __Pyx_GIVEREF(__pyx_tuple__25);
 
   /* "../../../../../../home/yyee/anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":814
  *         if ((child.byteorder == c'>' and little_endian) or
@@ -27597,9 +27858,9 @@ static int __Pyx_InitCachedConstants(void) {
  *             # One could encode it in the format string and have Cython
  *             # complain instead, BUT: < and > in format strings also imply
  */
-  __pyx_tuple__25 = PyTuple_Pack(1, __pyx_kp_u_Non_native_byte_order_not_suppor); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(1, 814, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__25);
-  __Pyx_GIVEREF(__pyx_tuple__25);
+  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_u_Non_native_byte_order_not_suppor); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(1, 814, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__26);
+  __Pyx_GIVEREF(__pyx_tuple__26);
 
   /* "../../../../../../home/yyee/anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":834
  *             t = child.type_num
@@ -27608,9 +27869,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  */
-  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_u_Format_string_allocated_too_shor_2); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(1, 834, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__26);
-  __Pyx_GIVEREF(__pyx_tuple__26);
+  __pyx_tuple__27 = PyTuple_Pack(1, __pyx_kp_u_Format_string_allocated_too_shor_2); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(1, 834, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__27);
+  __Pyx_GIVEREF(__pyx_tuple__27);
 
   /* "../../../../../../home/yyee/anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1000
  *         _import_array()
@@ -27619,9 +27880,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  * cdef inline int import_umath() except -1:
  */
-  __pyx_tuple__27 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_multiarray_failed_to); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(1, 1000, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__27);
-  __Pyx_GIVEREF(__pyx_tuple__27);
+  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_multiarray_failed_to); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(1, 1000, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__28);
+  __Pyx_GIVEREF(__pyx_tuple__28);
 
   /* "../../../../../../home/yyee/anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1006
  *         _import_umath()
@@ -27630,18 +27891,18 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  * cdef inline int import_ufunc() except -1:
  */
-  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_umath_failed_to_impor); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(1, 1006, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__28);
-  __Pyx_GIVEREF(__pyx_tuple__28);
+  __pyx_tuple__29 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_umath_failed_to_impor); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(1, 1006, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__29);
+  __Pyx_GIVEREF(__pyx_tuple__29);
 
   /* "../../../../../../home/yyee/anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1012
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
  */
-  __pyx_tuple__29 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_umath_failed_to_impor); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(1, 1012, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__29);
-  __Pyx_GIVEREF(__pyx_tuple__29);
+  __pyx_tuple__30 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_umath_failed_to_impor); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(1, 1012, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__30);
+  __Pyx_GIVEREF(__pyx_tuple__30);
 
   /* "View.MemoryView":132
  * 
@@ -27650,9 +27911,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         if itemsize <= 0:
  */
-  __pyx_tuple__30 = PyTuple_Pack(1, __pyx_kp_s_Empty_shape_tuple_for_cython_arr); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(2, 132, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__30);
-  __Pyx_GIVEREF(__pyx_tuple__30);
+  __pyx_tuple__31 = PyTuple_Pack(1, __pyx_kp_s_Empty_shape_tuple_for_cython_arr); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(2, 132, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__31);
+  __Pyx_GIVEREF(__pyx_tuple__31);
 
   /* "View.MemoryView":135
  * 
@@ -27661,9 +27922,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         if not isinstance(format, bytes):
  */
-  __pyx_tuple__31 = PyTuple_Pack(1, __pyx_kp_s_itemsize_0_for_cython_array); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(2, 135, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__31);
-  __Pyx_GIVEREF(__pyx_tuple__31);
+  __pyx_tuple__32 = PyTuple_Pack(1, __pyx_kp_s_itemsize_0_for_cython_array); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(2, 135, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__32);
+  __Pyx_GIVEREF(__pyx_tuple__32);
 
   /* "View.MemoryView":138
  * 
@@ -27672,9 +27933,9 @@ static int __Pyx_InitCachedConstants(void) {
  *         self._format = format  # keep a reference to the byte string
  *         self.format = self._format
  */
-  __pyx_tuple__32 = PyTuple_Pack(1, __pyx_n_s_ASCII); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(2, 138, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__32);
-  __Pyx_GIVEREF(__pyx_tuple__32);
+  __pyx_tuple__33 = PyTuple_Pack(1, __pyx_n_s_ASCII); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(2, 138, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__33);
+  __Pyx_GIVEREF(__pyx_tuple__33);
 
   /* "View.MemoryView":147
  * 
@@ -27683,9 +27944,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  * 
  */
-  __pyx_tuple__33 = PyTuple_Pack(1, __pyx_kp_s_unable_to_allocate_shape_and_str); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(2, 147, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__33);
-  __Pyx_GIVEREF(__pyx_tuple__33);
+  __pyx_tuple__34 = PyTuple_Pack(1, __pyx_kp_s_unable_to_allocate_shape_and_str); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(2, 147, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__34);
+  __Pyx_GIVEREF(__pyx_tuple__34);
 
   /* "View.MemoryView":175
  *             self.data = <char *>malloc(self.len)
@@ -27694,9 +27955,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *             if self.dtype_is_object:
  */
-  __pyx_tuple__34 = PyTuple_Pack(1, __pyx_kp_s_unable_to_allocate_array_data); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(2, 175, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__34);
-  __Pyx_GIVEREF(__pyx_tuple__34);
+  __pyx_tuple__35 = PyTuple_Pack(1, __pyx_kp_s_unable_to_allocate_array_data); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(2, 175, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__35);
+  __Pyx_GIVEREF(__pyx_tuple__35);
 
   /* "View.MemoryView":191
  *             bufmode = PyBUF_F_CONTIGUOUS | PyBUF_ANY_CONTIGUOUS
@@ -27705,9 +27966,9 @@ static int __Pyx_InitCachedConstants(void) {
  *         info.buf = self.data
  *         info.len = self.len
  */
-  __pyx_tuple__35 = PyTuple_Pack(1, __pyx_kp_s_Can_only_create_a_buffer_that_is); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(2, 191, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__35);
-  __Pyx_GIVEREF(__pyx_tuple__35);
+  __pyx_tuple__36 = PyTuple_Pack(1, __pyx_kp_s_Can_only_create_a_buffer_that_is); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(2, 191, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__36);
+  __Pyx_GIVEREF(__pyx_tuple__36);
 
   /* "(tree fragment)":2
  * def __reduce_cython__(self):
@@ -27715,18 +27976,18 @@ static int __Pyx_InitCachedConstants(void) {
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_tuple__36 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(2, 2, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__36);
-  __Pyx_GIVEREF(__pyx_tuple__36);
+  __pyx_tuple__37 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(2, 2, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__37);
+  __Pyx_GIVEREF(__pyx_tuple__37);
 
   /* "(tree fragment)":4
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_tuple__37 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(2, 4, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__37);
-  __Pyx_GIVEREF(__pyx_tuple__37);
+  __pyx_tuple__38 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(2, 4, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__38);
+  __Pyx_GIVEREF(__pyx_tuple__38);
 
   /* "View.MemoryView":413
  *     def __setitem__(memoryview self, object index, object value):
@@ -27735,9 +27996,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         have_slices, index = _unellipsify(index, self.view.ndim)
  */
-  __pyx_tuple__38 = PyTuple_Pack(1, __pyx_kp_s_Cannot_assign_to_read_only_memor); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(2, 413, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__38);
-  __Pyx_GIVEREF(__pyx_tuple__38);
+  __pyx_tuple__39 = PyTuple_Pack(1, __pyx_kp_s_Cannot_assign_to_read_only_memor); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(2, 413, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__39);
+  __Pyx_GIVEREF(__pyx_tuple__39);
 
   /* "View.MemoryView":490
  *             result = struct.unpack(self.view.format, bytesitem)
@@ -27746,9 +28007,9 @@ static int __Pyx_InitCachedConstants(void) {
  *         else:
  *             if len(self.view.format) == 1:
  */
-  __pyx_tuple__39 = PyTuple_Pack(1, __pyx_kp_s_Unable_to_convert_item_to_object); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(2, 490, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__39);
-  __Pyx_GIVEREF(__pyx_tuple__39);
+  __pyx_tuple__40 = PyTuple_Pack(1, __pyx_kp_s_Unable_to_convert_item_to_object); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(2, 490, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__40);
+  __Pyx_GIVEREF(__pyx_tuple__40);
 
   /* "View.MemoryView":515
  *     def __getbuffer__(self, Py_buffer *info, int flags):
@@ -27757,9 +28018,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         if flags & PyBUF_STRIDES:
  */
-  __pyx_tuple__40 = PyTuple_Pack(1, __pyx_kp_s_Cannot_create_writable_memory_vi); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(2, 515, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__40);
-  __Pyx_GIVEREF(__pyx_tuple__40);
+  __pyx_tuple__41 = PyTuple_Pack(1, __pyx_kp_s_Cannot_create_writable_memory_vi); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(2, 515, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__41);
+  __Pyx_GIVEREF(__pyx_tuple__41);
 
   /* "View.MemoryView":565
  *         if self.view.strides == NULL:
@@ -27768,9 +28029,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         return tuple([stride for stride in self.view.strides[:self.view.ndim]])
  */
-  __pyx_tuple__41 = PyTuple_Pack(1, __pyx_kp_s_Buffer_view_does_not_expose_stri); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(2, 565, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__41);
-  __Pyx_GIVEREF(__pyx_tuple__41);
+  __pyx_tuple__42 = PyTuple_Pack(1, __pyx_kp_s_Buffer_view_does_not_expose_stri); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(2, 565, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__42);
+  __Pyx_GIVEREF(__pyx_tuple__42);
 
   /* "View.MemoryView":572
  *     def suboffsets(self):
@@ -27779,12 +28040,12 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         return tuple([suboffset for suboffset in self.view.suboffsets[:self.view.ndim]])
  */
-  __pyx_tuple__42 = PyTuple_New(1); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(2, 572, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__42);
+  __pyx_tuple__43 = PyTuple_New(1); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(2, 572, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__43);
   __Pyx_INCREF(__pyx_int_neg_1);
   __Pyx_GIVEREF(__pyx_int_neg_1);
-  PyTuple_SET_ITEM(__pyx_tuple__42, 0, __pyx_int_neg_1);
-  __Pyx_GIVEREF(__pyx_tuple__42);
+  PyTuple_SET_ITEM(__pyx_tuple__43, 0, __pyx_int_neg_1);
+  __Pyx_GIVEREF(__pyx_tuple__43);
 
   /* "(tree fragment)":2
  * def __reduce_cython__(self):
@@ -27792,18 +28053,18 @@ static int __Pyx_InitCachedConstants(void) {
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_tuple__43 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(2, 2, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__43);
-  __Pyx_GIVEREF(__pyx_tuple__43);
+  __pyx_tuple__44 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__44)) __PYX_ERR(2, 2, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__44);
+  __Pyx_GIVEREF(__pyx_tuple__44);
 
   /* "(tree fragment)":4
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_tuple__44 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__44)) __PYX_ERR(2, 4, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__44);
-  __Pyx_GIVEREF(__pyx_tuple__44);
+  __pyx_tuple__45 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(2, 4, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__45);
+  __Pyx_GIVEREF(__pyx_tuple__45);
 
   /* "View.MemoryView":677
  *         if item is Ellipsis:
@@ -27812,9 +28073,9 @@ static int __Pyx_InitCachedConstants(void) {
  *                 seen_ellipsis = True
  *             else:
  */
-  __pyx_slice__45 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__45)) __PYX_ERR(2, 677, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_slice__45);
-  __Pyx_GIVEREF(__pyx_slice__45);
+  __pyx_slice__46 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__46)) __PYX_ERR(2, 677, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_slice__46);
+  __Pyx_GIVEREF(__pyx_slice__46);
 
   /* "View.MemoryView":680
  *                 seen_ellipsis = True
@@ -27823,9 +28084,9 @@ static int __Pyx_InitCachedConstants(void) {
  *             have_slices = True
  *         else:
  */
-  __pyx_slice__46 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__46)) __PYX_ERR(2, 680, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_slice__46);
-  __Pyx_GIVEREF(__pyx_slice__46);
+  __pyx_slice__47 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__47)) __PYX_ERR(2, 680, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_slice__47);
+  __Pyx_GIVEREF(__pyx_slice__47);
 
   /* "View.MemoryView":691
  *     nslices = ndim - len(result)
@@ -27834,9 +28095,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *     return have_slices or nslices, tuple(result)
  */
-  __pyx_slice__47 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__47)) __PYX_ERR(2, 691, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_slice__47);
-  __Pyx_GIVEREF(__pyx_slice__47);
+  __pyx_slice__48 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__48)) __PYX_ERR(2, 691, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_slice__48);
+  __Pyx_GIVEREF(__pyx_slice__48);
 
   /* "View.MemoryView":698
  *     for suboffset in suboffsets[:ndim]:
@@ -27845,9 +28106,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  * 
  */
-  __pyx_tuple__48 = PyTuple_Pack(1, __pyx_kp_s_Indirect_dimensions_not_supporte); if (unlikely(!__pyx_tuple__48)) __PYX_ERR(2, 698, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__48);
-  __Pyx_GIVEREF(__pyx_tuple__48);
+  __pyx_tuple__49 = PyTuple_Pack(1, __pyx_kp_s_Indirect_dimensions_not_supporte); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(2, 698, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__49);
+  __Pyx_GIVEREF(__pyx_tuple__49);
 
   /* "(tree fragment)":2
  * def __reduce_cython__(self):
@@ -27855,18 +28116,18 @@ static int __Pyx_InitCachedConstants(void) {
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_tuple__49 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(2, 2, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__49);
-  __Pyx_GIVEREF(__pyx_tuple__49);
+  __pyx_tuple__50 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(2, 2, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__50);
+  __Pyx_GIVEREF(__pyx_tuple__50);
 
   /* "(tree fragment)":4
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_tuple__50 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(2, 4, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__50);
-  __Pyx_GIVEREF(__pyx_tuple__50);
+  __pyx_tuple__51 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(2, 4, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__51);
+  __Pyx_GIVEREF(__pyx_tuple__51);
 
   /* "cython_laplace.pyx":94
  * # shamelessly stolen from John Sled's vessel_tracking.py
@@ -27875,10 +28136,10 @@ static int __Pyx_InitCachedConstants(void) {
  *     "trilinear interpolate 3D image block based on 8 neighbours of specified point"
  * 
  */
-  __pyx_tuple__52 = PyTuple_Pack(11, __pyx_n_s_image, __pyx_n_s_point, __pyx_n_s_p, __pyx_n_s_u, __pyx_n_s_c3, __pyx_n_s_d3, __pyx_n_s_c2, __pyx_n_s_d2, __pyx_n_s_c1, __pyx_n_s_d1, __pyx_n_s_value); if (unlikely(!__pyx_tuple__52)) __PYX_ERR(0, 94, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__52);
-  __Pyx_GIVEREF(__pyx_tuple__52);
-  __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(2, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_trilinear_interpolant, 94, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_tuple__53 = PyTuple_Pack(11, __pyx_n_s_image, __pyx_n_s_point, __pyx_n_s_p, __pyx_n_s_u, __pyx_n_s_c3, __pyx_n_s_d3, __pyx_n_s_c2, __pyx_n_s_d2, __pyx_n_s_c1, __pyx_n_s_d1, __pyx_n_s_value); if (unlikely(!__pyx_tuple__53)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__53);
+  __Pyx_GIVEREF(__pyx_tuple__53);
+  __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(2, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_trilinear_interpolant, 94, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 94, __pyx_L1_error)
 
   /* "cython_laplace.pyx":119
  * # reimplemented in cython after it turns out that John's python
@@ -27887,10 +28148,10 @@ static int __Pyx_InitCachedConstants(void) {
  *                                         np.ndarray[FDTYPE_t, ndim=1] point):
  *     cdef int i = <int> floor(point[0])
  */
-  __pyx_tuple__53 = PyTuple_Pack(2, __pyx_n_s_image, __pyx_n_s_point); if (unlikely(!__pyx_tuple__53)) __PYX_ERR(0, 119, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__53);
-  __Pyx_GIVEREF(__pyx_tuple__53);
-  __pyx_codeobj__54 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_pyx_fuse_0fast_trilinear_inter, 119, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__54)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_tuple__54 = PyTuple_Pack(2, __pyx_n_s_image, __pyx_n_s_point); if (unlikely(!__pyx_tuple__54)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__54);
+  __Pyx_GIVEREF(__pyx_tuple__54);
+  __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_pyx_fuse_0fast_trilinear_inter, 119, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 119, __pyx_L1_error)
 
   /* "cython_laplace.pyx":171
  * # currently assumes that the input is a three-dimensional image where the
@@ -27899,70 +28160,70 @@ static int __Pyx_InitCachedConstants(void) {
  *                                        np.ndarray[FDTYPE_t, ndim=1] point):
  *     cdef int i = <int> floor(point[0])
  */
-  __pyx_tuple__55 = PyTuple_Pack(2, __pyx_n_s_image, __pyx_n_s_point); if (unlikely(!__pyx_tuple__55)) __PYX_ERR(0, 171, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__55);
-  __Pyx_GIVEREF(__pyx_tuple__55);
-  __pyx_codeobj__56 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__55, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_pyx_fuse_0fast_bilinear_interp, 171, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__56)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_tuple__56 = PyTuple_Pack(2, __pyx_n_s_image, __pyx_n_s_point); if (unlikely(!__pyx_tuple__56)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__56);
+  __Pyx_GIVEREF(__pyx_tuple__56);
+  __pyx_codeobj__57 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_pyx_fuse_0fast_bilinear_interp, 171, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__57)) __PYX_ERR(0, 171, __pyx_L1_error)
 
-  /* "cython_laplace.pyx":386
+  /* "cython_laplace.pyx":394
  * #   0: output the distance between closest inside and closest outside point
  * #   1: normalize that distance to lie between the inside and outside grid
  * def straightLineDistance(np.ndarray[BDTYPE_t, ndim=3] g,    # grid             # <<<<<<<<<<<<<<
  *                          np.ndarray[FDTYPE_t, ndim=3] o,    # output
  *                          int laplace_initialization):       # work mode
  */
-  __pyx_tuple__57 = PyTuple_Pack(9, __pyx_n_s_g, __pyx_n_s_o, __pyx_n_s_laplace_initialization, __pyx_n_s_v0, __pyx_n_s_v1, __pyx_n_s_v2, __pyx_n_s_nv0, __pyx_n_s_nv1, __pyx_n_s_nv2); if (unlikely(!__pyx_tuple__57)) __PYX_ERR(0, 386, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__57);
-  __Pyx_GIVEREF(__pyx_tuple__57);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(3, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__57, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_straightLineDistance, 386, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 386, __pyx_L1_error)
+  __pyx_tuple__58 = PyTuple_Pack(9, __pyx_n_s_g, __pyx_n_s_o, __pyx_n_s_laplace_initialization, __pyx_n_s_v0, __pyx_n_s_v1, __pyx_n_s_v2, __pyx_n_s_nv0, __pyx_n_s_nv1, __pyx_n_s_nv2); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 394, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__58);
+  __Pyx_GIVEREF(__pyx_tuple__58);
+  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(3, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__58, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_straightLineDistance, 394, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 394, __pyx_L1_error)
 
-  /* "cython_laplace.pyx":401
+  /* "cython_laplace.pyx":409
  *                     o[v0,v1,v2] = voxelDistance(g, v0, v1, v2)
  * 
  * def computeAllStreamlines(str method, # method             # <<<<<<<<<<<<<<
  *                           np.ndarray[BDTYPE_t, ndim=3] g,    # grid
  *                           np.ndarray[FDTYPE_t, ndim=3] s, #scalar function
  */
-  __pyx_tuple__58 = PyTuple_Pack(14, __pyx_n_s_method, __pyx_n_s_g, __pyx_n_s_s, __pyx_n_s_o, __pyx_n_s_dv0, __pyx_n_s_dv1, __pyx_n_s_dv2, __pyx_n_s_h, __pyx_n_s_v0, __pyx_n_s_v1, __pyx_n_s_v2, __pyx_n_s_nv0, __pyx_n_s_nv1, __pyx_n_s_nv2); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 401, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__58);
-  __Pyx_GIVEREF(__pyx_tuple__58);
-  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(8, 0, 14, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__58, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_computeAllStreamlines, 401, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 401, __pyx_L1_error)
+  __pyx_tuple__59 = PyTuple_Pack(14, __pyx_n_s_method, __pyx_n_s_g, __pyx_n_s_s, __pyx_n_s_o, __pyx_n_s_dv0, __pyx_n_s_dv1, __pyx_n_s_dv2, __pyx_n_s_h, __pyx_n_s_v0, __pyx_n_s_v1, __pyx_n_s_v2, __pyx_n_s_nv0, __pyx_n_s_nv1, __pyx_n_s_nv2); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 409, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__59);
+  __Pyx_GIVEREF(__pyx_tuple__59);
+  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(8, 0, 14, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__59, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_computeAllStreamlines, 409, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 409, __pyx_L1_error)
 
-  /* "cython_laplace.pyx":424
+  /* "cython_laplace.pyx":432
  *                     o[v0,v1,v2] = 0
  * 
  * def computeStreamlinesFromList(str method, # method             # <<<<<<<<<<<<<<
  *                                np.ndarray[BDTYPE_t, ndim=3] g,    # grid
  *                                np.ndarray[FDTYPE_t, ndim=3] s, #scalar function
  */
-  __pyx_tuple__59 = PyTuple_Pack(11, __pyx_n_s_method, __pyx_n_s_g, __pyx_n_s_s, __pyx_n_s_pointList, __pyx_n_s_o, __pyx_n_s_dv0, __pyx_n_s_dv1, __pyx_n_s_dv2, __pyx_n_s_h, __pyx_n_s_nv0, __pyx_n_s_v0); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 424, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__59);
-  __Pyx_GIVEREF(__pyx_tuple__59);
-  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(9, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__59, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_computeStreamlinesFromList, 424, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 424, __pyx_L1_error)
+  __pyx_tuple__60 = PyTuple_Pack(11, __pyx_n_s_method, __pyx_n_s_g, __pyx_n_s_s, __pyx_n_s_pointList, __pyx_n_s_o, __pyx_n_s_dv0, __pyx_n_s_dv1, __pyx_n_s_dv2, __pyx_n_s_h, __pyx_n_s_nv0, __pyx_n_s_v0); if (unlikely(!__pyx_tuple__60)) __PYX_ERR(0, 432, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__60);
+  __Pyx_GIVEREF(__pyx_tuple__60);
+  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(9, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__60, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_computeStreamlinesFromList, 432, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 432, __pyx_L1_error)
 
-  /* "cython_laplace.pyx":444
+  /* "cython_laplace.pyx":452
  * # creates the gradients using the central difference
  * # this is called after iterateLaplace
  * def computeGradients(np.ndarray[BDTYPE_t, ndim=3] g, #grid             # <<<<<<<<<<<<<<
  *                      np.ndarray[FDTYPE_t, ndim=3] o, #relaxed equation
  *                      np.ndarray[FDTYPE_t, ndim=3] dv0, # output gradient
  */
-  __pyx_tuple__60 = PyTuple_Pack(15, __pyx_n_s_g, __pyx_n_s_o, __pyx_n_s_dv0, __pyx_n_s_dv1, __pyx_n_s_dv2, __pyx_n_s_v0, __pyx_n_s_v1, __pyx_n_s_v2, __pyx_n_s_nv0, __pyx_n_s_nv1, __pyx_n_s_nv2, __pyx_n_s_d0, __pyx_n_s_d1, __pyx_n_s_d2, __pyx_n_s_mag); if (unlikely(!__pyx_tuple__60)) __PYX_ERR(0, 444, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__60);
-  __Pyx_GIVEREF(__pyx_tuple__60);
-  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(5, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__60, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_computeGradients, 444, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 444, __pyx_L1_error)
+  __pyx_tuple__61 = PyTuple_Pack(15, __pyx_n_s_g, __pyx_n_s_o, __pyx_n_s_dv0, __pyx_n_s_dv1, __pyx_n_s_dv2, __pyx_n_s_v0, __pyx_n_s_v1, __pyx_n_s_v2, __pyx_n_s_nv0, __pyx_n_s_nv1, __pyx_n_s_nv2, __pyx_n_s_d0, __pyx_n_s_d1, __pyx_n_s_d2, __pyx_n_s_mag); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 452, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__61);
+  __Pyx_GIVEREF(__pyx_tuple__61);
+  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(5, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__61, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_computeGradients, 452, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 452, __pyx_L1_error)
 
-  /* "cython_laplace.pyx":489
+  /* "cython_laplace.pyx":497
  *                     dv2[v0,v1,v2] = d2 / mag
  * 
  * def iterateLaplace(np.ndarray[BDTYPE_t, ndim=3] g,             # <<<<<<<<<<<<<<
  *                    np.ndarray[FDTYPE_t, ndim=3] o,
  *                    int max_iterations,
  */
-  __pyx_tuple__61 = PyTuple_Pack(7, __pyx_n_s_g, __pyx_n_s_o, __pyx_n_s_max_iterations, __pyx_n_s_convergence_criteria, __pyx_n_s_i, __pyx_n_s_convergence, __pyx_n_s_normalize_factor); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 489, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__61);
-  __Pyx_GIVEREF(__pyx_tuple__61);
-  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__61, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_iterateLaplace, 489, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 489, __pyx_L1_error)
+  __pyx_tuple__62 = PyTuple_Pack(7, __pyx_n_s_g, __pyx_n_s_o, __pyx_n_s_max_iterations, __pyx_n_s_convergence_criteria, __pyx_n_s_i, __pyx_n_s_convergence, __pyx_n_s_normalize_factor); if (unlikely(!__pyx_tuple__62)) __PYX_ERR(0, 497, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__62);
+  __Pyx_GIVEREF(__pyx_tuple__62);
+  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__62, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_laplace_pyx, __pyx_n_s_iterateLaplace, 497, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 497, __pyx_L1_error)
 
   /* "View.MemoryView":285
  *         return self.name
@@ -27971,9 +28232,9 @@ static int __Pyx_InitCachedConstants(void) {
  * cdef strided = Enum("<strided and direct>") # default
  * cdef indirect = Enum("<strided and indirect>")
  */
-  __pyx_tuple__62 = PyTuple_Pack(1, __pyx_kp_s_strided_and_direct_or_indirect); if (unlikely(!__pyx_tuple__62)) __PYX_ERR(2, 285, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__62);
-  __Pyx_GIVEREF(__pyx_tuple__62);
+  __pyx_tuple__63 = PyTuple_Pack(1, __pyx_kp_s_strided_and_direct_or_indirect); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(2, 285, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__63);
+  __Pyx_GIVEREF(__pyx_tuple__63);
 
   /* "View.MemoryView":286
  * 
@@ -27982,9 +28243,9 @@ static int __Pyx_InitCachedConstants(void) {
  * cdef indirect = Enum("<strided and indirect>")
  * 
  */
-  __pyx_tuple__63 = PyTuple_Pack(1, __pyx_kp_s_strided_and_direct); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(2, 286, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__63);
-  __Pyx_GIVEREF(__pyx_tuple__63);
+  __pyx_tuple__64 = PyTuple_Pack(1, __pyx_kp_s_strided_and_direct); if (unlikely(!__pyx_tuple__64)) __PYX_ERR(2, 286, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__64);
+  __Pyx_GIVEREF(__pyx_tuple__64);
 
   /* "View.MemoryView":287
  * cdef generic = Enum("<strided and direct or indirect>")
@@ -27993,9 +28254,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  * 
  */
-  __pyx_tuple__64 = PyTuple_Pack(1, __pyx_kp_s_strided_and_indirect); if (unlikely(!__pyx_tuple__64)) __PYX_ERR(2, 287, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__64);
-  __Pyx_GIVEREF(__pyx_tuple__64);
+  __pyx_tuple__65 = PyTuple_Pack(1, __pyx_kp_s_strided_and_indirect); if (unlikely(!__pyx_tuple__65)) __PYX_ERR(2, 287, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__65);
+  __Pyx_GIVEREF(__pyx_tuple__65);
 
   /* "View.MemoryView":290
  * 
@@ -28004,9 +28265,9 @@ static int __Pyx_InitCachedConstants(void) {
  * cdef indirect_contiguous = Enum("<contiguous and indirect>")
  * 
  */
-  __pyx_tuple__65 = PyTuple_Pack(1, __pyx_kp_s_contiguous_and_direct); if (unlikely(!__pyx_tuple__65)) __PYX_ERR(2, 290, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__65);
-  __Pyx_GIVEREF(__pyx_tuple__65);
+  __pyx_tuple__66 = PyTuple_Pack(1, __pyx_kp_s_contiguous_and_direct); if (unlikely(!__pyx_tuple__66)) __PYX_ERR(2, 290, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__66);
+  __Pyx_GIVEREF(__pyx_tuple__66);
 
   /* "View.MemoryView":291
  * 
@@ -28015,19 +28276,19 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  * 
  */
-  __pyx_tuple__66 = PyTuple_Pack(1, __pyx_kp_s_contiguous_and_indirect); if (unlikely(!__pyx_tuple__66)) __PYX_ERR(2, 291, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__66);
-  __Pyx_GIVEREF(__pyx_tuple__66);
+  __pyx_tuple__67 = PyTuple_Pack(1, __pyx_kp_s_contiguous_and_indirect); if (unlikely(!__pyx_tuple__67)) __PYX_ERR(2, 291, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__67);
+  __Pyx_GIVEREF(__pyx_tuple__67);
 
   /* "(tree fragment)":1
  * def __pyx_unpickle_Enum(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     if __pyx_checksum != 0xb068931:
  *         from pickle import PickleError as __pyx_PickleError
  */
-  __pyx_tuple__67 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__67)) __PYX_ERR(2, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__67);
-  __Pyx_GIVEREF(__pyx_tuple__67);
-  __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__67, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_Enum, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) __PYX_ERR(2, 1, __pyx_L1_error)
+  __pyx_tuple__68 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__68)) __PYX_ERR(2, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__68);
+  __Pyx_GIVEREF(__pyx_tuple__68);
+  __pyx_codeobj__52 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__68, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_Enum, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__52)) __PYX_ERR(2, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -28421,17 +28682,17 @@ if (!__Pyx_RefNanny) {
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_14cython_laplace_17__pyx_fuse_0fast_trilinear_interpolant, 0, __pyx_n_s_pyx_fuse_0fast_trilinear_inter, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__54)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_14cython_laplace_17__pyx_fuse_0fast_trilinear_interpolant, 0, __pyx_n_s_pyx_fuse_0fast_trilinear_inter, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__55)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_ndarray_float64_t_ndim_3, __pyx_t_2) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_14cython_laplace_19__pyx_fuse_1fast_trilinear_interpolant, 0, __pyx_n_s_pyx_fuse_1fast_trilinear_inter, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__54)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_14cython_laplace_19__pyx_fuse_1fast_trilinear_interpolant, 0, __pyx_n_s_pyx_fuse_1fast_trilinear_inter, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__55)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_1, __pyx_kp_s_ndarray_uint8_t_ndim_3, __pyx_t_2) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_mdef_14cython_laplace_3fast_trilinear_interpolant, 0, __pyx_n_s_fast_trilinear_interpolant, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__54)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_2 = __pyx_FusedFunction_NewEx(&__pyx_mdef_14cython_laplace_3fast_trilinear_interpolant, 0, __pyx_n_s_fast_trilinear_interpolant, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__55)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_empty_tuple);
   ((__pyx_FusedFunctionObject *) __pyx_t_2)->__signatures__ = __pyx_t_1;
@@ -28448,17 +28709,17 @@ if (!__Pyx_RefNanny) {
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_14cython_laplace_23__pyx_fuse_0fast_bilinear_interpolant, 0, __pyx_n_s_pyx_fuse_0fast_bilinear_interp, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__56)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_4 = __pyx_FusedFunction_NewEx(&__pyx_fuse_0__pyx_mdef_14cython_laplace_23__pyx_fuse_0fast_bilinear_interpolant, 0, __pyx_n_s_pyx_fuse_0fast_bilinear_interp, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__57)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_3, __pyx_kp_s_ndarray_float64_t_ndim_3, __pyx_t_4) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_14cython_laplace_25__pyx_fuse_1fast_bilinear_interpolant, 0, __pyx_n_s_pyx_fuse_1fast_bilinear_interp, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__56)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_4 = __pyx_FusedFunction_NewEx(&__pyx_fuse_1__pyx_mdef_14cython_laplace_25__pyx_fuse_1fast_bilinear_interpolant, 0, __pyx_n_s_pyx_fuse_1fast_bilinear_interp, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__57)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_empty_tuple);
   if (PyDict_SetItem(__pyx_t_3, __pyx_kp_s_ndarray_uint8_t_ndim_3, __pyx_t_4) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __pyx_FusedFunction_NewEx(&__pyx_mdef_14cython_laplace_5fast_bilinear_interpolant, 0, __pyx_n_s_fast_bilinear_interpolant, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__56)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_4 = __pyx_FusedFunction_NewEx(&__pyx_mdef_14cython_laplace_5fast_bilinear_interpolant, 0, __pyx_n_s_fast_bilinear_interpolant, NULL, __pyx_n_s_cython_laplace, __pyx_d, ((PyObject *)__pyx_codeobj__57)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_empty_tuple);
   ((__pyx_FusedFunctionObject *) __pyx_t_4)->__signatures__ = __pyx_t_3;
@@ -28466,64 +28727,64 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_fast_bilinear_interpolant, __pyx_t_4) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "cython_laplace.pyx":386
+  /* "cython_laplace.pyx":394
  * #   0: output the distance between closest inside and closest outside point
  * #   1: normalize that distance to lie between the inside and outside grid
  * def straightLineDistance(np.ndarray[BDTYPE_t, ndim=3] g,    # grid             # <<<<<<<<<<<<<<
  *                          np.ndarray[FDTYPE_t, ndim=3] o,    # output
  *                          int laplace_initialization):       # work mode
  */
-  __pyx_t_5 = PyCFunction_NewEx(&__pyx_mdef_14cython_laplace_7straightLineDistance, NULL, __pyx_n_s_cython_laplace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 386, __pyx_L1_error)
+  __pyx_t_5 = PyCFunction_NewEx(&__pyx_mdef_14cython_laplace_7straightLineDistance, NULL, __pyx_n_s_cython_laplace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 394, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_straightLineDistance, __pyx_t_5) < 0) __PYX_ERR(0, 386, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_straightLineDistance, __pyx_t_5) < 0) __PYX_ERR(0, 394, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "cython_laplace.pyx":401
+  /* "cython_laplace.pyx":409
  *                     o[v0,v1,v2] = voxelDistance(g, v0, v1, v2)
  * 
  * def computeAllStreamlines(str method, # method             # <<<<<<<<<<<<<<
  *                           np.ndarray[BDTYPE_t, ndim=3] g,    # grid
  *                           np.ndarray[FDTYPE_t, ndim=3] s, #scalar function
  */
-  __pyx_t_5 = PyCFunction_NewEx(&__pyx_mdef_14cython_laplace_9computeAllStreamlines, NULL, __pyx_n_s_cython_laplace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 401, __pyx_L1_error)
+  __pyx_t_5 = PyCFunction_NewEx(&__pyx_mdef_14cython_laplace_9computeAllStreamlines, NULL, __pyx_n_s_cython_laplace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 409, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_computeAllStreamlines, __pyx_t_5) < 0) __PYX_ERR(0, 401, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_computeAllStreamlines, __pyx_t_5) < 0) __PYX_ERR(0, 409, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "cython_laplace.pyx":424
+  /* "cython_laplace.pyx":432
  *                     o[v0,v1,v2] = 0
  * 
  * def computeStreamlinesFromList(str method, # method             # <<<<<<<<<<<<<<
  *                                np.ndarray[BDTYPE_t, ndim=3] g,    # grid
  *                                np.ndarray[FDTYPE_t, ndim=3] s, #scalar function
  */
-  __pyx_t_5 = PyCFunction_NewEx(&__pyx_mdef_14cython_laplace_11computeStreamlinesFromList, NULL, __pyx_n_s_cython_laplace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 424, __pyx_L1_error)
+  __pyx_t_5 = PyCFunction_NewEx(&__pyx_mdef_14cython_laplace_11computeStreamlinesFromList, NULL, __pyx_n_s_cython_laplace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 432, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_computeStreamlinesFromList, __pyx_t_5) < 0) __PYX_ERR(0, 424, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_computeStreamlinesFromList, __pyx_t_5) < 0) __PYX_ERR(0, 432, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "cython_laplace.pyx":444
+  /* "cython_laplace.pyx":452
  * # creates the gradients using the central difference
  * # this is called after iterateLaplace
  * def computeGradients(np.ndarray[BDTYPE_t, ndim=3] g, #grid             # <<<<<<<<<<<<<<
  *                      np.ndarray[FDTYPE_t, ndim=3] o, #relaxed equation
  *                      np.ndarray[FDTYPE_t, ndim=3] dv0, # output gradient
  */
-  __pyx_t_5 = PyCFunction_NewEx(&__pyx_mdef_14cython_laplace_13computeGradients, NULL, __pyx_n_s_cython_laplace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 444, __pyx_L1_error)
+  __pyx_t_5 = PyCFunction_NewEx(&__pyx_mdef_14cython_laplace_13computeGradients, NULL, __pyx_n_s_cython_laplace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 452, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_computeGradients, __pyx_t_5) < 0) __PYX_ERR(0, 444, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_computeGradients, __pyx_t_5) < 0) __PYX_ERR(0, 452, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "cython_laplace.pyx":489
+  /* "cython_laplace.pyx":497
  *                     dv2[v0,v1,v2] = d2 / mag
  * 
  * def iterateLaplace(np.ndarray[BDTYPE_t, ndim=3] g,             # <<<<<<<<<<<<<<
  *                    np.ndarray[FDTYPE_t, ndim=3] o,
  *                    int max_iterations,
  */
-  __pyx_t_5 = PyCFunction_NewEx(&__pyx_mdef_14cython_laplace_15iterateLaplace, NULL, __pyx_n_s_cython_laplace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 489, __pyx_L1_error)
+  __pyx_t_5 = PyCFunction_NewEx(&__pyx_mdef_14cython_laplace_15iterateLaplace, NULL, __pyx_n_s_cython_laplace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 497, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_iterateLaplace, __pyx_t_5) < 0) __PYX_ERR(0, 489, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_iterateLaplace, __pyx_t_5) < 0) __PYX_ERR(0, 497, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "cython_laplace.pyx":1
@@ -28556,7 +28817,7 @@ if (!__Pyx_RefNanny) {
  * cdef strided = Enum("<strided and direct>") # default
  * cdef indirect = Enum("<strided and indirect>")
  */
-  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__62, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 285, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__63, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_XGOTREF(generic);
   __Pyx_DECREF_SET(generic, __pyx_t_5);
@@ -28570,7 +28831,7 @@ if (!__Pyx_RefNanny) {
  * cdef indirect = Enum("<strided and indirect>")
  * 
  */
-  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__63, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 286, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__64, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 286, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_XGOTREF(strided);
   __Pyx_DECREF_SET(strided, __pyx_t_5);
@@ -28584,7 +28845,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  */
-  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__64, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 287, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__65, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 287, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_XGOTREF(indirect);
   __Pyx_DECREF_SET(indirect, __pyx_t_5);
@@ -28598,7 +28859,7 @@ if (!__Pyx_RefNanny) {
  * cdef indirect_contiguous = Enum("<contiguous and indirect>")
  * 
  */
-  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__65, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 290, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__66, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 290, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_XGOTREF(contiguous);
   __Pyx_DECREF_SET(contiguous, __pyx_t_5);
@@ -28612,7 +28873,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  */
-  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__66, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 291, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__67, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(2, 291, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_XGOTREF(indirect_contiguous);
   __Pyx_DECREF_SET(indirect_contiguous, __pyx_t_5);

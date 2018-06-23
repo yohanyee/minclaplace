@@ -1,0 +1,4 @@
+/micehome/yyee/local/lib/python3.6/site-packages/cython_laplace.cpython-36m-x86_64-linux-gnu.so
+/micehome/yyee/local/bin/make_laplace_grid
+/micehome/yyee/local/bin/minclaplace
+/micehome/yyee/local/lib/python3.6/site-packages/minclaplace-1.0-py3.6.egg-info
