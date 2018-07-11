@@ -80,6 +80,7 @@ model of Huntington's disease. Neuroimage. 2008 Jun;41(2):243-51.
                             help="stop criteria for relaxation convergence "
                             "[default: %default]",
                             type="float", default=0.001)
+    solver_group.add_option("--grid-is-relaxed", dest="gridrelaxed", help="Input grid is already relaxed", default=False, action='store_true')
     parser.add_option_group(solver_group)
 
     output_group = OptionGroup(parser, "Output options")
@@ -216,11 +217,15 @@ model of Huntington's disease. Neuroimage. 2008 Jun;41(2):243-51.
     # TODO: implement convergence criteria
 
     # relax the equation
-    print("CONVERGENCE:", options.convergence)
-    cython_laplace.iterateLaplace(grid.data, relaxation.data,
-                                  options.maxiterations,
-                                  options.convergence)
+    if options.gridrelaxed:
+        print("CONVERGENCE:", options.convergence)
+        cython_laplace.iterateLaplace(grid.data, relaxation.data,
+                                      options.maxiterations,
+                                      options.convergence)
 
+    else:
+        print("Grid provided as relaxed. Using input grid as relaxed data")
+        relaxation.data = grid.data
     # compute the gradients
     cython_laplace.computeGradients(grid.data, relaxation.data, dv0, dv1, dv2)
 

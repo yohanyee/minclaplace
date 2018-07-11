@@ -10,6 +10,6 @@ setup(
     author = "Jason Lerch",
     author_email = 'jason.lerch@utoronto.ca',
     url = 'https://github.com/jasonlerch/minclaplace',
-    scripts = ["minclaplace", "make_laplace_grid"],
+    scripts = ["minclaplace", "make_laplace_grid", "modify_grid.py"],
     ext_modules = [Extension("cython_laplace", ["cython_laplace.c"])]
 )
